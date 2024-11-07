@@ -1,5 +1,5 @@
 site_name: Pet Shop Guará
-#site_url: https://github.com/mdsreq-fga-unb/2024.2-T03-PetShopGuara.git 
+site_url: https://mdsreq-fga-unb.github.io/2024.2-T03-PetShopGuara/
 repo_url: "https://github.com/mdsreq-fga-unb/2024.2-T03-PetShopGuara"
 theme:
   name: material
