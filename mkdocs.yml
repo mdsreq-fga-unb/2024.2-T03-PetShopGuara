@@ -3,3 +3,13 @@ site_url: https://mdsreq-fga-unb.github.io/2024.2-T03-PetShopGuara/
 repo_url: "https://github.com/mdsreq-fga-unb/2024.2-T03-PetShopGuara"
 theme:
   name: material
+
+nav:
+  - Página Inicial: home.md 
+  - Visão do Produto: 
+    - Objetivo do Produto : VisãoProduto/ObjetivoProduto.md
+  - Cenário atual do ciente e do negócio:
+    - Introdução ao negócio e contexto : CenarioAtual/Introdução.md 
+    - Identificação da Oportunidade ou Problema : CenarioAtual/Identificação.md
+    - Desafios do Projeto : CenarioAtual/Desafios.md
+    - Segmentação de clientes : CenarioAtual/Segmentação.md
