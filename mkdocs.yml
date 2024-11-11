@@ -6,10 +6,12 @@ theme:
 
 nav:
   - Página Inicial: home.md 
-  - Visão do Produto: 
-    - Objetivo do Produto : VisãoProduto/ObjetivoProduto.md
   - Cenário atual do ciente e do negócio:
     - Introdução ao negócio e contexto : CenarioAtual/Introdução.md 
     - Identificação da Oportunidade ou Problema : CenarioAtual/Identificação.md
     - Desafios do Projeto : CenarioAtual/Desafios.md
     - Segmentação de clientes : CenarioAtual/Segmentação.md
+  - Visão do Produto e Projeto: 
+    - Solução Proposta : VisãoProduto/Solucao.md
+    
+  
