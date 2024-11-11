@@ -13,5 +13,9 @@ nav:
     - Segmentação de clientes : CenarioAtual/Segmentação.md
   - Visão do Produto e Projeto: 
     - Solução Proposta : VisãoProduto/Solucao.md
-    
+    - Estratégias de Engenharia de Software : VisãoProduto/Estrategias.md
+    - Cronogramas e Entregas : VisãoProduto/Cronograma.md
+    - Interação entre Equipe e Cliente : VisãoProduto/Interação.md
+  - Lições Aprendidas: 
+    - Unidade 1 : Unidades/Unidade1.md
   
