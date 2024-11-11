@@ -1,3 +1,0 @@
-# Desafios do Projeto
-
-O desafio deste projeto é desenvolver um sistema que realiza as atividades de forma a gerar resultados positivos de gestão para Pet Shop, focado em otimizar a organização do próprio negócio. Os funcionários e os clientes do negócio não estão acostumados a usar ferramentas tecnológicas para o agendamento dos banhos e tosas, logo, outro desafio é fazer uma plataforma que, mesmo pessoas não familiarizadas com tecnologia, vão conseguir utilizar e optar pelo seu uso.

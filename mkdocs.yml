@@ -6,11 +6,7 @@ theme:
 
 nav:
   - Página Inicial: home.md 
-  - Cenário atual do ciente e do negócio:
-    - Introdução ao negócio e contexto : CenarioAtual/Introdução.md 
-    - Identificação da Oportunidade ou Problema : CenarioAtual/Identificação.md
-    - Desafios do Projeto : CenarioAtual/Desafios.md
-    - Segmentação de clientes : CenarioAtual/Segmentação.md
+  - Cenário atual do ciente e do negócio: CenarioAtual/Cenario.md 
   - Visão do Produto e Projeto: 
     - Solução Proposta : VisãoProduto/Solucao.md
     - Estratégias de Engenharia de Software : VisãoProduto/Estrategias.md
