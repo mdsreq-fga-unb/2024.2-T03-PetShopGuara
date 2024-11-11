@@ -3,9 +3,10 @@ site_url: https://mdsreq-fga-unb.github.io/2024.2-T03-PetShopGuara/
 repo_url: "https://github.com/mdsreq-fga-unb/2024.2-T03-PetShopGuara"
 theme:
   name: material
+site_logo: petguara.png
 
 nav:
-  - Página Inicial: home.md 
+  - Página Inicial: index.md 
   - Cenário atual do ciente e do negócio: CenarioAtual/Cenario.md 
   - Visão do Produto e Projeto: 
     - Solução Proposta : VisãoProduto/Solucao.md
