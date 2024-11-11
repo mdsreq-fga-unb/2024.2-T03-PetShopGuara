@@ -3,11 +3,18 @@ site_url: https://mdsreq-fga-unb.github.io/2024.2-T03-PetShopGuara/
 repo_url: "https://github.com/mdsreq-fga-unb/2024.2-T03-PetShopGuara"
 theme:
   name: material
+  name: material
+  palette:
+    scheme: 'default + dark'
+    primary: 'deep orange'
+    accent: 'orange'
   logo: assets/imgs/logo.png
+  favicon: assets/imgs/logo.png
+
 
 nav:
   - Página Inicial: index.md 
-  - Cenário atual do ciente e do negócio: CenarioAtual/Cenario.md 
+  - Cenário atual do cliente e do negócio: CenarioAtual/Cenario.md 
   - Visão do Produto e Projeto: 
     - Solução Proposta : VisãoProduto/Solucao.md
     - Estratégias de Engenharia de Software : VisãoProduto/Estrategias.md

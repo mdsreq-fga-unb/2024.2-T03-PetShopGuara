@@ -9,7 +9,7 @@ O Pet Shop Guará é um pet shop que tem como sua prioridade atender a populaç�
 O cliente enfrenta desafios significativos com os agendamentos e controle financeiro, essenciais para o serviço de banho e tosa. Seu principal problema é a ineficiência operacional do seu negócio, com dois grandes catalisadores: gestão de agendamentos e controle de vendas. Os agendamentos, atualmente, são feitos pelo WhatsApp do dono ou por ligações no seu telefone pessoal, e após isso anotados em um caderno ou apenas passados aos funcionários responsáveis pelo serviço. Ocasionalmente, essa falta de organização acaba levando a problemas de agendamentos, como esquecimentos, falta de comunicação com os funcionários e situações onde clientes são rejeitados por "não estarem marcados" caso o dono não esteja na loja. Outro problema encontrado é a falta de informações sobre o cachorro para o serviço de banho e tosa, o que faz com que só pessoalmente os tosadores consigam descobrir o nível de dificuldade e o tempo de serviço, além da possiblidade ou não do serviço ser realizado. Já o controle de vendas, hoje em dia não é feito, logo, ao final do mês, Tiago não sabe a quantidade de serviços realizados e nem seu lucro e, além disso, suas contas pessoais acabam se misturando com as da empresa.
 
  
- ![Texto alternativo](../assets/imgs/diagrama.png)
+ ![Texto alternativo](../assets/imgs/diagrama1.jpg)
  
 
 ## Desafios do Projeto

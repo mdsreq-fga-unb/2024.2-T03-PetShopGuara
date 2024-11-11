@@ -1,7 +1,7 @@
 # Pet Shop Guará
 
 <div style="text-align: center;">
-  <img src="assets/imgs/petguara.png" alt="logo" width="500"/>
+  <img src="assets/imgs/logo.png" alt="logo" width="500"/>
 </div>
 
 ## Introdução 
