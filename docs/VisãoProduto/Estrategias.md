@@ -8,6 +8,16 @@
 
 - Processo de Engenharia de Software: OpenUP 
 
+O OpenUp segue uma metodologia com 4 fase de desenvolvimento : 
+
+- Concepção : Nessa fase é feita a definição dos objetivos do projeto, levantamento inicial de requisitos e o planejamento e cronograma do projeto;
+- Elaboração : Nessa fase é realizado o refinamento de requisitos e arquitetura, o desenvolvimento de protótipos e validação do mesmo e por último a análise de riscos;
+- Construção : Aqui é feito as iterações de desenvolvimento, testes de funcionalidades e integração contínuos e feedback e ajustes com o cliente;
+- Transição : Nesta última fase ocorre os testes finais e implantação, documentação e guias de usuário e o suporte pós-lançamento ao usuário.
+
+No cronograma da disciplina detalhamos como seguiremos cada uma dessas fases de acordo com nosso cronograma.
+
+
 ## Quadro Comparativo 
 
 | Características                           | Unified Process (UP)                                           | Open Unified Process (OpenUP)                                    |

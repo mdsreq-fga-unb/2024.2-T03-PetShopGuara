@@ -18,11 +18,16 @@
 | 13     | 03/02/2025         | 09/02/2025          | Fazer as mudanças pedidas pelo cliente, estilizar a alteração de preço e o cancelamento do agendamento, testes das funções/estilizações feitas na semana. |
 | 14     | 10/02/2025         | 12/02/2025          | Encerramento do projeto, entrega da Unidade 4.                            |
 
-
 ## Considerações Importantes 
 
 - Datas de Início e Fim: Cada sprint tem a duração de uma semana, começando em 04/11/2024 e finalizando em 12/02/2025. 
 
  - Entrega do produto final para o cliente na última sprint do projeto. 
+
+ - Fases de desenvolvimento de acordo com o OpenUP :
+    * Fase de concepção - Sprints 0 e 1
+    * Fase de elaboração - Sprint 2
+    * Fase de construção - Spints 3 a 12
+    * Fase de transição - Sprints 13 e 14
 
 
