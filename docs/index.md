@@ -6,7 +6,7 @@
 
 ## Introdução 
 
- O Projeto Pet Shop Guará é um projeto desenvolvido durante a disciplina de Requisitos de Software durante o semestre 2024.2. A ideia do projeto é desenvolver uma ferramenta web que facilite a organização de um pet shop. Mais informações disponíveis na Visão Geral do Produto
+ O Projeto Pet Shop Guará é um projeto desenvolvido durante a disciplina de Requisitos de Software durante o semestre 2024.2. A ideia do projeto é desenvolver uma aplicação web que facilite a organização e melhore a eficiência operacional de um pet shop. Mais informações disponíveis na Visão Geral do Produto
 
 ## Equipe 
 
