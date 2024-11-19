@@ -7,7 +7,7 @@
 | Gerente de Projeto | Coordena o projeto, garante a comunicação entre cliente e equipe, controla prazos e entregas.   | Manoela           | -   |
 | Desenvolvedor FrontEnd     | Responsável pela interface do usuário, design e implementação das funcionalidades no lado do cliente.  | Alexandre     | Manoela     |
 | Desenvolvedor Backend            | Implementa a lógica de negócios, integração com banco de dados e APIs.         | Enrico     |Kaio e Pedro Henrique    |
-| Analista de Requisitos             | Define os requisitos funcionais e não funcionais do sistema e garante que eles sejam atendidos.       | Pedro Henrique          | Gustavo e Alexandre     |
+| Analista de Requisitos             | Identifica, documenta e gerencia requisitos funcionais e não funcionais. Realiza elicitação, análise, validação e especificação dos requisitos. Garante alinhamento com os objetivos do projeto e participa de revisões e testes..       | Pedro Henrique          | Gustavo, Alexandre, Enrico, Kaio e Manoela     |
 | Desenvolvedor CI/CD / Tester | Codificar testes unitários, criar integração e entrega contínua. Realizar testes funcionais, garantindo a qualidade do produto.         | Kaio     | Gustavo         |
 
 

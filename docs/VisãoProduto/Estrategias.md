@@ -43,3 +43,17 @@ Para um projeto menor, como este de um sistema de agendamento e controle de vend
 
 O OpenUP reduz a carga de documentação e a complexidade do planejamento detalhado, o que também diminui o custo e o tempo de desenvolvimento — ambos essenciais para um projeto com orçamento e cronograma restritos. Com menos etapas obrigatórias e mais flexibilidade, a equipe pode acelerar o processo de desenvolvimento e entrega, atendendo ao cliente mais rapidamente. 
 
+#### Referências 
+
+<small>SILVA, Luciane. OpenUp: um processo integrado e ágil. Disponível em: <https://medium.com/@LucianeS/openup-um-processo-integrado-e-agil-a4400c17ce62>. Acesso em: 11 nov. 2024.</small>
+
+<small>CATOLICA. METODOLOGIAS ÁGEIS DE DESENVOLVIMENTO: OPENUP, FDD, DSDM E LEAN. Disponível em: <https://conteudo.catolica.edu.br/conteudos/unileste_cursos/disciplinas/nucleo_formacao_geral/Gestao_de_projetos_e_metodos_ageis/tema_03/index.html>. Acesso em: 11 nov. 2024.</small>
+
+<small>EDUCATIVE.IO. What is a unified process model. Disponível em: <https://www.educative.io/answers/what-is-a-unified-process-model>. Acesso em: 11 nov. 2024.</small>
+
+<small>EDEKI, Charles. Agile Unified Process. Disponível em: <https://interhad.nied.unicamp.br/courses/roberto-pereira/ci163-projeto-de-software-ufpr-1/agenda/auppaper.pdf>. Acesso em: 11 nov. 2024.</small>
+
+
+<small>TREINAWEB. O que é RUP (Rational Unified Process). Disponível em: <https://www.treinaweb.com.br/blog/o-que-e-rup-rational-unified-process>. Acesso em: 11 nov. 2024.</small>
+
+
