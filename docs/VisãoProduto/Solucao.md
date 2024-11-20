@@ -2,9 +2,9 @@
 
 ## Objetivo do Produto
 
-O objetivo principal do produto de software é organizar os agendamentos de banho e tosa, centralizando os agendamentos em um sistema, garantindo que todos os funcionários estejam cientes das marcações para, assim, reduzir falhas de comunicação, e, também, facilitar o controle financeiro, monitorando o volume de serviços e o valor arrecadado ao longo do mês, permitindo um entendimento preciso das finanças da empresa. 
+O objetivo principal do produto de software é amenizar a ineficiência operacional por meio da organização dos agendamentos de banho e tosa, centralizando os agendamentos em um sistema, garantindo que todos os funcionários estejam cientes das marcações para, assim, reduzir falhas de comunicação, e simplificando o cadastro dos pets, permitindo que os donos incluam informações sobre ele, como tamanho, comportamento, e especificações para o banho e tosa, e feedback dos clientes após o serviço prestado.  
 
-Objetivos secundários incluem simplificar o cadastro dos pets, permitindo que os donos incluam informações sobre os pets, como tamanho, comportamento, e especificações para o banho e tosa, e feedback dos clientes após o serviço prestado. 
+Devido ao curto prazo de desenvolvimento, definimos que o controle financeiro seria um objetivo secundário, já que ainda é uma forma de solucionar falhas da ineficiência operacional do dono, mas não uma prioridade de desenvolvimento devido ao prazo de entrega. Ele será feito monitorando o volume de serviços e o valor arrecadado ao longo do mês, permitindo um entendimento preciso das finanças da empresa.
 
 
 ## Características da Solução 
