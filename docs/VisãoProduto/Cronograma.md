@@ -30,7 +30,7 @@ dar feedback sobre o serviço prestado
  - Fases de desenvolvimento de acordo com o OpenUP :
     * Fase de concepção - Sprints 0 e 1
     * Fase de elaboração - Sprint 2
-    * Fase de construção - Spints 3 a 11
-    * Fase de transição - Sprints 12 e 13
+    * Fase de construção - Spints 3 a 10
+    * Fase de transição - Sprints 11 e 12
 
 
