@@ -29,7 +29,7 @@ Devido ao curto prazo de desenvolvimento, definimos que o controle financeiro se
 
 - Frontend: HTML, CSS e JavaScript, utilizando a biblioteca React. 
 
-- Backend: Supabase, um serviço hospedado em nuvem semelhante ao Firebase. 
+- Backend: Java, utilizando o framework Spring Boot. 
 
 - Banco de Dados: PostgreSQL hospedado no Supabase, para armazenar dados de agendamentos, informações dos clientes e registros financeiros. 
 
