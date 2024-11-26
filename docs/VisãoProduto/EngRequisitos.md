@@ -35,8 +35,7 @@
 #### **Representação**
 
 - **Prototipagem**: Criação de protótipos para validar funcionalidades e melhorar a comunicação entre a equipe e os stakeholders.  
-- **Diagramas**: Produção de diagramas (como casos de uso e fluxogramas) para representar os processos e requisitos do sistema.  
-- **Representações formais**: Uso de linguagens formais, como UML, para documentar e detalhar o design do sistema.  
+- **Diagramas**: Produção de diagramas (como arquitetura) para representar os processos e requisitos do sistema.    
 
 #### **Análise e Consenso**
 
@@ -65,5 +64,15 @@
 - **Walkthrough**: Sessões de revisão guiada onde as funcionalidades são apresentadas ao cliente e equipe para validação e ajustes finais.  
 
 
-
 ## Engenharia de Requisitos e o OpenUP
+| **Fases do OpenUP** | **Atividades da ER**          | **Prática**                     | **Técnica**                                                                                     | **Resultados Esperados**                                                                                          |
+|----------------------|------------------------------|----------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **Iniciação**        | **Elicitação e Descoberta**  | Conhecimento do cliente e do problema | Entrevista com o cliente, Análise de Concorrentes, Brainstorming                                | Lista de necessidades, Declaração do problema                                                                    |
+|                      | **Análise e Consenso**       | Análise de requisitos            | Análise de Domínio de Requisito, Análise de viabilidade, Reuniões entre os membros da equipe     | Declaração do problema, Lista de requisitos, Proposta de solução, Criação do MVP                                  |
+|                      | **Declaração**               | Registros dos requisitos         | Reuniões entre os membros da equipe, Documento de visão de produto, Especificação de Requisitos, Features | Especificação de Requisitos (RFs), Especificação de Requisitos de Software (SRS), Features, Visão de Produto, Regras de Negócio, User Story |
+|                      | **Verificação e Validação**  | Validação de Requisitos          | Reunião entre os membros da equipe, Revisão de Critérios de Aceitação, Brainstorming             | DoD e DoR                                                                                                         |
+| **Elaboração**       | **Representação**            | Criação de Protótipos e Arquitetura | Prototipagem e  Diagramas                                                | Arquitetura e Protótipo                                                                                           |
+|                      | **Análise e Consenso**       | Alinhamento de requisitos        | Análise de Risco                                                                                | Análise de Risco                                                                                                  |
+| **Construção**       | **Organização e Atualização**| Revisão do produto               | Alinhamento da equipe, Feedback                                                                | Desenvolvimento atualizado e alinhado de acordo com o cronograma                                                 |
+|                      | **Verificação e Validação**  | Revisão do produto               | Entrevista com o cliente, Feedback                                                             | Funcionalidades verificadas com o cliente e feedback coletado                                                    |
+| **Transição**        | **Verificação e Validação**  | Revisão do produto finalizado    | Walkthrough                                                                                    | Resultados do Walkthrough, Qualidade de Produto                                                                   |
