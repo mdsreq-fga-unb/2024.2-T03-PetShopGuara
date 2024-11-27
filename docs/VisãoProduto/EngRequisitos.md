@@ -43,6 +43,13 @@
 
 ---
 
+#### **Verificação e Validação**
+
+- **Walkthrough**: Revisão com o cliente em cima do protótipo mostrando todas as funcionalidades que serão aplicadas ao produto.
+- **Feedback**: Feedback sobre o protótipo criado e melhorias que o cliente gostaria que fossem feitas.
+
+---
+
 ### **Construção**
 
 #### **Organização e Atualização**
@@ -73,6 +80,7 @@
 |                      | **Verificação e Validação**  | Validação de Requisitos          | Reunião entre os membros da equipe, Revisão de Critérios de Aceitação, Brainstorming             | DoD e DoR                                                                                                         |
 | **Elaboração**       | **Representação**            | Criação de Protótipos e Arquitetura | Prototipagem e  Diagramas                                                | Arquitetura e Protótipo                                                                                           |
 |                      | **Análise e Consenso**       | Alinhamento de requisitos        | Análise de Risco                                                                                | Análise de Risco                                                                                                  |
+|                      | **Verificação e Validação**       | Validação do protótipo        | Walkthrough, Feedback                                                                                | Protótipo validado para começar o desenvolvimento, alinhamento visual com o cliente                                                                                                  |
 | **Construção**       | **Organização e Atualização**| Revisão do produto               | Alinhamento da equipe, Feedback                                                                | Desenvolvimento atualizado e alinhado de acordo com o cronograma                                                 |
 |                      | **Verificação e Validação**  | Revisão do produto               | Entrevista com o cliente, Feedback                                                             | Funcionalidades verificadas com o cliente e feedback coletado                                                    |
 | **Transição**        | **Verificação e Validação**  | Revisão do produto finalizado    | Walkthrough                                                                                    | Resultados do Walkthrough, Qualidade de Produto                                                                   |
