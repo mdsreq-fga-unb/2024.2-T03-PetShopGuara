@@ -11,11 +11,11 @@
 | 6      | 16/12/2024    | 22/12/2024    | Entrega da Unidade 2, estilizar a página do dono e as consultas de pets e clientes, criar a função de alterar os preços dos serviços, criar a função de ver o calendário de agendamentos, testes das funções/estilizações feitas na semana. |
 |        | 23/12/2024    | 01/01/2025    | Recesso                                                                                        |
 | 7      | 02/01/2025    | 12/01/2025    | Estilizar a alteração de preços e o calendário de agendamentos, criar a função de alterar o calendário e cancelar agendamentos, testes das funções/estilizações feitas na semana. Validação da página do usuário com nosso cliente. |
-| 8      | 13/01/2025    | 19/01/2025    | Fazer a hospedagem, criar a página dos funcionários com a consulta das informações sobre os clientes e pets e com acesso ao calendário de agendamentos, testes das funções/estilizações feitas na semana. |
+| 8      | 13/01/2025    | 19/01/2025    | Criar a página dos funcionários com a consulta das informações sobre os clientes e pets e com acesso ao calendário de agendamentos, testes das funções/estilizações feitas na semana. |
 | 9      | 20/01/2025    | 26/01/2025    | Entrega da Unidade 3, estilizar a página dos funcionários, criar link para direcionamento para o instagram do petshop, criar função de consultar os agendamentos anteriores para os clientes, criar a função de upload de fotos, testes das funções/estilizações feitas na semana. |
-| 10     | 27/01/2025    | 02/02/2025    | Estilizar a consulta de agendamentos anteriores e o upload de fotos, criar a função de feedback sobre os serviços prestados, criar a função do planner financeiro, validação com o cliente, testes das funções/estilizações feitas na semana. |
+| 10     | 27/01/2025    | 02/02/2025    | Fazer a hospedagem, estilizar a consulta de agendamentos anteriores e o upload de fotos, criar a função de feedback sobre os serviços prestados, criar a função do planner financeiro, validação com o cliente, testes das funções/estilizações feitas na semana. |
 | 11     | 03/02/2025    | 09/02/2025    | Fazer as mudanças pedidas pelo cliente, estilizar o feedback e o planner, testes das funções/estilizações feitas na semana. |
-| 12     | 10/02/2025    | 12/02/2025    | Encerramento do projeto, entrega da Unidade 4.                                                |
+| 12     | 10/02/2025    | 12/02/2025    | Walkthrough com o cliente, encerramento do projeto, entrega da Unidade 4.                                                |
 
 criar a função de upload de fotos para o agendamento e o cadastro dos pets
 criar a função de consultar os agendamentos já feitos pelo usuário
@@ -31,6 +31,6 @@ dar feedback sobre o serviço prestado
     * Fase de concepção - Sprints 0 e 1
     * Fase de elaboração - Sprint 2
     * Fase de construção - Spints 3 a 10
-    * Fase de transição - Sprints 11 e 12
+    * Fase de transição - Sprints 10 a 12
 
 

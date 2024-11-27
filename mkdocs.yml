@@ -24,9 +24,14 @@ nav:
     - Requisitos de Software: VisãoProduto/Requisitos.md
     - DoR e DoD: VisãoProduto/DoRDoD.md
     - Backlog do Produto: VisãoProduto/Backlog.md
-    - Arquitetura : VisãoProduto/Arquitetura.md
   - Lições Aprendidas: 
     - Unidade 1 : Unidades/Unidade1.md
+  - Fases do OpenUP:
+    - Concepção: FasesOpenUP/Concepcao.md
+    - Elaboração: FasesOpenUP/Elaboracao.md
+    - Construção: FasesOpenUP/Construcao.md
+    - Transição: FasesOpenUP/Transicao.md
   - Apresentações: 
     - Apresentação Unidade 1 : Entregas/Entrega1.md
+  
   

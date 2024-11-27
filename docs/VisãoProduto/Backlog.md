@@ -2,4 +2,6 @@
 
 ## Backlog Geral
 
-## Priorização do Backlog
+## Priorização do Backlog Geral
+
+## MVP
