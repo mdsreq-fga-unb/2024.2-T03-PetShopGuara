@@ -75,3 +75,43 @@ A priorização teve como objetivo garantir que o desenvolvimento fosse focado n
 | **US20** |Vizualizar Calendário com Agendamentos por Parte dos Funcionários  | Must have     |
 
 ## MVP
+O Produto Mínimo Viável (MVP) é uma versão do produto que inclui as funcionalidades essenciais e prioritárias, selecionadas por meio da técnica MoSCoW, para atender às necessidades principais do cliente, permitindo o lançamento inicial do sistema com as funcionalidades mais críticas.
+
+As funcionalidades escolhidas para o MVP são:
+
+1. **Cadastrar Usuários**  
+
+2. **Cadastrar Pets**  
+
+3. **Agendar Serviços**  
+
+4. **Exibir Horários Disponíveis**  
+
+5. **Cancelar Agendamentos**  
+
+6. **Consultar Dados dos Clientes**  
+
+7. **Consultar Informações dos Pets**  
+
+8. **Alterar os Preços dos Serviços**  
+
+9. **Visualizar Calendário com Agendamentos**  
+
+10. **Alterar o Calendário**  
+
+11. **Cancelar Agendamentos**  
+
+12. **Consultar Dados dos Clientes**  
+
+13. **Consultar Informações dos Pets**  
+
+14. **Visualizar Calendário com Agendamentos**  
+
+<center>
+![mvp](../assets/imgs/mvp.jpeg)
+Autores: [Alexandre Júnior](https://github.com/AlexandreLJr), [Gustavo Haubert](https://github.com/GustavoHaubert), [Manoela Garcia](https://github.com/manu-sgc)
+</center>
+
+Essas funcionalidades são essenciais para a operação inicial do sistema e foram priorizadas para garantir que o produto atenda às necessidades básicas do cliente e colaboradores do pet shop, com o objetivo de facilitar a gestão de serviços e o relacionamento com os clientes.
+
+As funcionalidades que não entraram no MVP, as da classificação *Could Have*, serão feitas após a conculsão do MVP, por não serem críticas para o funcionamento do sistema.
