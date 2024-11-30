@@ -6,7 +6,7 @@ Os requisitos funcionais detalham as funcionalidades específicas que o sistema 
 
 ### Requisitos do Cliente do Petshop
 1. **Cadastrar Usuários**: Permitir o cadastro de clientes, incluindo informações como nome e telefone.
-2. **Cadstrar Pets**: Permitir que o cliente faça o cadstro de seus pets com informações como nome, idade, raça e peso.
+2. **Cadstrar Pets**: Permitir que o cliente faça o cadstro de seus pets com informações como nome, idade e raça.
 3. **Agendar Serviços**: Permitir que o cliente agende serviços de banho e tosa para seus animais, escolhendo entre os serviços disponíveis e adicionando especificações sobre o serviço.
 4. **Exibir Horários Disponíveis**: Mostrar ao cliente os horários disponíveis para agendamentos, com base na disponibilidade do pet shop e dos funcionários.
 5. **Cancelar agendamentos**: Permitir que o cliente cancele ou reagende serviços, seguindo uma política de tempo de antecedência definida pelo pet shop.
