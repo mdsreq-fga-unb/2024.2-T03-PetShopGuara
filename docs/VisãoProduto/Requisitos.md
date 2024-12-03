@@ -26,9 +26,8 @@ Os requisitos funcionais detalham as funcionalidades específicas que o sistema 
 17. **Consultar os Feedbacks Forncecidos**: Permitir que o dono veja e analise os feedbacks dos clientes para identificar áreas de melhoria.
 
 ### Requisitos dos Funcionários
-18. **Consultar Dados dos Clientes**: Permitir que os funcionários acessem os dados cadastrais dos clientes, incluindo informações de contato, para casos onde o contato direto com o cliente seja necessário.
-19. **Consultar Informações dos Pets**: Permitir que os funcionários acessem as informações dos pets cadastrados, como nome, idade e raça.
-20. **Vizualizar Calendário com Agendamentos**: Permitir que os funcionários vejam todos os agendamentos em um calendário, com horários e datas organizados.
+18. **Consultar Informações dos Pets**: Permitir que os funcionários acessem as informações dos pets cadastrados, como nome, idade, raça e o nome do dono.
+19. **Vizualizar Calendário com Agendamentos do Dia**: Permitir que os funcionários vejam os agendamentos do dia atual.
 
 ## **Lista de Requisitos Não Funcionais**
 

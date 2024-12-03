@@ -36,11 +36,9 @@
 
 **US17** - Como administrador, quero visualizar e analisar os feedbacks fornecidos pelos clientes, para identificar melhorias nos serviços oferecidos.
 
-**US18** - Como colaborador, quero acessar os dados cadastrais dos clientes, incluindo informações de contato, para facilitar a comunicação direta quando necessário.
+**US18** - Como colaborador, quero visualizar as informações dos pets cadastrados, como nome, idade, raça e nome do dono, para prestar os serviços com mais eficiência e personalização.
 
-**US19** - Como colaborador, quero visualizar as informações dos pets cadastrados, como nome, idade e raça, para prestar os serviços com mais eficiência e personalização.
-
-**US20** - Como colaborador, quero acessar o calendário com todos os agendamentos organizados por horário e data, para gerenciar melhor o fluxo de trabalho e atender os clientes conforme programado.
+**US19** - Como colaborador, quero acessar o calendário com os agendamentos do dia organizados por horário, para gerenciar melhor o fluxo de trabalho e atender os clientes conforme programado.
 
 ## Priorização do Backlog Geral
 Nesta seção, realizamos a priorização dos itens do backlog utilizando a técnica MoSCoW, que organiza as funcionalidades em três categorias principais: 
@@ -70,9 +68,8 @@ A priorização teve como objetivo garantir que o desenvolvimento fosse focado n
 | **US15** |Cancelar Agendamentos  | Should have     |
 | **US16** |Consultar Dados Financeiro  | Could have     |
 | **US17** |Consultar os Feedbacks Forncecidos  | Could have     |
-| **US18** |Consultar Dados dos Clientes por Parte dos Funcionários  | Should have     |
-| **US19** |Consultar Informações dos Pets por Parte dos Funcionários  | Should have     |
-| **US20** |Vizualizar Calendário com Agendamentos por Parte dos Funcionários  | Must have     |
+| **US18** |Consultar Informações dos Pets por Parte dos Funcionários  | Should have     |
+| **US19** |Vizualizar Calendário com Agendamentos do Dia por Parte dos Funcionários  | Must have     |
 
 ## MVP
 O Produto Mínimo Viável (MVP) é uma versão do produto que inclui as funcionalidades essenciais e prioritárias, selecionadas por meio da técnica MoSCoW, para atender às necessidades principais do cliente, permitindo o lançamento inicial do sistema com as funcionalidades mais críticas.
@@ -99,13 +96,11 @@ As funcionalidades escolhidas para o MVP são:
 
 10. **Alterar o Calendário**  
 
-11. **Cancelar Agendamentos**  
+11. **Cancelar Agendamentos**   
 
-12. **Consultar Dados dos Clientes**  
+12. **Consultar Informações dos Pets por Parte dos Funcionários**  
 
-13. **Consultar Informações dos Pets**  
-
-14. **Visualizar Calendário com Agendamentos**  
+13. **Visualizar Calendário com Agendamentos do Dia**  
 
 <center>
 ![mvp](../assets/imgs/mvp.jpeg)
