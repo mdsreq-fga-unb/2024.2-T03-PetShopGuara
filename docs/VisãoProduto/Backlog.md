@@ -36,9 +36,9 @@
 
 **US17** - Como administrador, quero visualizar e analisar os feedbacks fornecidos pelos clientes, para identificar melhorias nos serviços oferecidos.
 
-**US18** - Como colaborador, quero visualizar as informações dos pets cadastrados, como nome, idade, raça e nome do dono, para prestar os serviços com mais eficiência e personalização.
+**US18** - Como administrador, quero que os funcionários vizualizem as informações dos pets cadastrados, como nome, idade, raça e nome do dono, para prestar os serviços com mais eficiência.
 
-**US19** - Como colaborador, quero acessar o calendário com os agendamentos do dia organizados por horário, para gerenciar melhor o fluxo de trabalho e atender os clientes conforme programado.
+**US19** - Como administrador, quero que os funcionários acessem o calendário com os agendamentos do dia organizados por horário, para gerenciar melhor o fluxo de trabalho e atender os clientes conforme programado.
 
 ## Priorização do Backlog Geral
 Nesta seção, realizamos a priorização dos itens do backlog utilizando a técnica MoSCoW, que organiza as funcionalidades em três categorias principais: 
