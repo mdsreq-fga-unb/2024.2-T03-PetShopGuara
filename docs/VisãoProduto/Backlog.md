@@ -2,6 +2,10 @@
 É importante ressaltar que todas as histórias de usuário apresentadas a seguir foram elaboradas com base na lista de requisitos funcionais descritos anteriormente neste documento. Trata-se de uma lista inicial, sujeita a ajustes ao longo do desenvolvimento do produto da Pet Shop Guará, conforme necessário.
 
 ## Backlog Geral
+### Tema
+
+
+#### Épico 1
 **US01** - Como cliente, quero me cadastrar no sistema para poder agendar serviços para meus pets.
 
 **US02** - Como cliente, quero cadastrar meus pets com informações como nome, idade e raça, para facilitar a escolha dos serviços mais adequados.
@@ -36,9 +40,9 @@
 
 **US17** - Como administrador, quero visualizar e analisar os feedbacks fornecidos pelos clientes, para identificar melhorias nos serviços oferecidos.
 
-**US18** - Como administrador, quero que os funcionários vizualizem as informações dos pets cadastrados, como nome, idade, raça e nome do dono, para prestar os serviços com mais eficiência.
+**US18** - Como funcionário, quero vizualizar as informações dos pets cadastrados, como nome, idade, raça e nome do dono, para prestar os serviços com mais eficiência.
 
-**US19** - Como administrador, quero que os funcionários acessem o calendário com os agendamentos do dia organizados por horário, para gerenciar melhor o fluxo de trabalho e atender os clientes conforme programado.
+**US19** - Como funcionário, quero acessar o calendário com os agendamentos do dia organizados por horário, para gerenciar melhor o fluxo de trabalho e atender os clientes conforme programado.
 
 ## Priorização do Backlog Geral
 Nesta seção, realizamos a priorização dos itens do backlog utilizando a técnica MoSCoW, que organiza as funcionalidades em três categorias principais: 
@@ -46,6 +50,7 @@ Nesta seção, realizamos a priorização dos itens do backlog utilizando a téc
 - **Must have**: Funcionalidades essenciais para o funcionamento do produto, que devem ser entregues sem exceção. 
 - **Should have**: Funcionalidades importantes, porém que podem ser implementadas após as funcionalidades essenciais. 
 - **Could have**: Funcionalidades desejáveis, que agregam valor, mas não são prioritárias no escopo inicial. 
+- **Wont't have**: Funcionalidades que não serão aplicadas, por, inicialmente, não agregarem valor.
 
 A priorização teve como objetivo garantir que o desenvolvimento fosse focado nas funcionalidades mais críticas, alinhando o produto às necessidades do negócio e aos recursos disponíveis. A tabela a seguir apresenta a classificação de cada item do backlog, proporcionando clareza e organização para as próximas etapas do projeto.
 
