@@ -7,7 +7,7 @@ Capacitações contínuas foram realizadas com foco nas tecnologias utilizadas n
 ## Prototipagem
 Protótipos interativos foram desenvolvidos no **Figma**, permitindo que a equipe visualizasse e testasse o fluxo de navegação do sistema e a experiência do usuário antes da implementação. Isso facilitou a comunicação com o cliente, ajudando a validar o design e as funcionalidades propostas.
 
-*link do figma*
+[Link do figma](https://www.figma.com/design/35bsz8P6wMWnZAo6fzlmDj/Prot%C3%B3tipo---pet-shop-guar%C3%A1?node-id=0-1&t=WOYEH2ExE34RqevI-1)
 
 ## Análise de Riscos
 A análise de riscos foi realizada para identificar possíveis obstáculos no desenvolvimento, como desafios técnicos, limitações de recursos, e riscos de mercado. A equipe definiu estratégias de mitigação para lidar com os riscos identificados, minimizando a chance de imprevistos durante as fases seguintes do desenvolvimento.
