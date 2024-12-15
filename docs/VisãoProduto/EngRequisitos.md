@@ -2,7 +2,7 @@
 
 ## Atividades e Técnicas de ER e OpenUP
 
-### **Iniciação**
+### **Concepção**
 
 #### **Elicitação e Descoberta**
 
@@ -78,7 +78,7 @@
 ## Engenharia de Requisitos e o OpenUP
 | **Fases do OpenUP** | **Atividades da ER**          | **Prática**                     | **Técnica**                                                                                     | **Resultados Esperados**                                                                                          |
 |----------------------|------------------------------|----------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| **Iniciação**        | **Elicitação e Descoberta**  | Conhecimento do cliente e do problema | Entrevista com o cliente, Análise de Concorrentes, Brainstorming                                | Lista de necessidades, Declaração do problema, Lista de requisitos, Proposta de solução                                                                    |
+| **Concepção**        | **Elicitação e Descoberta**  | Conhecimento do cliente e do problema | Entrevista com o cliente, Análise de Concorrentes, Brainstorming                                | Lista de necessidades, Declaração do problema, Lista de requisitos, Proposta de solução                                                                    |
 |                      | **Análise e Consenso**       | Análise de requisitos            | Análise de Domínio de Requisito, Análise de viabilidade, Reuniões entre os membros da equipe     | Criação do MVP                                  |
 |                      | **Declaração**               | Registros dos requisitos         | Reuniões entre os membros da equipe, Documento de visão de produto, Especificação de Requisitos, Features | SRS - Software Requirements Specification|
 |                      | **Verificação e Validação**  | Validação de Requisitos          | Reunião entre os membros da equipe, Revisão de Critérios de Aceitação, Brainstorming             | DoD e DoR 
