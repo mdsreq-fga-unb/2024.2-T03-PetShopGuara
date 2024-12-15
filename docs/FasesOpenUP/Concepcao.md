@@ -27,7 +27,7 @@ Realização de sessões de capacitação para garantir que todos os membros da 
 O MVP foi definido, contendo as funcionalidades essenciais necessárias para que o produto fosse lançado e pudesse ser utilizado pelos primeiros usuários. Maior detalhamento pode ser encontrado na Visão de Produto e Projeto, na aba Backlog do Produto.
 
 <center>
-![mvp](../assets/imgs/mvp.jpeg)
+![mvp](../assets/imgs/mvp.png)
 Autores: [Alexandre Júnior](https://github.com/AlexandreLJr), [Gustavo Haubert](https://github.com/GustavoHaubert), [Manoela Garcia](https://github.com/manu-sgc)
 </center>
 
