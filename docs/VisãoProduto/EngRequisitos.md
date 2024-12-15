@@ -25,8 +25,13 @@
 
 #### **Verificação e Validação**
 
-- **Critérios de aceitação**: Definir critérios objetivos para validar que os requisitos foram corretamente implementados.  
+- **Reuniões entre os membros da equipe**: Sessões colaborativas para verificar e validar os requisitos.
+- **Revisão dos critérios de aceitação**: Definir critérios objetivos para validar que os requisitos foram corretamente implementados.  
 - **Brainstorming**: Sessões para validar ideias, explorar melhorias e alinhar expectativas sobre os requisitos levantados.  
+
+#### **Organização e Atualização**
+- **MoSCoW**: Aplicação do método MoSCoW para priorização dos requisitos.
+- **User Story**: Abordagem para descrever os requisitos sob a perspectiva dos usuários.
 
 ---
 
@@ -69,18 +74,18 @@
 #### **Verificação e Validação**
 
 - **Walkthrough**: Sessões de revisão guiada onde as funcionalidades são apresentadas ao cliente e equipe para validação e ajustes finais.  
-
-
+       
 ## Engenharia de Requisitos e o OpenUP
 | **Fases do OpenUP** | **Atividades da ER**          | **Prática**                     | **Técnica**                                                                                     | **Resultados Esperados**                                                                                          |
 |----------------------|------------------------------|----------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| **Iniciação**        | **Elicitação e Descoberta**  | Conhecimento do cliente e do problema | Entrevista com o cliente, Análise de Concorrentes, Brainstorming                                | Lista de necessidades, Declaração do problema                                                                    |
-|                      | **Análise e Consenso**       | Análise de requisitos            | Análise de Domínio de Requisito, Análise de viabilidade, Reuniões entre os membros da equipe     | Declaração do problema, Lista de requisitos, Proposta de solução, Criação do MVP                                  |
-|                      | **Declaração**               | Registros dos requisitos         | Reuniões entre os membros da equipe, Documento de visão de produto, Especificação de Requisitos, Features | Especificação de Requisitos (RFs), Especificação de Requisitos de Software (SRS), Features, Visão de Produto, Regras de Negócio, User Story |
-|                      | **Verificação e Validação**  | Validação de Requisitos          | Reunião entre os membros da equipe, Revisão de Critérios de Aceitação, Brainstorming             | DoD e DoR                                                                                                         |
-| **Elaboração**       | **Representação**            | Criação de Protótipos e Arquitetura | Prototipagem e  Diagramas                                                | Arquitetura e Protótipo                                                                                           |
-|                      | **Análise e Consenso**       | Alinhamento de requisitos        | Análise de Risco                                                                                | Análise de Risco                                                                                                  |
-|                      | **Verificação e Validação**       | Validação do protótipo        | Walkthrough, Feedback                                                                                | Protótipo validado para começar o desenvolvimento, alinhamento visual com o cliente                                                                                                  |
-| **Construção**       | **Organização e Atualização**| Revisão do produto               | Alinhamento da equipe, Feedback                                                                | Desenvolvimento atualizado e alinhado de acordo com o cronograma                                                 |
-|                      | **Verificação e Validação**  | Revisão do produto               | Entrevista com o cliente, Feedback                                                             | Funcionalidades verificadas com o cliente e feedback coletado                                                    |
-| **Transição**        | **Verificação e Validação**  | Revisão do produto finalizado    | Walkthrough                                                                                    | Resultados do Walkthrough, Qualidade de Produto                                                                   |
+| **Iniciação**        | **Elicitação e Descoberta**  | Conhecimento do cliente e do problema | Entrevista com o cliente, Análise de Concorrentes, Brainstorming                                | Lista de necessidades, Declaração do problema, Lista de requisitos, Proposta de solução                                                                    |
+|                      | **Análise e Consenso**       | Análise de requisitos            | Análise de Domínio de Requisito, Análise de viabilidade, Reuniões entre os membros da equipe     | Criação do MVP                                  |
+|                      | **Declaração**               | Registros dos requisitos         | Reuniões entre os membros da equipe, Documento de visão de produto, Especificação de Requisitos, Features | SRS - Software Requirements Specification|
+|                      | **Verificação e Validação**  | Validação de Requisitos          | Reunião entre os membros da equipe, Revisão de Critérios de Aceitação, Brainstorming             | DoD e DoR 
+|                      | **Organização e Atualização**  | Priorização de Requisitos          | MoSCoW, User Story             | Requisitos priorizados para montar o mvp, Backlog de Requisitos                                                                                                         |
+| **Elaboração**       | **Representação**            | Criação de Protótipos | Prototipagem e  Diagramas                                                | Protótipo                                                                                           |
+|                      | **Análise e Consenso**       | Alinhamento de requisitos        | Análise de Risco, Lean Inception                                                                                | User Story, Especificação de Requisitos de Software (SRS)                                                                                                  |
+|                      | **Verificação e Validação**       | Validação do protótipo        | Walkthrough, Feedback                                                                                | Resultados do Walkthrough                                                                                                  |
+| **Construção**       | **Organização e Atualização**| Revisão do produto               | Alinhamento da equipe, Feedback                                                                | Atualização dos requisitos                                                 |
+|                      | **Verificação e Validação**  | Revisão do produto               | Walkthrough, Feedback, DoD                                                             | Resultados do walkthrough                                                    |
+| **Transição**        | **Verificação e Validação**  | Revisão do produto finalizado    | Walkthrough                                                                                    | Resultados do Walkthrough, Qualidade de Requisitos                                                                   |

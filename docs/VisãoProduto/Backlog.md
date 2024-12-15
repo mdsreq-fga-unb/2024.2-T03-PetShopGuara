@@ -1,4 +1,4 @@
-# Backlog do Produto
+﻿# Backlog do Produto
 É importante ressaltar que todas as histórias de usuário apresentadas a seguir foram elaboradas com base na lista de requisitos funcionais descritos anteriormente neste documento. Trata-se de uma lista inicial, sujeita a ajustes ao longo do desenvolvimento do produto da Pet Shop Guará, conforme necessário.
 
 ## Backlog Geral
