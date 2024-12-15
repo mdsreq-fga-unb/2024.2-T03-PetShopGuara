@@ -6,10 +6,10 @@ Os requisitos funcionais detalham as funcionalidades específicas que o sistema 
 
 ### Requisitos do Cliente do Petshop
 1. **Cadastrar Usuários**: Permitir o cadastro de clientes, incluindo informações como nome e telefone.
-2. **Cadstrar Pets**: Permitir que o cliente faça o cadstro de seus pets com informações como nome, idade e raça.
-3. **Agendar Serviços**: Permitir que o cliente agende serviços de banho e tosa para seus animais, escolhendo entre os serviços disponíveis e adicionando especificações sobre o serviço.
+2. **Cadstrar Pets**: Permitir que o cliente faça o cadstro de seus pets com informações como nome, idade, raça, e tudo o que seja relevante para o serviço de banho e tosa.
+3. **Agendar Serviços**: Permitir que o cliente agende serviços de banho e tosa para seus animais, escolhendo entre os serviços disponíveis, em horários que estejam disponíveis, e adicionando especificações sobre o serviço.
 4. **Exibir Horários Disponíveis**: Mostrar ao cliente os horários disponíveis para agendamentos, com base na disponibilidade do pet shop e dos funcionários.
-5. **Cancelar agendamentos**: Permitir que o cliente cancele ou reagende serviços, seguindo uma política de tempo de antecedência definida pelo pet shop.
+5. **Cancelar agendamentos**: Permitir que o cliente cancele ou reagende serviços, seguindo uma política de tempo de antecedência mínima definida pelo pet shop.
 6. **Consultar Histórico de Serviços**: Oferecer ao cliente acesso ao histórico dos serviços realizados, incluindo data, serviços prestados, e valores cobrados.
 7. **Redirecionar para as Redes Sociais**: Permitir que o cliente seja redirecionado para a rede social do pet shop, no caso o Instagram.
 8. **Fazer Upload de Fotos**: Permitir que o cliente envie fotos do seu animal para cadastro ou para referências de tosas.
@@ -18,11 +18,11 @@ Os requisitos funcionais detalham as funcionalidades específicas que o sistema 
 ### Requisitos do Dono do Negócio
 10. **Consultar Dados dos Clientes**: Permitir que o dono do pet shop acesse os dados cadastrais dos clientes, incluindo informações de contato e histórico de agendamentos.
 11. **Consultar Informações dos Pets**: Permitir que o dono acesse informações dos pets cadastrados, como nome, idade e raça.
-12. **Alterar os Preços dos Serviços**: Permitir que o dono modifique os preços dos serviços com base em diferentes critérios como custo ou promoções.
+12. **Alterar os Preços dos Serviços**: Permitir que o dono modifique os preços dos serviços com base em diferentes critérios como custo de acordo com as características do animal ou promoções.
 13. **Vizualizar Calendário com Agendamentos**: Permitir que o dono visualize todos os agendamentos em um calendário, com horários e datas organizados.
 14. **Alterar o Calendário**: Permitir que o dono mova ou reagende horários e configure datas sem atendimento ou com horários especiais.
 15. **Cancelar Agendamentos**:Permitir que o dono cancele agendamentos com o envio de notificações adequadas aos clientes.
-16. **Consultar Dados Financeiro**: Permitir que o dono acesse relatórios financeiros detalhados sobre os serviços prestados.
+16. **Consultar Dados Financeiro**: Permitir que o dono acesse relatórios financeiros,  detalhando o custo dos serviços que foram realizados e o valor cobrado por cada um.
 17. **Consultar os Feedbacks Forncecidos**: Permitir que o dono veja e analise os feedbacks dos clientes para identificar áreas de melhoria.
 
 ### Requisitos dos Funcionários
