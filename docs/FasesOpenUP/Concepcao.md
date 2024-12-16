@@ -13,7 +13,7 @@ Atribuição dos papéis e responsabilidades dentro da equipe, garantindo a orga
 
 - Gerente de Projeto: Manoela.
 - Desenvolvedor FrontEnd: Alexandre, com participação da Manoela.
-- Desenvolvedor BackEnd: Enrico, com participação do Kaio e Pedro Henrique.
+- Desenvolvedor BackEnd: Enrico, com participação do Gustavo e Pedro Henrique.
 - Desenvolvedor CI/CD / Testes: Gustavo.
 - Analista de Requisitos: Pedro Henrique, com a participação de toda a equipe.
 

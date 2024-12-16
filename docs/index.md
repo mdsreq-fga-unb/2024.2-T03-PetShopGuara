@@ -25,3 +25,4 @@
 | 06/11/2024 | 2.1    | Correção dos feedbacks levantados pelo professor e melhora de alguns dos novos tópicos |    Grupo      |
 | 11/11/2024 | 2.2    | Adição de como o OpenUP será realizado ao longo do semestre | Alexandre |
 | 20/11/2024 | 2.3    | Alteração do cronograma para corresponder o mvp | Alexandre |
+| 10/12/2024 | 2.3    | Adição dos itens DoR e DoD, Requisitos de Software e Backlog | Manoela |
