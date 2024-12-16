@@ -46,7 +46,7 @@ Os requisitos não funcionais especificam as qualidades e restrições do sistem
 6. **Eficiência**: As funcionalidades principais (ex.: agendamento, consulta de calendário) devem ter um tempo de resposta inferior a 3 segundos.
 
 ### **Suportabilidade (Supportability)**
-7. **Compatibilidade**: Deve ser acessível em dispositivos móveis e navegadores modernos, como o Google Chrome e Safari, garantindo boa experiência para todos os usuários.
+7. **Compatibilidade**: Deve ser acessível em dispositivos móveis e navegadores modernos, como o Google Chrome e Safari, garantindo boa experiência para todos os usuários. 
 
 ### **Requisitos de Implementação**
 8. **Linguagem de Programação**: O sistema deve ser desenvolvido utilizando Java, com o framework Spring Boot. 
