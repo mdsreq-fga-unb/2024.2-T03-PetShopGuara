@@ -18,11 +18,22 @@ nav:
   - Visão do Produto e Projeto: 
     - Solução Proposta : VisãoProduto/Solucao.md
     - Estratégias de Engenharia de Software : VisãoProduto/Estrategias.md
+    - Engenharia de Requisitos: VisãoProduto/EngRequisitos.md
     - Cronogramas e Entregas : VisãoProduto/Cronograma.md
     - Interação entre Equipe e Cliente : VisãoProduto/Interação.md
-    - Arquitetura : VisãoProduto/Arquitetura.md
+    - Requisitos de Software: VisãoProduto/Requisitos.md
+    - DoR e DoD: VisãoProduto/DoRDoD.md
+    - Backlog do Produto: VisãoProduto/Backlog.md
   - Lições Aprendidas: 
     - Unidade 1 : Unidades/Unidade1.md
+    - Unidade 2 : Unidades/Unidade2.md
+  - Fases do OpenUP:
+    - Concepção: FasesOpenUP/Concepcao.md
+    - Elaboração: FasesOpenUP/Elaboracao.md
+    - Construção: FasesOpenUP/Construcao.md
+    - Transição: FasesOpenUP/Transicao.md
   - Apresentações: 
     - Apresentação Unidade 1 : Entregas/Entrega1.md
+    - Apresentação Unidade 2 : Entregas/Entrega2.md
+  
   
