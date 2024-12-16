@@ -34,12 +34,6 @@ A documentação do projeto pode ser acessada [aqui](https://mdsreq-fga-unb.gith
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/kaioenzo">
-                    <img style="border-radius: 50%;" src="https://github.com/kaioenzo.png" width="150px;"/>
-                    <h5 class="text-center">Kaio<br>Enzo</h5>
-                </a>
-            </td>
-            <td align="center">
                 <a href="https://github.com/manu-sgc">
                     <img style="border-radius: 50%;" src="https://github.com/manu-sgc.png" width="150px;"/>
                     <h5 class="text-center">Manoela<br>Garcia</h5>
