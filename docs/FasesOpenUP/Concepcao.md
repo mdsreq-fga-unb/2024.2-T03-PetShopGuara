@@ -56,33 +56,47 @@ User Stories foram criadas para representar as funcionalidades do sistema de for
 
 **US07** - Como cliente, quero acessar o Instagram do pet shop pelo sistema, para acompanhar novidades e promoções.
 
-**US08** - Como cliente, quero enviar fotos do meu pet ao sistema, para usar como referência em pedidos de tosa personalizada.
+**US08** - Como cliente, quero enviar fotos do meu pet ao sistema, para usar como referência em pedidos de tosa personalizada ou para ter salvo em seu cadastro.
 
 **US09** - Como cliente, quero avaliar os serviços prestados com uma nota e comentários, para ajudar a melhorar a qualidade do atendimento.
 
-**US10** - Como administrador, quero acessar os dados cadastrais dos clientes, para entrar em contato com eles e atender melhor suas demandas.
+**US10** - Como administrador, quero visualizar e analisar as avaliações fornecidas pelos clientes, para identificar melhorias nos serviços oferecidos.
 
-**US11** - Como administrador, quero visualizar informações detalhadas sobre os pets dos clientes, para oferecer um atendimento de qualidade.
+**US11** - Como administrador, quero acessar os dados cadastrais dos clientes, para entrar em contato com eles e atender melhor suas demandas.
 
-**US12** - Como administrador, quero ajustar os preços dos serviços sempre que necessário, para acompanhar custos e promoções.
+**US12** - Como administrador, quero visualizar informações detalhadas sobre os pets dos clientes, para oferecer um atendimento de qualidade.
 
-**US13** - Como administrador, quero acessar um calendário com todos os agendamentos organizados por data e horário, para gerenciar melhor os atendimentos.
+**US13** - Como funcionário, quero vizualizar as informações dos pets cadastrados, como nome, idade, raça e nome do dono, para prestar os serviços com mais eficiência.
 
-**US14** - Como administrador, quero mover ou reagendar horários no calendário, para acomodar ajustes necessários nos atendimentos.
+**US14** - Como administrador, quero ajustar os preços dos serviços sempre que necessário, para acompanhar custos e promoções.
 
-**US15** - Como administrador, quero cancelar agendamentos quando preciso, notificando os clientes de forma clara e imediata.
+**US15** - Como administrador, quero acessar um calendário com todos os agendamentos organizados por data e horário, para gerenciar melhor os atendimentos.
 
-**US16** - Como administrador, quero acessar relatórios financeiros detalhados, para entender melhor os lucros e despesas do pet shop.
+**US16** - Como administrador, quero mover ou reagendar horários no calendário, para acomodar ajustes necessários nos atendimentos.
 
-**US17** - Como administrador, quero visualizar e analisar os feedbacks fornecidos pelos clientes, para identificar melhorias nos serviços oferecidos.
+**US17** - Como administrador, quero cancelar agendamentos quando preciso, notificando os clientes de forma clara e imediata, para liberar a agenda quando não for possível receber o pet.
 
-**US18** - Como colaborador, quero acessar os dados cadastrais dos clientes, incluindo informações de contato, para facilitar a comunicação direta quando necessário.
+**US18** - Como funcionário, quero acessar o calendário com os agendamentos do dia organizados por horário, para gerenciar melhor o fluxo de trabalho e atender os clientes conforme programado.
 
-**US19** - Como colaborador, quero visualizar as informações dos pets cadastrados, como nome, idade e raça, para prestar os serviços com mais eficiência e personalização.
-
-**US20** - Como colaborador, quero acessar o calendário com todos os agendamentos organizados por horário e data, para gerenciar melhor o fluxo de trabalho e atender os clientes conforme programado.
+**US19** - Como administrador, quero acessar relatórios financeiros detalhados, para entender melhor os lucros e despesas do pet shop.
 
 ## Regras de Negócio
 As regras de negócio foram estabelecidas, descrevendo as condições, processos e lógicas essenciais que o sistema deve seguir para garantir que os objetivos de negócio sejam atendidos corretamente.
 
-*regras de negócio*
+1. Um cliente pode cadastrar múltiplos pets, mas cada pet deve ter informações como nome, idade, raça e tamanho obrigatoriamente preenchidas.
+
+2. Raça e tamanho dos pets influenciam na escolha dos serviços e preços.
+
+3. Clientes podem cancelar ou reagendar um serviço até 24 horas antes do horário marcado sem penalidades.
+
+4. O administrador pode cancelar agendamentos, mas precisa notificar os clientes com antecedência de 2 horas.
+
+5. Serviços agendados devem ser organizados por ordem cronológica no calendário.
+
+6. Dias e horários de atendimento devem ser configuráveis pelo administrador (ex.: feriados, dias sem expediente).
+
+7. O sistema deve gerar relatórios financeiros detalhados (ex.: lucro mensal, serviços mais solicitados) com base nos agendamentos concluídos.
+
+8. Clientes podem avaliar os serviços prestados apenas após a conclusão do atendimento.
+
+9. Notas e comentários de avaliação devem estar vinculados ao agendamento específico e visíveis apenas para o administrador.
