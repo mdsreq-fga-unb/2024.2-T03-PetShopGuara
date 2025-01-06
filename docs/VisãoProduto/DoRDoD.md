@@ -25,15 +25,8 @@ O **Definition of Done (DoD)** define os critérios que precisam ser cumpridos p
 - Cumprimento dos critérios de aceitação
 Todos os critérios definidos previamente devem ser atendidos, garantindo que a funcionalidade cumpre os requisitos do negócio.
 
-- Aderência aos padrões de codificação
-O código deve seguir os padrões definidos pela equipe, garantindo qualidade, consistência e facilidade de manutenção.
-
 - Completo em termos de desenvolvimento
 A funcionalidade deve estar totalmente implementada, sem partes faltando.
 
 - Testes Unitários e de Integração Realizados e Aprovados
 Todos os testes foram executados, garantindo que a funcionalidade não afeta negativamente outras partes do sistema e que se comporta como esperado.
-
-- Validação pelo Cliente
-O cliente aprovou as funcionalidades desenvolvidas até o momento da reunião, confirmando que atende às expectativas e ao escopo definido.
-
