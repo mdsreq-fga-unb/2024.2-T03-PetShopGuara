@@ -123,6 +123,24 @@ As funcionalidades escolhidas para o MVP são:
 
 16. **Consultar feedbacks fornecidos**
 
+17. **Interface Institiva**
+
+18. **Feedback Visual**
+
+19. **Disponibilidade**
+
+20. **Recuperação de Falhas**
+
+21. **Processamento**
+
+22. **Eficiência**
+
+23. **Compatibilidade**
+
+24. **Linguagem de Programação**
+
+25. **Banco de Dados**
+
 <center>
 ![mvp](../assets/imgs/mvp.png)
 Autores: [Alexandre Júnior](https://github.com/AlexandreLJr), [Gustavo Haubert](https://github.com/GustavoHaubert), [Manoela Garcia](https://github.com/manu-sgc)
