@@ -13,42 +13,46 @@
 
 **US04** - Como cliente, quero visualizar os horários disponíveis para agendamentos, para escolher o momento mais conveniente para mim e para meus pets.
 
-**US05** - Como cliente, quero cancelar ou reagendar serviços com antecedência, caso surjam imprevistos, para evitar transtornos.
+**US05** - Como cliente, quero cancelar serviços com antecedência, caso surjam imprevistos, para evitar transtornos.
 
-**US06** - Como cliente, quero consultar o histórico dos serviços realizados para meus pets, para acompanhar os cuidados prestados e os custos envolvidos.
+**US06** - Como cliente, quero reagendar serviços com antecedência, caso surjam imprevistos, para evitar transtornos.
+
+**US07** - Como cliente, quero consultar o histórico dos serviços realizados para meus pets, para acompanhar os cuidados prestados e os custos envolvidos.
 
 ### Redirecionamento
-**US07** - Como cliente, quero acessar o Instagram do pet shop pelo sistema, para acompanhar novidades e promoções.
+**US08** - Como cliente, quero acessar o Instagram do pet shop pelo sistema, para acompanhar novidades e promoções.
 
 ### Upload de Fotos
-**US08** - Como cliente, quero enviar fotos do meu pet ao sistema, para usar como referência em pedidos de tosa personalizada ou para ter salvo em seu cadastro.
+**US09** - Como cliente, quero enviar fotos do meu pet ao sistema, para usar como referência em pedidos de tosa personalizada ou para ter salvo em seu cadastro.
 
 ### Feedbacks
-**US09** - Como cliente, quero avaliar os serviços prestados com uma nota e comentários, para ajudar a melhorar a qualidade do atendimento.
+**US10** - Como cliente, quero avaliar os serviços prestados com uma nota e comentários, para ajudar a melhorar a qualidade do atendimento.
 
-**US10** - Como administrador, quero visualizar e analisar as avaliações fornecidas pelos clientes, para identificar melhorias nos serviços oferecidos.
+**US11** - Como administrador, quero visualizar as avaliações fornecidas pelos clientes, para identificar melhorias nos serviços oferecidos.
 
 ### Gestão de Clientes e Pets
-**US11** - Como administrador, quero acessar os dados cadastrais dos clientes, para entrar em contato com eles e atender melhor suas demandas.
+**US12** - Como administrador, quero acessar os dados cadastrais dos clientes, para entrar em contato com eles e atender melhor suas demandas.
 
-**US12** - Como administrador, quero visualizar informações detalhadas sobre os pets dos clientes, para oferecer um atendimento de qualidade.
+**US13** - Como administrador, quero visualizar informações detalhadas sobre os pets dos clientes, para oferecer um atendimento de qualidade.
 
-**US13** - Como funcionário, quero vizualizar as informações dos pets cadastrados, como nome, idade, raça e nome do dono, para prestar os serviços com mais eficiência.
+**US14** - Como funcionário, quero visualizar as informações dos pets cadastrados, como nome, idade, raça e nome do dono, para prestar os serviços com mais eficiência.
 
 ### Gestão de Preços
-**US14** - Como administrador, quero ajustar os preços dos serviços sempre que necessário, para acompanhar custos e promoções.
+**US15** - Como administrador, quero ajustar os preços dos serviços sempre que necessário, para acompanhar custos e promoções.
 
 ### Calendário e Agendamentos
-**US15** - Como administrador, quero acessar um calendário com todos os agendamentos organizados por data e horário, para gerenciar melhor os atendimentos.
+**US16** - Como administrador, quero acessar um calendário com todos os agendamentos organizados por data e horário, para gerenciar melhor os atendimentos.
 
-**US16** - Como administrador, quero mover ou reagendar horários no calendário, para acomodar ajustes necessários nos atendimentos.
+**US17** - Como administrador, quero mover horários no calendário, para acomodar ajustes necessários nos atendimentos.
 
-**US17** - Como administrador, quero cancelar agendamentos quando preciso, notificando os clientes de forma clara e imediata, para liberar a agenda quando não for possível receber o pet.
+**US18** - Como administrador, quero reagendar horários no calendário, para acomodar ajustes necessários nos atendimentos.
 
-**US18** - Como funcionário, quero acessar o calendário com os agendamentos do dia organizados por horário, para gerenciar melhor o fluxo de trabalho e atender os clientes conforme programado.
+**US19** - Como administrador, quero cancelar agendamentos quando preciso, notificando os clientes de forma clara e imediata, para liberar a agenda quando não for possível receber o pet.
+
+**US20** - Como funcionário, quero acessar o calendário com os agendamentos do dia organizados por horário, para gerenciar melhor o fluxo de trabalho e atender os clientes conforme programado.
 
 ### Relatórios
-**US19** - Como administrador, quero acessar relatórios financeiros detalhados, para entender melhor os lucros e despesas do pet shop.
+**US21** - Como administrador, quero acessar relatórios financeiros com informações sobre despesas de água e luz e quantidade arrecadada dos serviços de banho e tosa, para entender melhor os lucros e despesas do pet shop.
 
 ## Priorização do Backlog Geral
 Nesta seção, realizamos a priorização dos itens do backlog utilizando a técnica MoSCoW, que organiza as funcionalidades em três categorias principais: 
