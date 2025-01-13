@@ -77,20 +77,20 @@ A tabela a seguir apresenta a classificação de cada item do backlog, proporcio
 | **US03** |Agendar Serviço  | Must have      |
 | **US04** |Exibir Horários Disponíveis  | Must have      |
 | **US05** |Cancelar agendamentos  | Should have    |
-| **US06** |Reagendar agendamentos  | Should have    |
+| **US06** |Reagendar agendamentos  | Could have    |
 | **US07** |Consultar Histórico de Serviços  | Could have      |
 | **US08** |Redirecionar para as Redes Sociais  | Could have      |
 | **US09** |Fazer Upload de Fotos  | Could have      |
-| **US10** |Fornecer Feedback sobre o Serviço  | Should have    |
-| **US11** |Consultar os Feedbacks Forncecidos  | Should have     |
+| **US10** |Fornecer Feedback sobre o Serviço  | Could have    |
+| **US11** |Consultar os Feedbacks Forncecidos  | Could have     |
 | **US12** |Consultar Dados dos Clientes  | Must have    |
 | **US13** |Consultar Informações dos Pets  | Must have    |
 | **US14** |Consultar Informações dos Pets por Parte dos Funcionários  | Should have     |
 | **US15** |Alterar os Preços dos Serviços  | Should have    |
 | **US16** |Vizualizar Calendário com Agendamentos  | Must have     |
 | **US17** |Configurar Datas no Calendário  | Should have     |
-| **US18** |Reagendar Agendamentos no Calendário  | Should have     |
-| **US19** |Cancelar Agendamentos  | Should have     |
+| **US18** |Reagendar Agendamentos por Parte do Dono | Could have     |
+| **US19** |Cancelar Agendamentos por Parte do Dono | Could have     |
 | **US20** |Vizualizar Calendário com Agendamentos do Dia por Parte dos Funcionários  | Must have     |
 | **US21** |Consultar Lucros  | Should have     |
 | **US22** |Consultar Despesas  | Should have     |
@@ -116,47 +116,37 @@ As funcionalidades escolhidas para o MVP são:
 
 8. **Visualizar Calendário com Agendamentos do Dia por Parte dos Funcionários**
 
-9. **Alterar os Preços dos Serviços**
+9. **Alterar os Preços dos Serviços** 
 
-10. **Cancelar Agendamentos por Parte do Dono**  
+10. **Configurar Datas no Calendário**
 
-11. **Reagendar Agendamentos por Parte do Dono**  
+11. **Cancelar Agendamentos por Parte do Cliente**  
 
-12. **Configurar Datas no Calendário**
+12. **Consultar Informações dos Pets por Parte dos Funcionários**
 
-13. **Reagendar Agendamentos no Calendário**
+13. **Consultar Lucros**
 
-14. **Cancelar Agendamentos por Parte do Cliente**  
-
-15. **Fornecer Feedback sobre o Serviço**
-
-16. **Consultar Informações dos Pets por Parte dos Funcionários**
-
-17. **Consultar Lucros**
-
-18. **Consultar Despesas**
-
-19. **Consultar Feedbacks Fornecidos**
+14. **Consultar Despesas**
 
 Os requisitos não funcionais escolhidos para o MVP foram:
 
-20. **Interface Institiva**
+15. **Interface Institiva**
 
-21. **Feedback Visual**
+16. **Feedback Visual**
 
-22. **Disponibilidade**
+17. **Disponibilidade**
 
-23. **Recuperação de Falhas**
+18. **Recuperação de Falhas**
 
-24. **Processamento**
+19. **Processamento**
 
-25. **Eficiência**
+20. **Eficiência**
 
-26. **Compatibilidade**
+21. **Compatibilidade**
 
-27. **Linguagem de Programação**
+22. **Linguagem de Programação**
 
-28. **Banco de Dados**
+23. **Banco de Dados**
 
 <center>
 ![mvp](../assets/imgs/mvp.png)
