@@ -27,6 +27,9 @@ nav:
   - Lições Aprendidas: 
     - Unidade 1 : Unidades/Unidade1.md
     - Unidade 2 : Unidades/Unidade2.md
+  - Estudos de Caso:
+    - Product Backlog Building: EstudosDeCaso/PBB.md
+    - User Story Mapping: EstudosDeCaso/USM.md
   - Fases do OpenUP:
     - Concepção: FasesOpenUP/Concepcao.md
     - Elaboração: FasesOpenUP/Elaboracao.md
