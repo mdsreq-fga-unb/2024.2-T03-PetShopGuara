@@ -21,4 +21,9 @@ public class PetController {
     public void cancelarPet(@PathVariable Long id) {
         petService.cancelarPet(id);
     }
+
+    @GetMapping("/consultar/{petId}")
+    public PetDTO consultarDados(@PathVariable Long petId){
+        return petService.consultarDadosPet(petId);
+    }
 }
