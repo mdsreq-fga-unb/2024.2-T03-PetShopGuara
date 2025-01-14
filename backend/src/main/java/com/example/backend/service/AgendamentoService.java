@@ -1,10 +1,11 @@
 package com.example.backend.service;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 
+import com.example.backend.models.Agendamento;
 import com.example.backend.models.Dono;
 import com.example.backend.models.Pet;
-import com.example.backend.models.agendamento;
 import com.example.backend.repository.AgendamentoRepository;
 
 import java.time.LocalDateTime;
@@ -17,14 +18,18 @@ public class AgendamentoService {
     private AgendamentoRepository agendamentoRepository;
 
     // Agendar banho e tosa
-    public agendamento agendarBanhoTosa(Pet pet, Dono dono, LocalDateTime dataHora) {
-        agendamento agendamento = new agendamento(pet, dono, dataHora);
-        return agendamentoRepository.save(agendamento);
+    public Agendamento agendarBanhoTosa(Pet pet, Dono dono, LocalDateTime dataHora) {
+        Agendamento agendamento = new Agendamento();
+        agendamento.setDataHora(dataHora);
+        agendamento.setDono(dono);
+        agendamento.setPet(pet);
+        
+        return agendamentoRepository.saveAndFlush(agendamento);
     }
 
     // Cancelar agendamento
     public boolean cancelarAgendamento(Long id) {
-        Optional<agendamento> agendamento = agendamentoRepository.findById(id);
+        Optional<Agendamento> agendamento = agendamentoRepository.findById(id);
         if (agendamento.isPresent()) {
             agendamentoRepository.delete(agendamento.get());
             return true;

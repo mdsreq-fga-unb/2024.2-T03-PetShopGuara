@@ -1,10 +1,13 @@
 package com.example.backend.controller;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.web.bind.annotation.*;
 
 import com.example.backend.models.Dono;
 import com.example.backend.models.Pet;
-import com.example.backend.models.agendamento;
+import com.example.backend.models.Agendamento;
+import com.example.backend.repository.DonoRepository;
+import com.example.backend.repository.PetRepository;
 import com.example.backend.service.AgendamentoService;
 
 import java.time.LocalDateTime;
@@ -15,12 +18,17 @@ public class AgendamentoController {
 
     @Autowired
     private AgendamentoService agendamentoService;
-
+    
+    @Autowired
+    private PetRepository petRepository;
+    
+    @Autowired
+    private DonoRepository donoRepository;
     // Endpoint para agendar banho e tosa
     @PostMapping("/agendar")
-    public agendamento agendar(@RequestParam Long petId, @RequestParam Long donoId, @RequestParam String dataHora) {
+    public Agendamento agendar(@RequestParam Long petId, @RequestParam Long donoId, @RequestParam String dataHora) {
         // Aqui você vai buscar o pet e dono no banco e fazer o agendamento
-        Pet pet = PetRepository.findById(petId).orElse(null);  // Exemplo de busca
+        Pet pet = petRepository.findById(petId).orElse(null);  // Exemplo de busca
         Dono dono = donoRepository.findById(donoId).orElse(null); // Exemplo de busca
         LocalDateTime data = LocalDateTime.parse(dataHora); // Supondo que a data está no formato ISO-8601
         

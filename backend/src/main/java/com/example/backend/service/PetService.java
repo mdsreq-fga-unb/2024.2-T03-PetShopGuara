@@ -1,7 +1,12 @@
 package com.example.backend.service;
 
+import com.example.backend.Exception.PetException;
+import com.example.backend.dto.PetDTO;
 import com.example.backend.models.Pet;
 import com.example.backend.repository.PetRepository;
+
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +26,7 @@ public class PetService {
 
     public PetDTO consultarDadosPet(Long petId){
         Optional<Pet> petExist = petRepository.findById(petId);
-        if(petExist.isPresent<>){ // verifica se existe o pet
+        if(petExist.isPresent()){ // verifica se existe o pet
             PetDTO petDto = new PetDTO(); // cria uma instância do PetDTO
             petDto.setId(petExist.get().getId()); // tira do optional
             petDto.setNome(petExist.get().getNome());

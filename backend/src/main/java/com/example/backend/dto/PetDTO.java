@@ -1,4 +1,6 @@
-public class Pet {
+package com.example.backend.dto;
+
+public class PetDTO {
     private Long id;
     private String nome;
     private String especie;

@@ -1,4 +1,6 @@
-public class PetException extends RunTimeException  {
+package com.example.backend.Exception;
+
+public class PetException extends RuntimeException{
 
 	private static final long serialVersionUID = 1L;
 

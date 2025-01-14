@@ -1,5 +1,6 @@
 package com.example.backend.controller;
 
+import com.example.backend.dto.PetDTO;
 import com.example.backend.models.Pet;
 import com.example.backend.service.PetService;
 import org.springframework.beans.factory.annotation.Autowired;

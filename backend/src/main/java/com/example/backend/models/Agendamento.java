@@ -1,9 +1,16 @@
 package com.example.backend.models;
-import javax.persistence.*;
 import java.time.LocalDateTime;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+
 @Entity
-public class agendamento {
+public class Agendamento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -16,15 +23,9 @@ public class agendamento {
     @JoinColumn(name = "dono_id")
     private Dono dono;
 
+    @Column(name= "dataHoraAgendamento")
     private LocalDateTime dataHora;
 
-    public agendamento() {}
-
-    public agendamento(Pet pet, Dono dono, LocalDateTime dataHora) {
-        this.pet = pet;
-        this.dono = dono;
-        this.dataHora = dataHora;
-    }
 
     // Getters e Setters
     public Long getId() {
