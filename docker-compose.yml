@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: "postgres:15"
+    restart: "always"
+    volumes:
+      - ./.psql/:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "myuser"
+      POSTGRES_PASSWORD: "mypassword"
+      POSTGRES_DB: "petshopguara"
+
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/petshopguara
+      SPRING_DATASOURCE_USERNAME: myuser
+      SPRING_DATASOURCE_PASSWORD: mypassword
