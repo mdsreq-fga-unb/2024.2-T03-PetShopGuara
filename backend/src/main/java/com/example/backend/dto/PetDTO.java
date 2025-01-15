@@ -41,11 +41,11 @@ public class PetDTO {
         this.raca = raca;
     }
 
-    public Long getDonoId() {
+    public Long getClienteId() {
         return clienteId;
     }
 
-    public void setDonoId(Long clienteId) {
+    public void setClienteId(Long clienteId) {
         this.clienteId = clienteId;
     }
 }

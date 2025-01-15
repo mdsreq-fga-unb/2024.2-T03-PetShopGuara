@@ -13,12 +13,13 @@ public class ClienteController {
     private ClienteService clienteService;
 
     @PostMapping("/cadastrar")
-    public Cliente cadastrarCliente(@RequestBody Cliente clienteId) {
-        return clienteService.cadastrarCliente(clienteId);
+    public Cliente cadastrarCliente(@RequestBody Cliente cliente) {
+        return clienteService.cadastrarCliente(cliente);
     }
 
     @DeleteMapping("/cancelar/{id}")
     public void cancelarCliente(@PathVariable Long id) {
-        clienteService.cancelarcliente(clienteId);
+        clienteService.cancelarCliente(id); // Passando o id para o serviço
     }
 }
+
