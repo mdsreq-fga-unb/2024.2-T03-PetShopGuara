@@ -13,7 +13,7 @@ public class ClienteController {
     private ClienteService clienteService;
 
     @PostMapping("/cadastrar")
-    public Cliente cadastrarCliente(@RequestBody Cliente cliente) {
+    public Cliente cadastrarCliente(@RequestBody Cliente clienteId) {
         return clienteService.cadastrarCliente(clienteId);
     }
 
