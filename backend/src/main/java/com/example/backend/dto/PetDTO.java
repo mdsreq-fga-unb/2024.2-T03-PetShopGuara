@@ -5,7 +5,7 @@ public class PetDTO {
     private String nome;
     private String especie;
     private String raca;
-    private Long donoId;
+    private Long clienteId;
 
      // Getters and setters
 
@@ -42,10 +42,10 @@ public class PetDTO {
     }
 
     public Long getDonoId() {
-        return donoId;
+        return clienteId;
     }
 
-    public void setDonoId(Long donoId) {
-        this.donoId = donoId;
+    public void setDonoId(Long clienteId) {
+        this.clienteId = clienteId;
     }
 }

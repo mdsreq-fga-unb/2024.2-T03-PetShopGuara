@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.backend.models.Agendamento;
-import com.example.backend.models.Dono;
+import com.example.backend.models.Cliente;
 import com.example.backend.models.Pet;
 import com.example.backend.repository.AgendamentoRepository;
 
@@ -18,7 +18,7 @@ public class AgendamentoService {
     private AgendamentoRepository agendamentoRepository;
 
     // Agendar banho e tosa
-    public Agendamento agendarBanhoTosa(Pet pet, Dono dono, LocalDateTime dataHora) {
+    public Agendamento agendarBanhoTosa(Pet pet, Cliente dono, LocalDateTime dataHora) {
         Agendamento agendamento = new Agendamento();
         agendamento.setDataHora(dataHora);
         agendamento.setDono(dono);
