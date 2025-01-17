@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+.psql/
+*.psql
+*.sql
+*.pgsql
+*.dump
+.env
