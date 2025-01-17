@@ -4,12 +4,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.backend.models.Agendamento;
-import com.example.backend.models.Dono;
+import com.example.backend.models.Cliente;
 import com.example.backend.models.Pet;
 import com.example.backend.repository.AgendamentoRepository;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Optional;
+import java.util.List;
 
 @Service
 public class AgendamentoService {
@@ -18,10 +20,10 @@ public class AgendamentoService {
     private AgendamentoRepository agendamentoRepository;
 
     // Agendar banho e tosa
-    public Agendamento agendarBanhoTosa(Pet pet, Dono dono, LocalDateTime dataHora) {
+    public Agendamento agendarBanhoTosa(Pet pet, Cliente cliente, LocalDateTime dataHora) {
         Agendamento agendamento = new Agendamento();
         agendamento.setDataHora(dataHora);
-        agendamento.setDono(dono);
+        agendamento.setCliente(cliente);
         agendamento.setPet(pet);
         
         return agendamentoRepository.saveAndFlush(agendamento);
@@ -36,4 +38,21 @@ public class AgendamentoService {
         }
         return false;
     }
+
+    public List<LocalDateTime> obterHorariosDisponiveis(LocalDateTime inicioDoDia, int duracao) {
+    List<LocalDateTime> horariosDisponiveis = new ArrayList<>();
+    LocalDateTime horarioAtual = inicioDoDia.withHour(8); // Início do expediente às 8h
+    LocalDateTime horarioFinal = inicioDoDia.withHour(18); // Fim do expediente às 18h
+
+    while (horarioAtual.isBefore(horarioFinal)) {
+        horariosDisponiveis.add(horarioAtual);
+        horarioAtual = horarioAtual.plusMinutes(30); // Intervalos de 30 minutos
+    }
+
+    // Filtrar horários já ocupados
+    List<Agendamento> horariosOcupados = agendamentoRepository.findByDataHoraBetween(inicioDoDia, inicioDoDia.plusDays(1));
+    horariosDisponiveis.removeAll(horariosOcupados);
+
+    return horariosDisponiveis;
+}
 }

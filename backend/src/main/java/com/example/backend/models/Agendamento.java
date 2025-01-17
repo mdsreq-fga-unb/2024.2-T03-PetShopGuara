@@ -20,8 +20,8 @@ public class Agendamento {
     private Pet pet;
 
     @ManyToOne
-    @JoinColumn(name = "dono_id")
-    private Dono dono;
+    @JoinColumn(name = "cliente_id")
+    private Cliente cliente;
 
     @Column(name= "dataHoraAgendamento")
     private LocalDateTime dataHora;
@@ -44,12 +44,12 @@ public class Agendamento {
         this.pet = pet;
     }
 
-    public Dono getDono() {
-        return dono;
+    public Cliente getCliente() {
+        return cliente;
     }
 
-    public void setDono(Dono dono) {
-        this.dono = dono;
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
     public LocalDateTime getDataHora() {

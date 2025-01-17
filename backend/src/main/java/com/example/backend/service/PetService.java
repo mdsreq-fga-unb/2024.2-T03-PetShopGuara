@@ -32,7 +32,7 @@ public class PetService {
             petDto.setNome(petExist.get().getNome());
             petDto.setEspecie(petExist.get().getEspecie());
             petDto.setRaca(petExist.get().getRaca());
-            petDto.setDonoId(petExist.get().getDonoId());
+            petDto.setClienteId(petExist.get().getDonoId());
 
             return petDto;
         }
