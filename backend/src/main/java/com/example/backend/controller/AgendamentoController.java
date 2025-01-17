@@ -1,9 +1,11 @@
 package com.example.backend.controller;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -56,5 +58,28 @@ public class AgendamentoController {
         LocalDate dataFormatada = LocalDate.parse(data); // Converter data para LocalDate
         return agendamentoService.obterHorariosDisponiveis(dataFormatada.atStartOfDay(), duracao);
     }
+
+
+@GetMapping("/calendario")
+public ResponseEntity<List<Agendamento>> visualizarCalendario(
+        @RequestParam(required = false) String dataAgendamento) {
+
+    if (dataAgendamento != null && !dataAgendamento.isEmpty()) {
+        // Converter a data fornecida para LocalDate
+        LocalDate data = LocalDate.parse(dataAgendamento);
+        LocalDateTime inicio = data.atStartOfDay();
+        LocalDateTime fim = data.atTime(LocalTime.MAX);
+
+        // Buscar os agendamentos naquela data
+        List<Agendamento> agendamentos = agendamentoService.buscarAgendamentosPorData(inicio, fim);
+        return ResponseEntity.ok(agendamentos);
+    }
+
+    // Caso nenhuma data seja fornecida, retornar todos os agendamentos
+    List<Agendamento> agendamentos = agendamentoService.buscarTodosAgendamentos();
+    return ResponseEntity.ok(agendamentos);
+}
+
+
     
 }

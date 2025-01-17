@@ -1,17 +1,16 @@
 package com.example.backend.service;
-import org.springframework.beans.factory.annotation.Autowired;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.backend.models.Agendamento;
 import com.example.backend.models.Cliente;
 import com.example.backend.models.Pet;
 import com.example.backend.repository.AgendamentoRepository;
-
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Optional;
-import java.util.List;
 
 @Service
 public class AgendamentoService {
@@ -54,5 +53,17 @@ public class AgendamentoService {
     horariosDisponiveis.removeAll(horariosOcupados);
 
     return horariosDisponiveis;
+    }
+   // Buscar agendamentos por data específica
+    public List<Agendamento> buscarAgendamentosPorData(LocalDateTime inicio, LocalDateTime fim) {
+    return agendamentoRepository.findByDataBetween(inicio, fim);
 }
+
+// Buscar todos os agendamentos
+    public List<Agendamento> buscarTodosAgendamentos() {
+    return agendamentoRepository.findAll();
+    }
+
 }
+    
+
