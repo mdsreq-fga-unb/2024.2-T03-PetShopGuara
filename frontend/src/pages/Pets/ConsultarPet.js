@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { consultarPet } from "../../services/APIService";
+import axios from 'axios';
+import { ConsultarPet } from "../../services/APIService";
 
 const PetDetails = ({ petId }) => {
     const [petData, setPetData] = useState(null);

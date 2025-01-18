@@ -16,3 +16,10 @@ export async function consultarPet(petId) {
         throw error;
     }
 }
+
+export const cadastrarCliente = async (cliente) => {
+    const response = await axios.post(`${API_URL}/cadastrar`, cliente);
+    return response.data;
+  };
+  
+  

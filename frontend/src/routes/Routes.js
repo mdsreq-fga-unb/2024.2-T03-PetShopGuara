@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home/App';
-import Login from '../pages/Login/Cadastro';
+import Cadastro from "../pages/Cadastro/cadastrarCliente";
 import ConsultarPet from '../pages/Pets/ConsultarPet';
 
 const AppRoutes = () => {
@@ -9,7 +9,7 @@ const AppRoutes = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/pets" element={<ConsultarPet />} />
       </Routes>
     </BrowserRouter>
