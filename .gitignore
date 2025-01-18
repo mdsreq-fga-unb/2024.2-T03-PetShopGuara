@@ -38,3 +38,4 @@ build/
 *.pgsql
 *.dump
 .env
+package-lock.json

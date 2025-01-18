@@ -12,10 +12,5 @@ import com.example.backend.models.Agendamento;
 public interface AgendamentoRepository extends JpaRepository<Agendamento, Long> {
 
     // Buscar todos os agendamentos entre duas datas
-    List<Agendamento> findByDataHoraBetween(LocalDateTime start, LocalDateTime end);
-
-    List<Agendamento> findByDataBetween(LocalDateTime inicio, LocalDateTime fim);
-
-
-    
+    List<Agendamento> findByDataHoraBetween(LocalDateTime start, LocalDateTime end);  
 }

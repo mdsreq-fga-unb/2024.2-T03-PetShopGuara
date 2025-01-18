@@ -56,7 +56,7 @@ public class AgendamentoService {
     }
    // Buscar agendamentos por data específica
     public List<Agendamento> buscarAgendamentosPorData(LocalDateTime inicio, LocalDateTime fim) {
-    return agendamentoRepository.findByDataBetween(inicio, fim);
+        return agendamentoRepository.findByDataHoraBetween(inicio, fim);
 }
 
 // Buscar todos os agendamentos
