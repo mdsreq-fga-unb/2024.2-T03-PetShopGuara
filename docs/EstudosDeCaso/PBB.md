@@ -103,3 +103,125 @@ As funcionalidades foram organizadas e associadas diretamente às personas ident
 ### Organizar o Backlog
 
 Os PBIs de cada funcionalidade foram organizados verticalmente, com base em sua prioridade. Os itens de maior pontuação foram posicionados nas primeiras linhas, enquanto os de menor valor ficaram mais abaixo. Essa organização permite uma visualização clara do que é mais crítico para o produto.
+
+## Histórias de Usuário e BDD
+
+### Registrar serviços em tempo real
+- Como técnico de campo, posso registrar data e hora do serviço, para registrar informações no local
+
+    - O sistema permite selecionar data e hora em um calendário interativo
+    - O registro só pode ser salvo se todos os campos obrigatórios forem preenchidos
+
+- Como técnico de campo, posso vincular registro ao histórico do cliente, para registrar informações no local
+
+- Como técnico de campo, posso descrever o problema encontrado, para eliminar a necessidade de anotações manuais e retrabalhos
+
+    - O sistema aceita descrições textuais de até 2000 caracteres
+    - O técnico pode salvar a descrição em rascunho antes de finalizar o registro
+    - O sistema verifica que o campo de descrição não está vazio antes de salvar
+
+- Como técnico de campo, posso descrever o serviço realizado, para eliminar a necessidade de anotações manuais e retrabalhos
+
+- Como técnico de campo, posso fazer upload de imagens e anexos, para registrar informações no local
+
+    - O sistema permite upload de arquivos nos formatos JPG, PNG e PDF
+    - O técnico pode visualizar e excluir anexos antes de salvar o registro
+    - O tamanho máximo permitido por arquivo é de 50 MB
+
+### Consultar guias de diagnóstico
+- Como técnico de campo, posso visualizar guias técnicos, para aumentar precisão e agilidade do serviço
+
+- Como técnico de campo, posso consultar histórico do equipamento, para ver detalhes técnicos e histórico do equipamento
+
+    - O sistema exibe os últimos 10 registros do histórico do equipamento, com opção de carregar mais
+    - O técnico pode filtrar o histórico por data ou tipo de serviço
+    - Cada registro exibe data, descrição do serviço e técnico responsável
+
+- Como técnico de campo, posso selecionar o equipamento, para ter acesso imediato aos guias de diagnóstico
+
+    - O sistema permite busca por nome, modelo ou número de série do equipamento
+    - O equipamento selecionado aparece destacado e as informações associadas são carregadas automaticamente
+    - O sistema salva automaticamente a seleção do equipamento para consultas futuras
+
+- Como técnico de campo, posso pesquisar soluções por palavra-chave, para ter acesso imediato aos guias de diagnóstico
+
+    - O sistema aceita termos de busca com até 100 caracteres
+    - O técnico pode refinar a busca aplicando filtros adicionais, como categoria ou data
+
+- Como técnico de campo, posso ter acesso offline aos guias mais usados, para ter acesso imediato aos guias de diagnóstico
+
+### Gerenciar agendamentos
+- Como atendente, posso criar novo agendamento, para prevenir esquecimentos
+
+    - O sistema exibe todos os horários disponíveis ao criar um agendamento
+    - O agendamento é confirmado apenas após a validação de conflitos
+    - O cliente recebe uma notificação automática com a confirmação do agendamento
+
+- Como atendente, posso cancelar agendamento, para reduzir conflitos de agenda
+
+- Como atendente, posso visualizar agenda, para prevenir esquecimentos
+
+- Como atendente, posso alterar agendamento existente, para reduzir conflitos de agenda
+
+- Como atendente, posso receber alertas de conflitos de horários, para reduzir conflitos de agenda
+
+### Acompanhar solicitações em tempo real
+- Como cliente corporativo, posso visualizar status da solicitação, para obter transparência do processo
+
+- Como cliente corporativo, posso consultar prazo de conclusão, para ter previsibilidade
+
+- Como cliente corporativo, posso receber notificações e atualizações, para obter transparência do processo
+
+- Como cliente corporativo, posso enviar perguntas sobre a solicitação, para ter clareza e agilidade da comunicação
+
+### Receber relatórios detalhados
+- Como cliente corporativo, posso visualizar relatório do serviço prestado, para fazer planejamentos futuros
+
+- Como cliente corporativo, posso verificar informações financeiras, para fazer planejamentos futuros
+
+- Como cliente corporativo, posso baixar relatório de serviços em pdf, para ter registro dos atendimentos
+
+- Como cliente corporativo, posso baixar relatório de serviços em excel, para ter registro dos atendimentos
+
+- Como cliente corporativo, posso acessar histórico de serviços, para fazer planejamentos futuros
+
+- Como cliente corporativo, posso filtrar informações por período, para fazer planejamentos futuros
+
+### Fornecer feedback
+- Como cliente corporativo, posso avaliar a qualidade do serviço, para propor melhoria na experiência
+
+- Como cliente corporativo, posso adicionar comentário sobre o serviço, para propor melhoria na experiência
+
+- Como cliente corporativo, posso editar feedback enviado, para propor melhoria na experiência
+
+- Como cliente corporativo, posso visualizar histórico de feedbacks enviados, para saber se a empresa está melhorando
+
+### Acompanhar solicitações em tempo real
+- Como diretora de operações, posso visualizar status da equipe, para acompanhar o desemprenho dos funcionários
+
+- Como diretora de operações, posso receber alertas de atraso, para identificar problemas na empresa
+
+- Como diretora de operações, posso visualizar histórico de performance individual, para acompanhar o desemprenho dos funcionários
+
+- Como diretora de operações, posso visualizar histórico de performance das equipes, para acompanhar o desemprenho dos funcionários
+
+- Como diretora de operações, posso adicionar métricas de desempenho, para alocar de forma eficiente os recursos
+
+- Como diretora de operações, posso filtrar dados por período, para acompanhar o desemprenho dos funcionários
+
+### Gerar relatórios automáticos
+- Como diretora de operações, posso gerar relatório de desempenho geral, para analisar o desemprenho da empresa
+
+- Como diretora de operações, posso acessar relatórios financeiros, para analisar o desemprenho da empresa
+
+- Como diretora de operações, posso selecionar o período para o relatório, para analisar o desemprenho da empresa
+
+- Como diretora de operações, posso filtrar relatórios de desempenho por área da empresa, para analisar o desemprenho da empresa
+
+- Como diretora de operações, posso exportar o relatório em pdf, para ter apoio à tomada de decisões estratégicas
+
+- Como diretora de operações, posso exportar o relatório em excel, para ter apoio à tomada de decisões estratégicas
+
+
+
+
