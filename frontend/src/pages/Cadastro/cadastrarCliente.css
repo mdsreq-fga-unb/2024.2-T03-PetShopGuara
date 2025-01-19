@@ -1,0 +1,18 @@
+.custom-form label {
+    color: #FF5733; /* Cor personalizada para os rótulos */
+  }
+  
+  .custom-form input::placeholder {
+    color: #888; /* Cor personalizada para os placeholders */
+    opacity: 1; /* Assegura que a opacidade do placeholder seja visível */
+  }
+  
+  .custom-form input {
+    color: #333; /* Cor personalizada para o texto dentro dos campos */
+    border-color: #FF5733; /* Cor personalizada para as bordas */
+  }
+  
+  .custom-form input:focus {
+    border-color: #FF7F00; /* Cor das bordas ao focar no campo */
+    box-shadow: 0 0 5px rgba(255, 127, 0, 0.5); /* Sombra ao focar */
+  }

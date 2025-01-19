@@ -17,6 +17,11 @@ export async function consultarPet(petId) {
     }
 }
 
+export const cadastrarCliente = async (cliente) => {
+    const response = await axios.post(`${API_URL}/cadastrar`, cliente);
+    return response.data;
+  };
+
 export async function realizarLogin(email, senha) {
     try {
         const response = await axios.post(`${API_URL}/login`, {
@@ -29,8 +34,6 @@ export async function realizarLogin(email, senha) {
         throw error;
     }
 }
-
-
 
 export async function agendarServico(dadosAgendamento) {
     try {
