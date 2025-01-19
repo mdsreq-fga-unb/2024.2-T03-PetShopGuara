@@ -12,7 +12,8 @@ const AppRoutes = () => {
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/login" element={<Cadastrar />} />
         <Route path="/pets" element={<ConsultarPet />} />
-        <Route path="/agendar" element={<Calendario/>} /> 
+        <Route path="/visualizar calendario com agendamentos" element={<Calendario/>} />
+        <Route path="/horarios-disponiveis" element={<HorariosDisponiveis />} />
       </Routes>
     </BrowserRouter>
   );
