@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home/App';
 import Login from '../pages/Login/Cadastro';
 import ConsultarPet from '../pages/Pets/ConsultarPet';
+import Calendario from '..pages/Pets/Calendario';
 
 const AppRoutes = () => {
   return (
@@ -11,6 +12,7 @@ const AppRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/pets" element={<ConsultarPet />} />
+        <Route path="/agendar" element={<Agendar />} /> 
       </Routes>
     </BrowserRouter>
   );

@@ -16,3 +16,30 @@ export async function consultarPet(petId) {
         throw error;
     }
 }
+
+export async function realizarLogin(email, senha) {
+    try {
+        const response = await axios.post(`${API_URL}/login`, {
+            email: email,
+            senha: senha,
+        });
+        return response.data;
+    } catch (error) {
+        console.error("Erro ao realizar login:", error);
+        throw error;
+    }
+}
+
+
+
+export async function agendarServico(dadosAgendamento) {
+    try {
+        const response = await axios.post(`${API_URL}/agendamentos`, dadosAgendamento);
+        return response.data;
+    } catch (error) {
+        console.error("Erro ao agendar serviço:", error);
+        throw error;
+    }
+}
+
+
