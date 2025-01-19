@@ -159,6 +159,9 @@ Os PBIs de cada funcionalidade foram organizados verticalmente, com base em sua 
 
 - Como atendente, posso cancelar agendamento, para reduzir conflitos de agenda
 
+    - O sistema solicita confirmação antes de cancelar um agendamento
+    - O sistema registra o motivo do cancelamento, se fornecido
+
 - Como atendente, posso visualizar agenda, para prevenir esquecimentos
 
 - Como atendente, posso alterar agendamento existente, para reduzir conflitos de agenda
@@ -168,11 +171,22 @@ Os PBIs de cada funcionalidade foram organizados verticalmente, com base em sua 
 ### Acompanhar solicitações em tempo real
 - Como cliente corporativo, posso visualizar status da solicitação, para obter transparência do processo
 
+    - O cliente consegue visualizar o status atualizado da solicitação (em andamento, concluído, etc.)
+    - O sistema atualiza automaticamente o status a cada alteração registrada pelo técnico
+    - O sistema exibe um histórico de mudanças no status, com data e hora de cada atualização
+
 - Como cliente corporativo, posso consultar prazo de conclusão, para ter previsibilidade
+
+    - O cliente consegue visualizar o prazo estimado de conclusão no detalhe da solicitação
+    - O cliente recebe alertas por e-mail ou notificação sobre alterações no prazo
 
 - Como cliente corporativo, posso receber notificações e atualizações, para obter transparência do processo
 
 - Como cliente corporativo, posso enviar perguntas sobre a solicitação, para ter clareza e agilidade da comunicação
+
+    - O cliente consegue enviar perguntas diretamente ao técnico responsável pela solicitação
+    - O sistema registra e exibe as perguntas e respostas no histórico da solicitação
+    - O cliente recebe notificações quando uma resposta for enviada pelo técnico
 
 ### Receber relatórios detalhados
 - Como cliente corporativo, posso visualizar relatório do serviço prestado, para fazer planejamentos futuros
@@ -185,16 +199,31 @@ Os PBIs de cada funcionalidade foram organizados verticalmente, com base em sua 
 
 - Como cliente corporativo, posso acessar histórico de serviços, para fazer planejamentos futuros
 
+    - O cliente consegue visualizar o histórico completo de serviços realizados, organizados por data
+    - O histórico pode ser filtrado por tipo de serviço ou técnico responsável
+
 - Como cliente corporativo, posso filtrar informações por período, para fazer planejamentos futuros
+
+    - O cliente pode selecionar um intervalo de datas para visualizar ou baixar relatórios
+    - O sistema exibe o total de serviços realizados e custos associados no período selecionado
+    - O sistema exibe os serviços realizados no período selecionado, junto ao nome do técnico que o realizou
 
 ### Fornecer feedback
 - Como cliente corporativo, posso avaliar a qualidade do serviço, para propor melhoria na experiência
 
+    - O cliente consegue selecionar uma nota de 1 a 5 estrelas para avaliar o serviço
+
 - Como cliente corporativo, posso adicionar comentário sobre o serviço, para propor melhoria na experiência
+
+    - O cliente consegue adicionar um comentário com até 500 caracteres
+    - O sistema exibe os comentários enviados diretamente no histórico da solicitação
 
 - Como cliente corporativo, posso editar feedback enviado, para propor melhoria na experiência
 
 - Como cliente corporativo, posso visualizar histórico de feedbacks enviados, para saber se a empresa está melhorando
+
+    - O cliente consegue visualizar todas as avaliações enviadas, organizadas por data
+    - O sistema exibe gráficos que resumem as notas médias por período ou tipo de serviço
 
 ### Acompanhar solicitações em tempo real
 - Como diretora de operações, posso visualizar status da equipe, para acompanhar o desemprenho dos funcionários
@@ -203,11 +232,17 @@ Os PBIs de cada funcionalidade foram organizados verticalmente, com base em sua 
 
 - Como diretora de operações, posso visualizar histórico de performance individual, para acompanhar o desemprenho dos funcionários
 
+    - A diretora consegue visualizar gráficos detalhados do desempenho de cada técnico
+    - O sistema exibe comparações de desempenho entre técnicos do mesmo período
+
 - Como diretora de operações, posso visualizar histórico de performance das equipes, para acompanhar o desemprenho dos funcionários
 
 - Como diretora de operações, posso adicionar métricas de desempenho, para alocar de forma eficiente os recursos
 
 - Como diretora de operações, posso filtrar dados por período, para acompanhar o desemprenho dos funcionários
+
+    - A diretora consegue selecionar intervalos de datas para visualizar dados específicos
+    - Os dados filtrados são exibidos em gráficos e tabelas organizados por área ou técnico
 
 ### Gerar relatórios automáticos
 - Como diretora de operações, posso gerar relatório de desempenho geral, para analisar o desemprenho da empresa
@@ -218,10 +253,18 @@ Os PBIs de cada funcionalidade foram organizados verticalmente, com base em sua 
 
 - Como diretora de operações, posso filtrar relatórios de desempenho por área da empresa, para analisar o desemprenho da empresa
 
+    - A diretora consegue filtrar relatórios por departamentos ou equipes específicas
+    - Os relatórios filtrados incluem gráficos comparativos entre as áreas selecionadas
+
 - Como diretora de operações, posso exportar o relatório em pdf, para ter apoio à tomada de decisões estratégicas
+
+    - O sistema permite exportar relatórios completos em PDF com layout corporativo
+    - Os relatórios incluem cabeçalhos personalizáveis com logotipos e informações da empresa
 
 - Como diretora de operações, posso exportar o relatório em excel, para ter apoio à tomada de decisões estratégicas
 
+    - O sistema permite exportar relatórios detalhados em Excel, organizados por colunas
+    - O arquivo Excel inclui fórmulas e filtros pré-configurados para facilitar a análise
 
 
 
