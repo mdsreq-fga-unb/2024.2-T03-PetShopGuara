@@ -110,7 +110,13 @@ Os PBIs de cada funcionalidade foram organizados verticalmente, com base em sua 
 - Como técnico de campo, posso registrar data e hora do serviço, para registrar informações no local
 
     - O sistema permite selecionar data e hora em um calendário interativo
+        - **Dado que** o técnico está no local do serviço
+        - **Quando** ele abrir o calendário interativo
+        - **Então** ele deve poder selecionar a data e hora do serviço
     - O registro só pode ser salvo se todos os campos obrigatórios forem preenchidos
+        - **Dado** que o técnico preencheu parcialmente o formulário de registro
+        - **Quando** ele tentar salvar o registro
+        - **Então** o sistema deve exibir uma mensagem indicando quais campos obrigatórios estão pendentes
 
 - Como técnico de campo, posso vincular registro ao histórico do cliente, para registrar informações no local
 
@@ -154,7 +160,13 @@ Os PBIs de cada funcionalidade foram organizados verticalmente, com base em sua 
 - Como atendente, posso criar novo agendamento, para prevenir esquecimentos
 
     - O sistema exibe todos os horários disponíveis ao criar um agendamento
+        - **Dado** que o atendente está criando um novo agendamento
+        - **Quando** ele acessar o calendário de agendamentos
+        - **Então** o sistema deve exibir todos os horários disponíveis para o dia selecionado
     - O agendamento é confirmado apenas após a validação de conflitos
+        - **Dado** que o atendente selecionou um horário para um novo agendamento
+        - **Quando** ele tentar confirmar o agendamento
+        - **Então** o sistema deve validar se há conflitos antes de confirmar o agendamento
     - O cliente recebe uma notificação automática com a confirmação do agendamento
 
 - Como atendente, posso cancelar agendamento, para reduzir conflitos de agenda
@@ -200,13 +212,28 @@ Os PBIs de cada funcionalidade foram organizados verticalmente, com base em sua 
 - Como cliente corporativo, posso acessar histórico de serviços, para fazer planejamentos futuros
 
     - O cliente consegue visualizar o histórico completo de serviços realizados, organizados por data
+        - **Dado** que o cliente está acessando o histórico de serviços
+        - **Quando** ele abrir a seção correspondente
+        - **Então** o sistema deve exibir todos os serviços realizados, organizados por data
     - O histórico pode ser filtrado por tipo de serviço ou técnico responsável
+        - **Dado** que o cliente está visualizando o histórico de serviços
+        - **Quando** ele aplicar filtros por tipo de serviço ou técnico responsável
+        - **Então** o sistema deve exibir os resultados correspondentes ao filtro selecionado
 
 - Como cliente corporativo, posso filtrar informações por período, para fazer planejamentos futuros
 
     - O cliente pode selecionar um intervalo de datas para visualizar ou baixar relatórios
+        - **Dado** que o cliente está acessando relatórios
+        - **Quando** ele selecionar um intervalo de datas
+        - **Então** o sistema deve exibir ou disponibilizar para download os relatórios correspondentes ao período
     - O sistema exibe o total de serviços realizados e custos associados no período selecionado
+        - **Dado** que o cliente selecionou um intervalo de datas
+        - **Quando** o sistema carregar as informações do relatório
+        - **Então** ele deve exibir o total de serviços realizados e os custos associados
     - O sistema exibe os serviços realizados no período selecionado, junto ao nome do técnico que o realizou
+        - **Dado** que o cliente selecionou um intervalo de datas
+        - **Quando** o sistema carregar as informações detalhadas
+        - **Então** ele deve exibir os serviços realizados no período com os nomes dos técnicos responsáveis
 
 ### Fornecer feedback
 - Como cliente corporativo, posso avaliar a qualidade do serviço, para propor melhoria na experiência
@@ -233,7 +260,13 @@ Os PBIs de cada funcionalidade foram organizados verticalmente, com base em sua 
 - Como diretora de operações, posso visualizar histórico de performance individual, para acompanhar o desemprenho dos funcionários
 
     - A diretora consegue visualizar gráficos detalhados do desempenho de cada técnico
+        - **Dado** que a diretora está analisando o desempenho individual dos técnicos
+        - **Quando** ela acessar os detalhes de um técnico específico
+        - **Então** o sistema deve exibir gráficos detalhados de desempenho
     - O sistema exibe comparações de desempenho entre técnicos do mesmo período
+        - **Dado** que a diretora está visualizando o desempenho de vários técnicos
+        - **Quando** ela selecionar um período para comparação
+        - **Então** o sistema deve exibir gráficos comparativos entre os técnicos
 
 - Como diretora de operações, posso visualizar histórico de performance das equipes, para acompanhar o desemprenho dos funcionários
 
