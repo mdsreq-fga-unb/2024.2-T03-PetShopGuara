@@ -15,8 +15,45 @@ public class Pet {
     private String especie;
     private String raca;
     private Long donoId;
+    private String cor;
+    private Long idade;
+    private String observacao;
+    private String sexo;
+
 
     // Getters and setters
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public Long getIdade() {
+        return idade;
+    }
+
+    public void setIdade(Long idade) {
+        this.idade = idade;
+    }
+
+    public String getObservacao() {
+        return observacao;
+    }
+
+    public void setObservacao(String observacao) {
+        this.observacao = observacao;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
 
     public Long getId() {
         return id;
@@ -57,4 +94,5 @@ public class Pet {
     public void setDonoId(Long donoId) {
         this.donoId = donoId;
     }
-}
+    }
+

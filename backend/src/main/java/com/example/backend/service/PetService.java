@@ -28,11 +28,15 @@ public class PetService {
         Optional<Pet> petExist = petRepository.findById(petId);
         if(petExist.isPresent()){ // verifica se existe o pet
             PetDTO petDto = new PetDTO(); // cria uma instância do PetDTO
-            petDto.setId(petExist.get().getId()); // tira do optional
+            petDto.setId(petExist.get().getId());// tira do optional
+            petDto.setClienteId(petExist.get().getDonoId());
             petDto.setNome(petExist.get().getNome());
+            petDto.setCor(petExist.get().getCor());
+            petDto.setIdade(petExist.get().getIdade());
+            petDto.setSexo(petExist.get().getSexo());
             petDto.setEspecie(petExist.get().getEspecie());
             petDto.setRaca(petExist.get().getRaca());
-            petDto.setClienteId(petExist.get().getDonoId());
+            petDto.setObservacao(petExist.get().getObservacao());
 
             return petDto;
         }
