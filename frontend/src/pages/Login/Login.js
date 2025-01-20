@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { realizarLogin } from "../../services/APIService";
+import "./Login.css"; // Importando o CSS
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -26,32 +27,59 @@ const Login = () => {
     };
 
     return (
-        <div>
-            <h2>Login</h2>
-            <form onSubmit={handleLogin}>
-                <div>
-                    <label>Email:</label>
+        <div className="login-container">
+            {/* Imagem acima do título */}
+            <div>
+                <h1 className="login-title">PetShop Guará</h1>
+                <img
+                    src="/logo.png"
+                    alt="petguaraImage"
+                    className="login-logo"
+                />
+            </div>
+
+            {/* Subtítulo */}
+            <h3 className="login-subtitle">Fazer Login</h3>
+
+            <form onSubmit={handleLogin} className="login-form">
+                {/* Campos de entrada */}
+                <div className="login-input-container">
+                    <label htmlFor="email" className="login-label">
+                        Email:
+                    </label>
                     <input
                         type="email"
+                        id="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Digite seu email"
                         required
+                        className="login-input"
                     />
                 </div>
-                <div>
-                    <label>Senha:</label>
+                <div className="login-input-container">
+                    <label htmlFor="senha" className="login-label">
+                        Senha:
+                    </label>
                     <input
                         type="password"
+                        id="senha"
                         value={senha}
                         onChange={(e) => setSenha(e.target.value)}
                         placeholder="Digite sua senha"
                         required
+                        className="login-input"
                     />
                 </div>
-                <button type="submit">Entrar</button>
+
+                {/* Botão de login */}
+                <button type="submit" className="login-button">
+                    Entrar
+                </button>
             </form>
-            {error && <p style={{ color: "red" }}>{error}</p>}
+
+            {/* Mensagem de erro */}
+            {error && <p className="login-error">{error}</p>}
         </div>
     );
 };
