@@ -4,7 +4,7 @@
     <img src="https://github.com/mdsreq-fga-unb/2024.2-T03-PetShopGuara/blob/main/petguara.png" style="width:30vw"/>
 </div>
 
-Esse é o repositório da projeto Pet Shop Guará, da disciplina Requisitos de Software, o qual busca trazer uma solução pro dono de pet shop, com um site para seus clientes poderem realizar agendamentos de banhos e tosas, e para ele ter controle dos agendamentos realizados e suas finanças.
+Esse é o repositório da projeto Pet Shop Guará, da disciplina Requisitos de Software, o qual busca trazer uma solução pro dono de pet shop, com um site para seus clientes poderem realizar agendamentos de banho e tosa, e para ele ter controle dos agendamentos realizados e suas finanças.
 
 ## 📚 Documentação
         
@@ -31,12 +31,6 @@ A documentação do projeto pode ser acessada [aqui](https://mdsreq-fga-unb.gith
                 <a href="https://github.com/GustavoHaubert">
                     <img style="border-radius: 50%;" src="https://github.com/GustavoHaubert.png" width="150px;"/>
                     <h5 class="text-center">Gustavo<br>Haubert</h5>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/kaioenzo">
-                    <img style="border-radius: 50%;" src="https://github.com/kaioenzo.png" width="150px;"/>
-                    <h5 class="text-center">Kaio<br>Enzo</h5>
                 </a>
             </td>
             <td align="center">

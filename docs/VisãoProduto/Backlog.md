@@ -13,42 +13,48 @@
 
 **US04** - Como cliente, quero visualizar os horários disponíveis para agendamentos, para escolher o momento mais conveniente para mim e para meus pets.
 
-**US05** - Como cliente, quero cancelar ou reagendar serviços com antecedência, caso surjam imprevistos, para evitar transtornos.
+**US05** - Como cliente, quero cancelar serviços com antecedência, caso surjam imprevistos, para evitar transtornos.
 
-**US06** - Como cliente, quero consultar o histórico dos serviços realizados para meus pets, para acompanhar os cuidados prestados e os custos envolvidos.
+**US06** - Como cliente, quero reagendar serviços com antecedência, caso surjam imprevistos, para evitar transtornos.
+
+**US07** - Como cliente, quero consultar o histórico dos serviços realizados para meus pets, para acompanhar os cuidados prestados e os custos envolvidos.
 
 ### Redirecionamento
-**US07** - Como cliente, quero acessar o Instagram do pet shop pelo sistema, para acompanhar novidades e promoções.
+**US08** - Como cliente, quero acessar o Instagram do pet shop pelo sistema, para acompanhar novidades e promoções.
 
 ### Upload de Fotos
-**US08** - Como cliente, quero enviar fotos do meu pet ao sistema, para usar como referência em pedidos de tosa personalizada ou para ter salvo em seu cadastro.
+**US09** - Como cliente, quero enviar fotos do meu pet ao sistema, para usar como referência em pedidos de tosa personalizada ou para ter salvo em seu cadastro.
 
 ### Feedbacks
-**US09** - Como cliente, quero avaliar os serviços prestados com uma nota e comentários, para ajudar a melhorar a qualidade do atendimento.
+**US10** - Como cliente, quero avaliar os serviços prestados com uma nota e comentários, para ajudar a melhorar a qualidade do atendimento.
 
-**US10** - Como administrador, quero visualizar e analisar as avaliações fornecidas pelos clientes, para identificar melhorias nos serviços oferecidos.
+**US11** - Como administrador, quero visualizar as avaliações fornecidas pelos clientes, para identificar melhorias nos serviços oferecidos.
 
 ### Gestão de Clientes e Pets
-**US11** - Como administrador, quero acessar os dados cadastrais dos clientes, para entrar em contato com eles e atender melhor suas demandas.
+**US12** - Como administrador, quero acessar os dados cadastrais dos clientes, para entrar em contato com eles e atender melhor suas demandas.
 
-**US12** - Como administrador, quero visualizar informações detalhadas sobre os pets dos clientes, para oferecer um atendimento de qualidade.
+**US13** - Como administrador, quero visualizar informações detalhadas sobre os pets dos clientes, para oferecer um atendimento de qualidade.
 
-**US13** - Como funcionário, quero vizualizar as informações dos pets cadastrados, como nome, idade, raça e nome do dono, para prestar os serviços com mais eficiência.
+**US14** - Como funcionário, quero visualizar as informações dos pets cadastrados, como nome, idade, raça e nome do dono, para prestar os serviços com mais eficiência.
 
 ### Gestão de Preços
-**US14** - Como administrador, quero ajustar os preços dos serviços sempre que necessário, para acompanhar custos e promoções.
+**US15** - Como administrador, quero ajustar os preços dos serviços sempre que necessário, para acompanhar custos e promoções.
 
 ### Calendário e Agendamentos
-**US15** - Como administrador, quero acessar um calendário com todos os agendamentos organizados por data e horário, para gerenciar melhor os atendimentos.
+**US16** - Como administrador, quero acessar um calendário com todos os agendamentos organizados por data e horário, para gerenciar melhor os atendimentos.
 
-**US16** - Como administrador, quero mover ou reagendar horários no calendário, para acomodar ajustes necessários nos atendimentos.
+**US17** - Como administrador, quero configurar horários no calendário, para indicar datas que não terão serviço ou terão horários especiais.
 
-**US17** - Como administrador, quero cancelar agendamentos quando preciso, notificando os clientes de forma clara e imediata, para liberar a agenda quando não for possível receber o pet.
+**US18** - Como administrador, quero reagendar agendamentos no calendário, para acomodar melhor os serviços de banho e tosa.
 
-**US18** - Como funcionário, quero acessar o calendário com os agendamentos do dia organizados por horário, para gerenciar melhor o fluxo de trabalho e atender os clientes conforme programado.
+**US19** - Como administrador, quero cancelar agendamentos quando preciso, notificando os clientes de forma clara e imediata, para liberar a agenda quando não for possível receber o pet.
+
+**US20** - Como funcionário, quero acessar o calendário com os agendamentos do dia organizados por horário, para gerenciar melhor o fluxo de trabalho e atender os clientes conforme programado.
 
 ### Relatórios
-**US19** - Como administrador, quero acessar relatórios financeiros detalhados, para entender melhor os lucros e despesas do pet shop.
+**US21** - Como administrador, quero acessar relatórios financeiros com a quantidade arrecadada pelos serviços de banho e tosa, para entender melhor os lucros do pet shop.
+
+**US22** - Como administrador, quero anotar em um relatório financeiro as despesas de luz, água e produtos, para entender melhor as despesas do pet shop.
 
 ## Priorização do Backlog Geral
 Nesta seção, realizamos a priorização dos itens do backlog utilizando a técnica MoSCoW, que organiza as funcionalidades em três categorias principais: 
@@ -71,20 +77,23 @@ A tabela a seguir apresenta a classificação de cada item do backlog, proporcio
 | **US03** |Agendar Serviço  | Must have      |
 | **US04** |Exibir Horários Disponíveis  | Must have      |
 | **US05** |Cancelar agendamentos  | Should have    |
-| **US06** |Consultar Histórico de Serviços  | Could have      |
-| **US07** |Redirecionar para as Redes Sociais  | Could have      |
-| **US08** |Fazer Upload de Fotos  | Could have      |
-| **US09** |Fornecer Feedback sobre o Serviço  | Should have    |
-| **US10** |Consultar os Feedbacks Forncecidos  | Should have     |
-| **US11** |Consultar Dados dos Clientes  | Must have    |
-| **US12** |Consultar Informações dos Pets  | Must have    |
-| **US13** |Consultar Informações dos Pets por Parte dos Funcionários  | Should have     |
-| **US14** |Alterar os Preços dos Serviços  | Should have    |
-| **US15** |Vizualizar Calendário com Agendamentos  | Must have     |
-| **US16** |Alterar o Calendário  | Should have     |
-| **US17** |Cancelar Agendamentos  | Should have     |
-| **US18** |Vizualizar Calendário com Agendamentos do Dia por Parte dos Funcionários  | Must have     |
-| **US19** |Consultar Dados Financeiro  | Should have     |
+| **US06** |Reagendar agendamentos  | Could have    |
+| **US07** |Consultar Histórico de Serviços  | Could have      |
+| **US08** |Redirecionar para as Redes Sociais  | Could have      |
+| **US09** |Fazer Upload de Fotos  | Could have      |
+| **US10** |Fornecer Feedback sobre o Serviço  | Could have    |
+| **US11** |Consultar os Feedbacks Forncecidos  | Could have     |
+| **US12** |Consultar Dados dos Clientes  | Must have    |
+| **US13** |Consultar Informações dos Pets  | Must have    |
+| **US14** |Consultar Informações dos Pets por Parte dos Funcionários  | Should have     |
+| **US15** |Alterar os Preços dos Serviços  | Should have    |
+| **US16** |Vizualizar Calendário com Agendamentos  | Must have     |
+| **US17** |Configurar Datas no Calendário  | Should have     |
+| **US18** |Reagendar Agendamentos por Parte do Dono | Could have     |
+| **US19** |Cancelar Agendamentos por Parte do Dono | Could have     |
+| **US20** |Vizualizar Calendário com Agendamentos do Dia por Parte dos Funcionários  | Must have     |
+| **US21** |Consultar Lucros  | Should have     |
+| **US22** |Consultar Despesas  | Should have     |
 
 ## MVP
 O Produto Mínimo Viável (MVP) é uma versão do produto que inclui as funcionalidades essenciais e prioritárias, selecionadas por meio da técnica MoSCoW, para atender às necessidades principais do cliente, permitindo o lançamento inicial do sistema com as funcionalidades mais críticas.
@@ -107,21 +116,37 @@ As funcionalidades escolhidas para o MVP são:
 
 8. **Visualizar Calendário com Agendamentos do Dia por Parte dos Funcionários**
 
-9. **Alterar os Preços dos Serviços**
+9. **Alterar os Preços dos Serviços** 
 
-10. **Cancelar Agendamentos por Parte do Dono**  
+10. **Configurar Datas no Calendário**
 
-11. **Alterar o Calendário**
+11. **Cancelar Agendamentos por Parte do Cliente**  
 
-12. **Cancelar Agendamentos por Parte do Cliente**  
+12. **Consultar Informações dos Pets por Parte dos Funcionários**
 
-13. **Fornecer Feedback sobre o Serviço**
+13. **Consultar Lucros**
 
-14. **Consultar Informações dos Pets por Parte dos Funcionários**
+14. **Consultar Despesas**
 
-15. **Consultar dados financeiros**
+Os requisitos não funcionais escolhidos para o MVP foram:
 
-16. **Consultar feedbacks fornecidos**
+15. **Interface Institiva**
+
+16. **Feedback Visual**
+
+17. **Disponibilidade**
+
+18. **Recuperação de Falhas**
+
+19. **Processamento**
+
+20. **Eficiência**
+
+21. **Compatibilidade**
+
+22. **Linguagem de Programação**
+
+23. **Banco de Dados**
 
 <center>
 ![mvp](../assets/imgs/mvp.png)
