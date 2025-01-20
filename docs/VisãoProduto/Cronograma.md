@@ -35,14 +35,14 @@
 |                     |        |               |               | Testes das funções/estilizações feitas na semana                                            |
 |                     |        | 23/12/2024    | 01/01/2025    | **Recesso**                                                                                  |
 |           | 7      | 02/01/2025    | 12/01/2025    | Criar a página dos funcionários                                                      |
-|                     |        |               |               | Desenvolver a consulta dos dados dos pets por parte do dono do negócio                                                     |
 |                     |        |               |               | Desenvolver a visualização do calendário com agendamentos do dia por parte dos funcionários                                                |
 |                     |        |               |               | Testes das funções/estilizações feitas na semana                                            |
 |                     |        |               |               | Validação da página do usuário com nosso cliente                                           |
-|           | 8      | 13/01/2025    | 19/01/2025    | Desenvolver a função de alterar os preços dos serviços                                                            |
-|                     |        |               |               | Desenvolver a função de configurar as datas do calendário                                                           |
+|           | 8      | 13/01/2025    | 19/01/2025    | Desenvolver a consulta dos dados dos pets por parte do dono do negócio                                                            |
 |                     |        |               |               | Testes das funções/estilizações feitas na semana                                            |
 |           | 9      | 20/01/2025    | 26/01/2025    | Entrega Unidade 3                           |
+|                     |        |               |               | Desenvolver a função de alterar os preços dos serviços                                                                    |
+|                     |        |               |               | Desenvolver a função de configurar as datas do calendário                                                           |
 |                     |        |               |               | Desenvolver o cancelamento de agendamentos por parte do cliente                                                                    |
 |                     |        |               |               | Desenvolver a consulta dos dados dos pets por parte dos funcionários                                                                    |
 |                     |        |               |               | Testes das funções/estilizações feitas na semana                                           |
