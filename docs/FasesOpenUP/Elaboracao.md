@@ -70,7 +70,7 @@ A análise de riscos foi realizada para identificar possíveis obstáculos no de
 O projeto adota uma arquitetura em camadas, com o frontend em React.js, o backend em Spring Boot com PostgreSQL e a comunicação entre eles feita por meio de uma API RESTful.  Essa estrutura proporciona maior organização, manutenibilidade e escalabilidade.
 
 <center>
-![Arquitetura em Camadas](../assets/imgs/Arquitetura.jpg)
+![Arquitetura em Camadas](../assets/imgs/arquitetura.jpeg)
 Autores: [Pedro Henrique Fernandino](https://github.com/PedroHenrique061),  [Kaio Enzo Salgado](https://github.com/kaioenzo), [Enrico  Zoratto](https://github.com/sidts)
 </center>
 
@@ -86,9 +86,9 @@ O backend é dividido em duas camadas principais:
 
 * **Camada de Dados (PostgreSQL):**  Responsável pelo armazenamento e recuperação dos dados da aplicação. O PostgreSQL, um sistema de gerenciamento de banco de dados relacional. A camada de negócio interage com a camada de dados por meio de abstrações, permitindo que o banco de dados seja alterado sem impactar a lógica de negócios.
 
-**Comunicação (API REST - Camada de Integração):**
+**Comunicação (Axios - Camada de Integração):**
 
-A API REST atua como uma camada de integração entre o frontend e o backend. Ela define um conjunto de endpoints que o frontend pode acessar para interagir com a aplicação.
+O Axios é utilizado como a principal ferramenta de comunicação entre o frontend e o backend. Ele permite a realização de requisições HTTP de forma simples e eficiente, sendo amplamente usado para interagir com as APIs REST da aplicação. Com o Axios, o frontend consegue enviar dados, buscar informações do servidor e manipular as respostas de maneira intuitiva, proporcionando uma integração fluida e segura com o backend.
 
 **Infraestrutura(AWS, Vercel, GitHub Actions):**
 
