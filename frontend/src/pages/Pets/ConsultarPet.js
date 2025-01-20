@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import { ConsultarPet } from "../../services/APIService";
+import './ConsultarPet.css';
 
 const PetDetails = ({ petId }) => {
     const [petData, setPetData] = useState(null);
@@ -14,6 +15,11 @@ const PetDetails = ({ petId }) => {
                     nome: "Fido",
                     especie: "Cachorro",
                     raca: "Golden Retriever",
+                    cor: "Preto",
+                    idade: "6 anos",
+                    observacao: "Muito calmo e fácil de se lidar",
+                    sexo: "Masculino",
+                    
                 };
                 setPetData(mockData); // Use dados mockados
             } catch (err) {
@@ -35,17 +41,35 @@ const PetDetails = ({ petId }) => {
     }
 
     return (
-        <div>
-            <h2>Detalhes do Pet</h2>
-            {petData && (
-                <div>
-                    <p>Nome: {petData.nome}</p>
-                    <p>Espécie: {petData.especie}</p>
-                    <p>Raça: {petData.raca}</p>
-                </div>
-            )}
+      <div className="pet-details-container">
+      <div className="d-flex justify-content-between align-items-center">
+        <h1 className="text-primary fw-bold">Meus Pets 
+          <button
+          className="btn botao-adicionar btn-success   ms-4" // Botão pequeno, verde, com ícone
+          style={{ borderRadius: '5px' }}
+          onClick={() => alert('Adicionar Pet')} // Ação do botão (exemplo)
+        >
+          <i className="fas fa-plus"></i> {/* Ícone de adição */}
+        </button></h1>
+        
+        {/* Botão de Adicionar ao lado do título */}
+      </div>
+    
+      {petData && (
+        <div className="blue-box mt-3">
+          <h2 className="pet-details-title">
+            {petData ? `${petData.nome}` : "Detalhes do Pet"}
+          </h2>
+          <p className="pet-detail-item">Espécie: {petData.especie}</p>
+          <p className="pet-detail-item">Raça: {petData.raca}</p>
+          <p className="pet-detail-item">Cor: {petData.cor}</p>
+          <p className="pet-detail-item">Idade: {petData.idade}</p>
+          <p className="pet-detail-item">Observação: {petData.observacao}</p>
+          <p className="pet-detail-item">Sexo: {petData.sexo}</p>
         </div>
+      )}
+    </div>
     );
-};
+  };
 
 export default PetDetails;
