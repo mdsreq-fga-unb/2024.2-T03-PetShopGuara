@@ -14,7 +14,7 @@ const App = () => {
       {/* Sidebar */}
       <nav className="sidebar text-white">
         <div className="p-3">
-          <h3 className="titulo text-center mt-3 fw-bold">PetShop Guará</h3>
+          <h3 className="titulo text-center fw-bold">PetShop Guará</h3>
           <img
             src="/logo.png"
             style={{ width: "200px", height: "auto" }}

@@ -10,10 +10,12 @@
   background-color: #3D83CC; /* Cor da sidebar */
   padding-top: 20px;
   z-index: 1000; /* Garante que a sidebar fique acima do conteúdo */
+  font-size: 20px;
 }
 
 .titulo {
   color: #fff;
+  font-size: 40px;
 }
 
 .nav-link {
