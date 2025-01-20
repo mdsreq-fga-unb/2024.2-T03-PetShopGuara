@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Sidebar fixa no topo */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #3D83CC; /* Cor da sidebar */
+  padding-top: 20px;
+  z-index: 1000; /* Garante que a sidebar fique acima do conteúdo */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.titulo {
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  background-color: #2d6a9f;
+}
+
+/* Conteúdo principal */
+.content {
+  margin-left: 250px; /* Deixa espaço para a sidebar */
+  padding-top: 20px;
+  width: calc(100% - 250px); /* O conteúdo ocupa o restante da tela */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+
+/* Botão retroceder */
+button {
+  background-color: #3D83CC; /* Cor de fundo laranja */
+  color: white; /* Cor do ícone */
+  border: none;
+  font-size: 20px; /* Tamanho do ícone */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2d6a9f; /* Cor de fundo quando hover */
+}
+
+/* Estilos para o botão circular */
+button i {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
 }
