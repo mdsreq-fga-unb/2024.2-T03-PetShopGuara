@@ -33,5 +33,9 @@
   }
   
   .botao-adicionar{
-    color: #FF7F00;
+    background-color: #3D83CC;
+  }
+
+  .botao-adicionar:hover{
+    background-color: #FF7F00;
   }

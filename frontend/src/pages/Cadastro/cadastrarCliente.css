@@ -1,5 +1,5 @@
 .custom-form label {
-    color: #FF5733; /* Cor personalizada para os rótulos */
+    color: #ffffff; /* Cor personalizada para os rótulos */
   }
   
   .custom-form input::placeholder {
@@ -9,10 +9,22 @@
   
   .custom-form input {
     color: #333; /* Cor personalizada para o texto dentro dos campos */
-    border-color: #FF5733; /* Cor personalizada para as bordas */
+    
   }
   
   .custom-form input:focus {
     border-color: #FF7F00; /* Cor das bordas ao focar no campo */
     box-shadow: 0 0 5px rgba(255, 127, 0, 0.5); /* Sombra ao focar */
+  }
+
+.btn-cadastro{
+  background-color: #FF7F00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 150px; /* Definindo a largura do botão */
+    margin: 0 auto; /* Centraliza o botão */
   }

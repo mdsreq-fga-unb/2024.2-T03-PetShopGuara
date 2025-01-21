@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from "../pages/Home/App"; // Importa o Layou
+import Home from "../pages/Home/Home";
 import Cadastro from "../pages/Cadastro/cadastrarCliente";
 import Cadastrar from '../pages/Login/Login'
 import ConsultarPet from '../pages/Pets/ConsultarPet';
@@ -11,6 +12,7 @@ const AppRoutes = () => {
     <BrowserRouter>
       <Routes>
       <Route path="/" element={<App />}>
+        <Route path="/" element={<Home/>} />
         <Route path="/pets" element={<ConsultarPet />} />
         <Route path="/agendar" element={<Calendario/>} /> 
         </Route>
