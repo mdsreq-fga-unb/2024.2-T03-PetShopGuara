@@ -1,0 +1,30 @@
+.botao-login{
+    color: #3D83CC;
+    background-color: #3D83CC;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 250px; /* Definindo a largura do botão */
+    font-size: 20px;
+    height: 60px;
+    margin: 0 auto; /* Centraliza o botão */
+  }
+
+  .botao-agendar{
+    color: #3D83CC;
+    background-color: #3D83CC;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 400px; /* Definindo a largura do botão */
+    font-size: 40px;
+    height: 80px;
+    margin: 0 auto; /* Centraliza o botão */
+  }
+
