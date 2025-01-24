@@ -1,11 +1,13 @@
 package com.example.backend.controller;
 
+import com.example.backend.models.Agendamento;
 import com.example.backend.models.Funcionario;
 import com.example.backend.service.FuncionarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -22,5 +24,11 @@ public class FuncionarioController {
 
         Funcionario funcionario = funcionarioService.autenticar(email, senha);
         return ResponseEntity.ok(funcionario);
+    }
+
+    @GetMapping("/agendamentos")
+    public ResponseEntity<List<Agendamento>> getAgendamentosDoDia() {
+        List<Agendamento> agendamentos = funcionarioService.getAgendamentosDoDia();
+        return ResponseEntity.ok(agendamentos);
     }
 }
