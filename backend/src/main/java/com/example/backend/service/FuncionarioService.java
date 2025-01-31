@@ -5,6 +5,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.example.backend.Exception.IncorrectPasswordException;
+import com.example.backend.Exception.EmailNotFoundException;
 import com.example.backend.models.Agendamento;
 import com.example.backend.models.Funcionario;
 import com.example.backend.repository.AgendamentoRepository;
