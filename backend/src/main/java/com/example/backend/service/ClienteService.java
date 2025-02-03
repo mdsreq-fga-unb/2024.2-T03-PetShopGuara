@@ -1,8 +1,12 @@
 package com.example.backend.service;
 
 import com.example.backend.Exception.ClienteException;
+import com.example.backend.Exception.EmailNotFoundException;
+import com.example.backend.Exception.IncorrectPasswordException;
 import com.example.backend.dto.ClienteDTO;
+import com.example.backend.models.Funcionario;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.example.backend.models.Cliente;
@@ -15,6 +19,9 @@ public class ClienteService {
 
     @Autowired
     private ClienteRepository clienteRepository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     public Cliente cadastrarCliente(Cliente clienteId) {
         return clienteRepository.save(clienteId);
@@ -37,6 +44,21 @@ public class ClienteService {
         }
         else{
             throw new ClienteException("Cliente não existe!"); // mensagem de erro
+        }
+    }
+
+    public Cliente autenticar(String email, String senha) {
+        Cliente cliente = (Cliente) clienteRepository.findByEmail(email)
+                .orElseThrow(() -> new EmailNotFoundException("Email não encontrado"));
+
+        validarSenha(senha, cliente.getSenha());
+
+        return cliente;
+    }
+
+    private void validarSenha(String senhaInformada, String senhaArmazenada) {
+        if (!passwordEncoder.matches(senhaInformada, senhaArmazenada)) {
+            throw new IncorrectPasswordException("Senha incorreta");
         }
     }
 }

@@ -16,7 +16,7 @@ public class FuncionarioController {
 
     @Autowired
     private FuncionarioService funcionarioService;
-/*
+
     @PostMapping("/login")
     public ResponseEntity<Funcionario> login(@RequestBody Map<String, String> credenciais) {
         String email = credenciais.get("email");
@@ -25,7 +25,7 @@ public class FuncionarioController {
         Funcionario funcionario = funcionarioService.autenticar(email, senha);
         return ResponseEntity.ok(funcionario);
     }
-*/
+
     @GetMapping("/agendamentos")
     public ResponseEntity<List<Agendamento>> getAgendamentosDoDia() {
         List<Agendamento> agendamentos = funcionarioService.getAgendamentosDoDia();

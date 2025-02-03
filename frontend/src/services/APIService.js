@@ -24,7 +24,7 @@ export const cadastrarCliente = async (cliente) => {
 
 export async function realizarLogin(email, senha) {
     try {
-        const response = await axios.post(`${API_URL}/login`, {
+        const response = await axios.post(`http://localhost:8080/donos/login`, {
             email: email,
             senha: senha,
         });

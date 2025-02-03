@@ -27,14 +27,14 @@ public class FuncionarioService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    /*public Funcionario autenticar(String email, String senha) {
+    public Funcionario autenticar(String email, String senha) {
         Funcionario funcionario = funcionarioRepository.findByEmail(email)
                .orElseThrow(() -> new EmailNotFoundException("Email não encontrado"));
 
         validarSenha(senha, funcionario.getSenha());
 
         return funcionario;
-    }*/
+    }
 
     private void validarSenha(String senhaInformada, String senhaArmazenada) {
         if (!passwordEncoder.matches(senhaInformada, senhaArmazenada)) {

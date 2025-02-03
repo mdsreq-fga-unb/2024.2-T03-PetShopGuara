@@ -4,7 +4,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Data;
 
+@Data
 @Entity
 public class Cliente {
 
@@ -14,6 +16,8 @@ public class Cliente {
     private String nome;
     private String telefone;
     private String endereco;
+    private String email;
+    private String senha;
 
     // Getters and setters
 
@@ -48,6 +52,7 @@ public class Cliente {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
+
 }
 
     
