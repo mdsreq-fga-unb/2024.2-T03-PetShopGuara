@@ -38,6 +38,7 @@ public class AgendamentoService {
         return false;
     }
 
+    @SuppressWarnings("unlikely-arg-type")
     public List<LocalDateTime> obterHorariosDisponiveis(LocalDateTime inicioDoDia, int duracao) {
     List<LocalDateTime> horariosDisponiveis = new ArrayList<>();
     LocalDateTime horarioAtual = inicioDoDia.withHour(8); // Início do expediente às 8h

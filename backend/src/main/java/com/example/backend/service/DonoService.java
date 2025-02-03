@@ -1,9 +1,11 @@
 package com.example.backend.service;
 
+import org.springframework.stereotype.Service;
+
 import com.example.backend.Exception.AutenticacaoDonoException;
+import com.example.backend.dto.HorarioFuncionamentoDTO;
 import com.example.backend.models.Dono;
 import com.example.backend.repository.DonoRepository;
-import org.springframework.stereotype.Service;
 
 @Service
 public class DonoService {
@@ -14,7 +16,6 @@ public class DonoService {
         this.donoRepository = donoRepository;
     }
 
-    // Verificar se o email e a senha correspondem ao dono
     public Dono autenticarDono(String email, String senha) {
         Dono dono = donoRepository.findByEmail(email)
                 .orElseThrow(() -> new AutenticacaoDonoException("Email inválido."));
@@ -24,5 +25,15 @@ public class DonoService {
         }
 
         return dono;
+    }
+
+    public void alterarHorarioFuncionamento(HorarioFuncionamentoDTO horarioDTO) {
+        Dono dono = donoRepository.findById(1L)  // Supondo que há apenas um dono no sistema
+                .orElseThrow(() -> new RuntimeException("Dono não encontrado!"));
+
+        dono.setAbertura(horarioDTO.getAbertura());
+        dono.setFechamento(horarioDTO.getFechamento());
+
+        donoRepository.save(dono);
     }
 }
