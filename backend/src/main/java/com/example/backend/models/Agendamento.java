@@ -1,8 +1,11 @@
 package com.example.backend.models;
+
 import java.time.LocalDateTime;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -23,9 +26,15 @@ public class Agendamento {
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;
 
-    @Column(name= "dataHoraAgendamento")
+    @Column(name = "dataHoraAgendamento")
     private LocalDateTime dataHora;
 
+    @Enumerated(EnumType.STRING) // Mapeia o enum como uma string no banco de dados
+    @Column(name = "servico")
+    private Servico servico;
+
+    @Column(name = "valor")
+    private double valor;
 
     // Getters e Setters
     public Long getId() {
@@ -58,5 +67,21 @@ public class Agendamento {
 
     public void setDataHora(LocalDateTime dataHora) {
         this.dataHora = dataHora;
+    }
+
+    public Servico getServico() {
+        return servico;
+    }
+
+    public void setServico(Servico servico) {
+        this.servico = servico;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
     }
 }
