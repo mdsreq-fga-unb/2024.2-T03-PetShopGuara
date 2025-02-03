@@ -17,7 +17,7 @@ public class FuncionarioController {
     @Autowired
     private FuncionarioService funcionarioService;
 
-    @PostMapping("/login")
+    @GetMapping("/login")
     public ResponseEntity<Funcionario> login(@RequestBody Map<String, String> credenciais) {
         String email = credenciais.get("email");
         String senha = credenciais.get("senha");

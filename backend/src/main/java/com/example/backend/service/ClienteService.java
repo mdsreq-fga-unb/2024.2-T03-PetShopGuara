@@ -47,18 +47,4 @@ public class ClienteService {
         }
     }
 
-    public Cliente autenticar(String email, String senha) {
-        Cliente cliente = (Cliente) clienteRepository.findByEmail(email)
-                .orElseThrow(() -> new EmailNotFoundException("Email não encontrado"));
-
-        validarSenha(senha, cliente.getSenha());
-
-        return cliente;
-    }
-
-    private void validarSenha(String senhaInformada, String senhaArmazenada) {
-        if (!passwordEncoder.matches(senhaInformada, senhaArmazenada)) {
-            throw new IncorrectPasswordException("Senha incorreta");
-        }
-    }
 }

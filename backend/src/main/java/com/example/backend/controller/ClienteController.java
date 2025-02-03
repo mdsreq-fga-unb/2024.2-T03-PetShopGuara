@@ -17,15 +17,6 @@ public class ClienteController {
     @Autowired
     private ClienteService clienteService;
 
-    @PostMapping("/login")
-    public ResponseEntity<Cliente> login(@RequestBody Map<String, String> credenciais) {
-        String email = credenciais.get("email");
-        String senha = credenciais.get("senha");
-
-        Cliente cliente = clienteService.autenticar(email, senha);
-        return ResponseEntity.ok(cliente);
-    }
-
     @PostMapping("/cadastrar")
     public Cliente cadastrarCliente(@RequestBody Cliente cliente) {
         return clienteService.cadastrarCliente(cliente);

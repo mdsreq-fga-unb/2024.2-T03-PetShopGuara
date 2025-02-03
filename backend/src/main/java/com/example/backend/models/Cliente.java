@@ -16,8 +16,6 @@ public class Cliente {
     private String nome;
     private String telefone;
     private String endereco;
-    private String email;
-    private String senha;
 
     // Getters and setters
 
