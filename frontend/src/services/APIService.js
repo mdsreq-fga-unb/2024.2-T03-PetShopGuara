@@ -7,6 +7,16 @@ export async function getFunctions() {
     return response.data;
 }
 
+export async function cadastrarPet(pet) {
+    try {
+        const response = await axios.post(`${API_URL}/pets/cadastrar`, pet);
+        return response.data;
+    } catch (error) {
+        console.error("Erro ao cadastrar pet:", error);
+        throw error;
+    }
+}
+
 export async function consultarPet(petId) {
     try {
         const response = await axios.get(`${API_URL}/pets/consultar/${petId}`);
