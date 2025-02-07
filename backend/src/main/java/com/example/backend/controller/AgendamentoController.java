@@ -60,11 +60,11 @@ public class AgendamentoController {
     }
 
 
-@GetMapping("/calendario")
-public ResponseEntity<List<Agendamento>> visualizarCalendario(
+    @GetMapping("/calendario")
+    public ResponseEntity<List<Agendamento>> visualizarCalendario(
         @RequestParam(required = false) String dataAgendamento) {
 
-    if (dataAgendamento != null && !dataAgendamento.isEmpty()) {
+        if (dataAgendamento != null && !dataAgendamento.isEmpty()) {
         // Converter a data fornecida para LocalDate
         LocalDate data = LocalDate.parse(dataAgendamento);
         LocalDateTime inicio = data.atStartOfDay();
@@ -73,13 +73,10 @@ public ResponseEntity<List<Agendamento>> visualizarCalendario(
         // Buscar os agendamentos naquela data
         List<Agendamento> agendamentos = agendamentoService.buscarAgendamentosPorData(inicio, fim);
         return ResponseEntity.ok(agendamentos);
-    }
+        }
 
-    // Caso nenhuma data seja fornecida, retornar todos os agendamentos
-    List<Agendamento> agendamentos = agendamentoService.buscarTodosAgendamentos();
-    return ResponseEntity.ok(agendamentos);
+        // Caso nenhuma data seja fornecida, retornar todos os agendamentos
+        List<Agendamento> agendamentos = agendamentoService.buscarTodosAgendamentos();
+        return ResponseEntity.ok(agendamentos);
 }
-
-
-    
 }

@@ -5,6 +5,8 @@ import com.example.backend.dto.PetDTO;
 import com.example.backend.models.Pet;
 import com.example.backend.repository.PetRepository;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +41,32 @@ public class PetService {
             petDto.setObservacao(petExist.get().getObservacao());
 
             return petDto;
+        }
+        else{
+            throw new PetException("Pet não existe!"); // mensagem de erro
+        }
+    }
+
+    public List<PetDTO> listarPets() {
+        List<Pet> petExist = petRepository.findAll();
+        List<PetDTO> petDTOs = new ArrayList<>();
+        if(!petExist.isEmpty()){
+            for (Pet pet : petExist) {
+                PetDTO petDto = new PetDTO(); // cria uma instância do PetDTO
+                petDto.setId(pet.getId());// tira do optional
+                petDto.setClienteId(pet.getDonoId());
+                petDto.setNome(pet.getNome());
+                petDto.setCor(pet.getCor());
+                petDto.setIdade(pet.getIdade());
+                petDto.setSexo(pet.getSexo());
+                petDto.setEspecie(pet.getEspecie());
+                petDto.setRaca(pet.getRaca());
+                petDto.setObservacao(pet.getObservacao());
+                // Outros atributos do PetDTO que você precise setar
+                petDTOs.add(petDto);
+            }// verifica se existe o pet
+
+            return petDTOs;
         }
         else{
             throw new PetException("Pet não existe!"); // mensagem de erro

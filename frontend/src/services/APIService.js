@@ -37,7 +37,7 @@ export async function realizarLogin(email, senha) {
 
 export async function agendarServico(dadosAgendamento) {
     try {
-        const response = await axios.post(`${API_URL}/agendamentos`, dadosAgendamento);
+        const response = await axios.post(`http://localhost:8080/agendamentos/agendar`, dadosAgendamento);
         return response.data;
     } catch (error) {
         console.error("Erro ao agendar serviço:", error);
