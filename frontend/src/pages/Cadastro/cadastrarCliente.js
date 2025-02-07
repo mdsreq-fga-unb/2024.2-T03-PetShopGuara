@@ -4,27 +4,41 @@ import {cadastrarCliente} from "../../services/APIService"; // Importa a funçã
 import './cadastrarCliente.css'
 
 const CadastrarDono = () => {
-    // Estado para armazenar os dados do formulário
-    const [formData, setFormData] = useState({
-        nome: '',
-        telefone: '',
-        endereco: '',
-    });
+
+    const [nome, setNome] = React.useState("");
+    const [email, setEmail] = React.useState("");
+    const [endereco, setEndereco] = React.useState("");
+    const [telefone, setTelefone] = React.useState("");
+    const [senha, setSenha] = React.useState("");
 
     // Função para lidar com mudanças nos campos do formulário
-    const handleChange = (event) => {
-        const {name, value} = event.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
+    const onChangeEmail = (event) => {
+        setEmail(event.target.value);
     };
+    const onChangeNome = (event) => {
+        setNome(event.target.value);
+    };
+    const onChangeEndereco = (event) => {
+        setEndereco(event.target.value);
+    };
+    const onChangeTelefone = (event) => {
+        setTelefone(event.target.value);
+    };
+    const onChangeSenha = (event) => {
+        setSenha(event.target.value);
+    };
+
 
     // Função para submeter o formulário
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8080/donos/cadastrar', formData);
+            const response = await axios.post('http://localhost:8080/donos/cadastrar', {
+                email: email, nome: nome, endereco: endereco, telefone: telefone, senha: senha
+            });
+            if (response){
+                alert("Testando!");
+            }
             alert("Dono cadastrado com sucesso!");
         } catch (error) {
             alert("Erro ao cadastrar dono. Tente novamente.");
@@ -66,7 +80,7 @@ const CadastrarDono = () => {
                             <i className="fas fa-user"></i> Nome:
                         </label>
                         <div className="col-sm-9">
-                            <input
+                            <input onChange={onChangeNome}
                                 type="text"
                                 id="nome"
                                 className="form-control"
@@ -80,7 +94,7 @@ const CadastrarDono = () => {
                             <i className="fas fa-envelope"></i> E-mail:
                         </label>
                         <div className="col-sm-9">
-                            <input
+                            <input onChange={onChangeEmail}
                                 type="email"
                                 id="email"
                                 className="form-control"
@@ -94,7 +108,7 @@ const CadastrarDono = () => {
                             <i className="fas fa-phone"></i> Telefone:
                         </label>
                         <div className="col-sm-9">
-                            <input
+                            <input onChange={onChangeTelefone}
                                 type="text"
                                 id="telefone"
                                 className="form-control"
@@ -108,7 +122,7 @@ const CadastrarDono = () => {
                             <i className="fas fa-home"></i> Endereço:
                         </label>
                         <div className="col-sm-9">
-                            <input
+                            <input onChange={onChangeEndereco}
                                 type="text"
                                 id="endereco"
                                 className="form-control"
@@ -122,7 +136,7 @@ const CadastrarDono = () => {
                             <i className="fas fa-lock"></i> Senha:
                         </label>
                         <div className="col-sm-9">
-                            <input
+                            <input onChange={onChangeSenha}
                                 type="password"
                                 id="senha"
                                 className="form-control"

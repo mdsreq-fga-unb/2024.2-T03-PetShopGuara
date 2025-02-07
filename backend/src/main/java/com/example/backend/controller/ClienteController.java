@@ -19,6 +19,7 @@ public class ClienteController {
 
     @PostMapping("/cadastrar")
     public Cliente cadastrarCliente(@RequestBody Cliente cliente) {
+        System.out.println("Cadastrando Cliente");
         return clienteService.cadastrarCliente(cliente);
     }
 
