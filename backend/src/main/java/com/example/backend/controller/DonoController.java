@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.*;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -105,4 +107,22 @@ public class DonoController {
             return ResponseEntity.internalServerError().build();
         }
     }
+
+    @GetMapping("/calendario")
+public ResponseEntity<List<Agendamento>> visualizarCalendario(
+        @RequestParam(required = false) String dataAgendamento) {
+
+    if (dataAgendamento != null && !dataAgendamento.isEmpty()) {
+        LocalDate data = LocalDate.parse(dataAgendamento);
+        LocalDateTime inicio = data.atStartOfDay();
+        LocalDateTime fim = data.atTime(LocalTime.MAX);
+
+        List<Agendamento> agendamentos = donoService.buscarAgendamentosPorData(inicio, fim);
+        return ResponseEntity.ok(agendamentos);
+    }
+
+    List<Agendamento> agendamentos = donoService.buscarTodosAgendamentos();
+    return ResponseEntity.ok(agendamentos);
+    }
+
 }

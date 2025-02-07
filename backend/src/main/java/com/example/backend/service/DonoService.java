@@ -69,4 +69,13 @@ public class DonoService {
                 .mapToDouble(Agendamento::getValor)
                 .sum();
     }
+
+    public List<Agendamento> buscarAgendamentosPorData(LocalDateTime inicio, LocalDateTime fim) {
+        return agendamentoRepository.findByDataHoraBetween(inicio, fim);
+    }
+    
+    public List<Agendamento> buscarTodosAgendamentos() {
+        return agendamentoRepository.findAll();
+    }
+    
 }
