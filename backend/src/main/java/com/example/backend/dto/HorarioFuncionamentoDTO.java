@@ -1,4 +1,4 @@
-﻿package  com.example.backend.dto;
+package com.example.backend.dto;
 
 import java.time.LocalTime;
 import lombok.Data;
@@ -8,6 +8,4 @@ public class HorarioFuncionamentoDTO {
     private LocalTime abertura;
     private LocalTime fechamento;
     private boolean sabadoPorOrdemDeChegada;
-
-
 }

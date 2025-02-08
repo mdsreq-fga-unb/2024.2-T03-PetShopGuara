@@ -54,5 +54,12 @@ export async function agendarServico(dadosAgendamento) {
         throw error;
     }
 }
+export const listarPets = async () => {
+    const response = await fetch("http://localhost:8080/pets/consultar");
+    if (!response.ok) {
+        throw new Error("Erro ao buscar pets");
+    }
+    return await response.json();
+}
 
 

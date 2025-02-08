@@ -36,9 +36,6 @@ const CadastrarDono = () => {
             const response = await axios.post('http://localhost:8080/donos/cadastrar', {
                 email: email, nome: nome, endereco: endereco, telefone: telefone, senha: senha
             });
-            if (response){
-                alert("Testando!");
-            }
             alert("Dono cadastrado com sucesso!");
         } catch (error) {
             alert("Erro ao cadastrar dono. Tente novamente.");

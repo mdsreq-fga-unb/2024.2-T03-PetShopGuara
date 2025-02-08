@@ -1,22 +1,41 @@
-import React, { useState } from "react";
-import { agendarServico } from "../../services/APIService";
+import React, { useState, useEffect } from "react";
+import { agendarServico, listarPets } from "../../services/APIService";
+import axios from "axios";
+import {useNavigate} from "react-router-dom";
 
 const Agendar = () => {
-    const [nomePet, setNomePet] = useState("");
+    const [pets, setPets] = useState([]);
+    const [petSelecionado, setPetSelecionado] = useState(""); // Começa sem seleção
     const [data, setData] = useState("");
     const [hora, setHora] = useState("");
     const [servico, setServico] = useState("Banho");
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(null);
 
+    useEffect(() => {
+        const fetchPets = async () => {
+            try {
+                const response = await listarPets();
+                setPets(response); // Apenas define a lista, sem seleção automática
+            } catch (err) {
+                console.error("Erro ao buscar pets:", err);
+            }
+        };
+        fetchPets();
+    }, []);
+
+
     const handleAgendamento = async (e) => {
         e.preventDefault();
 
-        try {
-            const response = await agendarServico({ nomePet, data, hora, servico });
+        if (!petSelecionado) {
+            setError("Por favor, selecione um pet.");
+            return;
+        }
 
-            // Sucesso
-            setSuccess(`Agendamento realizado para ${nomePet} às ${hora} no dia ${data}.`);
+        try {
+            await agendarServico({ nomePet: petSelecionado, data, hora, servico });
+            setSuccess({nomePet: petSelecionado, data, hora, servico });
             setError(null);
         } catch (err) {
             setError("Erro ao realizar o agendamento. Tente novamente.");
@@ -29,14 +48,17 @@ const Agendar = () => {
             <h2>Agendar Serviço</h2>
             <form onSubmit={handleAgendamento}>
                 <div>
-                    <label>Nome do Pet:</label>
-                    <input
-                        type="text"
-                        value={nomePet}
-                        onChange={(e) => setNomePet(e.target.value)}
-                        placeholder="Digite o nome do pet"
+                    <label> Selecione um pet:</label>
+                    <select
+                        value={petSelecionado}
+                        onChange={(e) => setPetSelecionado(e.target.value)}
                         required
-                    />
+                    >
+                        <option value="" disabled>Selecione um pet</option>
+                        {pets.map((pet) => (
+                            <option key={pet.id} value={pet.nome}>{pet.nome}</option>
+                        ))}
+                    </select>
                 </div>
                 <div>
                     <label>Data:</label>
@@ -51,14 +73,13 @@ const Agendar = () => {
                     <label>Hora:</label>
                     <input
                         type="time"
-                        value={hora}
-                        onChange={(e) => setHora(e.target.value)}
+                        value={hora} onChange={(e) => setHora(e.target.value)}
                         required
                     />
                 </div>
                 <div>
                     <label>Serviço:</label>
-                    <select value={servico} onChange={(e) => setServico(e.target.value)}>
+                    <select value={servico} >
                         <option value="Banho">Banho</option>
                         <option value="Tosa">Tosa</option>
                         <option value="Consulta">Consulta</option>

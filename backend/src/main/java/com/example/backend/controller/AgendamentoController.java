@@ -35,13 +35,8 @@ public class AgendamentoController {
     private ClienteRepository clienteRepository;
     // Endpoint para agendar banho e tosa
     @PostMapping("/agendar")
-    public Agendamento agendar(@RequestParam Long petId, @RequestParam Long donoId, @RequestParam String dataHora) {
-        // Aqui você vai buscar o pet e dono no banco e fazer o agendamento
-        Pet pet = petRepository.findById(petId).orElse(null);  // Exemplo de busca
-        Cliente dono = clienteRepository.findById(donoId).orElse(null); // Exemplo de busca
-        LocalDateTime data = LocalDateTime.parse(dataHora); // Supondo que a data está no formato ISO-8601
-        
-        return agendamentoService.agendarBanhoTosa(pet, dono, data);
+    public Agendamento agendar(@RequestParam Pet petId, @RequestParam Cliente donoId, @RequestParam LocalDateTime dataHora) {
+        return agendamentoService.agendarBanhoTosa(petId, donoId, dataHora);
     }
 
     // Endpoint para cancelar agendamento
