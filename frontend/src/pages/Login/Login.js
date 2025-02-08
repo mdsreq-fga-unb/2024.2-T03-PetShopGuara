@@ -5,19 +5,15 @@ import "./Login.css"; // Importando o CSS
 const Login = () => {
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
+    const [perfil, setPerfil] = useState("Cliente");
+
     const [error, setError] = useState(null);
 
     const handleLogin = async (e) => {
         e.preventDefault();
 
         try {
-            const response = await realizarLogin(email, senha);
-
-            // Supondo que o backend retorna um token
-            // const { token, usuario } = response.data;
-
-            // Salvar o token no localStorage ou onde preferir
-            // localStorage.setItem("token", token);
+            const response = await realizarLogin(email, senha, perfil);
 
             // Exemplo: Redirecionar ou exibir dados do usuário
             alert(`Bem-vindo, ${response.nome}!`);
@@ -37,6 +33,7 @@ const Login = () => {
                     className="login-logo"
                 />
             </div>
+
 
             {/* Subtítulo */}
             <h3 className="login-subtitle">Fazer Login</h3>
@@ -71,6 +68,21 @@ const Login = () => {
                         className="login-input"
                     />
                 </div>
+                <div className="login-input-container">
+                    <label htmlFor="perfil" className="login-label">
+                        Perfil:
+                    </label>
+                    <select
+                        className="form-select form-control-lg"
+                        value={perfil}
+                        onChange={(e) => setPerfil(e.target.value)}
+                    >
+                        <option value="Dono">Dono</option>
+                        <option value="Funcionario">Funcionário</option>
+                        <option value="Cliente">Cliente</option>
+                    </select>
+                </div>
+
 
                 {/* Botão de login */}
                 <button type="submit" className="login-button">

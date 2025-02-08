@@ -32,9 +32,21 @@ export const cadastrarCliente = async (cliente) => {
     return response.data;
 };
 
-export async function realizarLogin(email, senha) {
+export async function realizarLogin(email, senha, perfil) {
     try {
-        const response = await axios.get(`http://localhost:8080/donos/login/${email}/${senha}`, {
+        let uri = "http://localhost:8080/donos/login"
+        switch (perfil) {
+            case "Cliente":
+                uri = "http://localhost:8080/donos/login"
+                break;
+            case "Dono":
+                uri = "http://localhost:8080/api/dono/login"
+                break;
+            case "Funcionario":
+                uri = "http://localhost:8080/api/funcionarios/login"
+                break;
+        }
+        const response = await axios.get(`${uri}/${email}/${senha}`, {
             email,
             senha
         });

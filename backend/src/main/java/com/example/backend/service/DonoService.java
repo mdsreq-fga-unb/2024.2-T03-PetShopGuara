@@ -1,8 +1,11 @@
 package com.example.backend.service;
 
 import com.example.backend.Exception.AutenticacaoDonoException;
+import com.example.backend.Exception.EmailNotFoundException;
+import com.example.backend.Exception.IncorrectPasswordException;
 import com.example.backend.dto.HorarioFuncionamentoDTO;
 import com.example.backend.models.Agendamento;
+import com.example.backend.models.Cliente;
 import com.example.backend.models.Dono;
 import com.example.backend.repository.AgendamentoRepository;
 import com.example.backend.repository.DonoRepository;
@@ -26,13 +29,17 @@ public class DonoService {
     // Verificar se o email e a senha correspondem ao dono
     public Dono autenticarDono(String email, String senha) {
         Dono dono = donoRepository.findByEmail(email)
-                .orElseThrow(() -> new AutenticacaoDonoException("Email inválido."));
+                .orElseThrow(() -> new EmailNotFoundException("Email não encontrado"));
 
-        if (!dono.getSenha().equals(senha)) {
-            throw new AutenticacaoDonoException("Senha incorreta.");
-        }
+        validarSenha(senha, dono.getSenha());
 
         return dono;
+    }
+
+    private void validarSenha(String senhaInformada, String senhaArmazenada) {
+        if (!senhaInformada.equals(senhaArmazenada)) {
+            throw new IncorrectPasswordException("Senha incorreta");
+        }
     }
 
     public void alterarHorarioFuncionamento(HorarioFuncionamentoDTO horarioDTO) {

@@ -37,7 +37,7 @@ public class FuncionarioService {
     }
 
     private void validarSenha(String senhaInformada, String senhaArmazenada) {
-        if (!passwordEncoder.matches(senhaInformada, senhaArmazenada)) {
+        if (!senhaInformada.equals(senhaArmazenada)) {
             throw new IncorrectPasswordException("Senha incorreta");
         }
     }
