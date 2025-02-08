@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import { ConsultarPet } from "../../services/APIService";
 import './ConsultarPet.css';
@@ -7,6 +8,7 @@ const PetDetails = ({ petId }) => {
     const [petData, setPetData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchPetData = async () => {
@@ -19,7 +21,6 @@ const PetDetails = ({ petId }) => {
                     idade: "6 anos",
                     observacao: "Muito calmo e fácil de se lidar",
                     sexo: "Masculino",
-                    
                 };
                 setPetData(mockData); // Use dados mockados
             } catch (err) {
@@ -45,9 +46,9 @@ const PetDetails = ({ petId }) => {
       <div className="d-flex justify-content-between align-items-center">
         <h1 className="text-primary fw-bold">Meus Pets 
           <button
-          className="btn botao-adicionar btn-success   ms-4" // Botão pequeno, verde, com ícone
+          className="btn botao-adicionar btn-success ms-4" // Botão pequeno, verde, com ícone
           style={{ borderRadius: '5px' }}
-          onClick={() => alert('Adicionar Pet')} // Ação do botão (exemplo)
+          onClick={() => navigate('/cadastropets')} // Navega para a página de adicionar pet
         >
           <i className="fas fa-plus"></i> {/* Ícone de adição */}
         </button></h1>

@@ -9,8 +9,12 @@ const HomePage = () => {
     navigate("/agendar"); // Substitua "/pagina-destino" pela rota desejada
   };
   const handleRedirect2 = () => {
+    navigate("/cadastro"); // Substitua "/pagina-destino" pela rota desejada
+  };
+  const handleRedirect3 = () => {
     navigate("/login"); // Substitua "/pagina-destino" pela rota desejada
   };
+
 
   return (
     <div className="d-flex justify-content-center">
@@ -28,8 +32,14 @@ const HomePage = () => {
           Agendar Agora
         </button>
         <button
-          className="botao-login mt-4" // Usando classes do Bootstrap para estilizar o botão
+          className="botao-cadastro mt-4" // Usando classes do Bootstrap para estilizar o botão
           onClick={handleRedirect2}
+        >
+         Cadastre-se
+        </button>
+        <button
+          className="botao-login mt-4" // Usando classes do Bootstrap para estilizar o botão
+          onClick={handleRedirect3}
         >
           Fazer Login
         </button>

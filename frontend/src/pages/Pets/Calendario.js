@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { agendarServico, listarPets } from "../../services/APIService";
-import axios from "axios";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import "./Calendario.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Agendar = () => {
     const [pets, setPets] = useState([]);
-    const [petSelecionado, setPetSelecionado] = useState(""); // Começa sem seleção
+    const [petSelecionado, setPetSelecionado] = useState("");
     const [data, setData] = useState("");
     const [hora, setHora] = useState("");
     const [servico, setServico] = useState("Banho");
@@ -16,7 +17,7 @@ const Agendar = () => {
         const fetchPets = async () => {
             try {
                 const response = await listarPets();
-                setPets(response); // Apenas define a lista, sem seleção automática
+                setPets(response);
             } catch (err) {
                 console.error("Erro ao buscar pets:", err);
             }
@@ -24,18 +25,15 @@ const Agendar = () => {
         fetchPets();
     }, []);
 
-
     const handleAgendamento = async (e) => {
         e.preventDefault();
-
         if (!petSelecionado) {
             setError("Por favor, selecione um pet.");
             return;
         }
-
         try {
             await agendarServico({ nomePet: petSelecionado, data, hora, servico });
-            setSuccess({nomePet: petSelecionado, data, hora, servico });
+            setSuccess({ nomePet: petSelecionado, data, hora, servico });
             setError(null);
         } catch (err) {
             setError("Erro ao realizar o agendamento. Tente novamente.");
@@ -44,12 +42,13 @@ const Agendar = () => {
     };
 
     return (
-        <div>
-            <h2>Agendar Serviço</h2>
-            <form onSubmit={handleAgendamento}>
-                <div>
-                    <label> Selecione um pet:</label>
+        <div className="container">
+            <h2 className="text-center text-primary mb-"style={{color: "#3D83CC", fontWeight: "bold"}} >Agendar Serviço</h2>
+            <form className="custom-form p-4 shadow" onSubmit={handleAgendamento}>
+                <div className="mb-3">
+                    <label className="form-label fw-bold">Selecione um pet:</label>
                     <select
+                        className="form-select form-control-lg"
                         value={petSelecionado}
                         onChange={(e) => setPetSelecionado(e.target.value)}
                         required
@@ -60,35 +59,42 @@ const Agendar = () => {
                         ))}
                     </select>
                 </div>
-                <div>
-                    <label>Data:</label>
+                <div className="mb-3">
+                    <label className="form-label fw-bold">Data:</label>
                     <input
                         type="date"
+                        className="form-control form-control-lg"
                         value={data}
                         onChange={(e) => setData(e.target.value)}
                         required
                     />
                 </div>
-                <div>
-                    <label>Hora:</label>
+                <div className="mb-3">
+                    <label className="form-label fw-bold">Hora:</label>
                     <input
                         type="time"
-                        value={hora} onChange={(e) => setHora(e.target.value)}
+                        className="form-control form-control-lg"
+                        value={hora}
+                        onChange={(e) => setHora(e.target.value)}
                         required
                     />
                 </div>
-                <div>
-                    <label>Serviço:</label>
-                    <select value={servico} >
+                <div className="mb-3">
+                    <label className="form-label fw-bold">Serviço:</label>
+                    <select
+                        className="form-select form-control-lg"
+                        value={servico}
+                        onChange={(e) => setServico(e.target.value)}
+                    >
                         <option value="Banho">Banho</option>
                         <option value="Tosa">Tosa</option>
                         <option value="Consulta">Consulta</option>
                     </select>
                 </div>
-                <button type="submit">Agendar</button>
+                <button type="submit" className="btn-agendar tn-lg w-100">Agendar</button>
             </form>
-            {success && <p style={{ color: "green" }}>{success}</p>}
-            {error && <p style={{ color: "red" }}>{error}</p>}
+            {success && <div className="alert alert-success mt-3 text-center">Agendamento realizado com sucesso!</div>}
+            {error && <div className="alert alert-danger mt-3 text-center">{error}</div>}
         </div>
     );
 };
