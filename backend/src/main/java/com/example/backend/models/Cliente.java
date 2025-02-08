@@ -19,8 +19,6 @@ public class Cliente {
     private String endereco;
     private String senha;
 
-    // Getters and setters
-
 
 }
 

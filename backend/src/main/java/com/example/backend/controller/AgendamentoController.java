@@ -6,13 +6,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.backend.models.Agendamento;
 import com.example.backend.models.Cliente;
@@ -35,8 +29,8 @@ public class AgendamentoController {
     private ClienteRepository clienteRepository;
     // Endpoint para agendar banho e tosa
     @PostMapping("/agendar")
-    public Agendamento agendar(@RequestParam Pet petId, @RequestParam Cliente donoId, @RequestParam LocalDateTime dataHora) {
-        return agendamentoService.agendarBanhoTosa(petId, donoId, dataHora);
+    public Agendamento agendar(@RequestBody Agendamento agendamento) {
+        return agendamentoService.agendarBanhoTosa(agendamento);
     }
 
     // Endpoint para cancelar agendamento

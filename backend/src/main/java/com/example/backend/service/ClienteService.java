@@ -46,5 +46,18 @@ public class ClienteService {
             throw new ClienteException("Cliente não existe!"); // mensagem de erro
         }
     }
+    private void validarSenha(String senhaInformada, String senhaArmazenada) {
+        if (!senhaInformada.equals(senhaArmazenada)) {
+            throw new IncorrectPasswordException("Senha incorreta");
+        }
+    }
 
+    public Cliente autenticar(String email, String senha) {
+        Cliente cliente = (Cliente) clienteRepository.findByEmail(email)
+                .orElseThrow(() -> new EmailNotFoundException("Email não encontrado"));
+
+        validarSenha(senha, cliente.getSenha());
+
+        return cliente;
+    }
 }

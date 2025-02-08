@@ -30,14 +30,17 @@ export async function consultarPet(petId) {
 export const cadastrarCliente = async (cliente) => {
     const response = await axios.post(`${API_URL}/cadastrar`, cliente);
     return response.data;
-  };
+};
 
 export async function realizarLogin(email, senha) {
     try {
-        const response = await axios.post(`http://localhost:8080/api/funcionarios/login`, {
-            email: email,
-            senha: senha,
+        const response = await axios.get(`http://localhost:8080/donos/login/${email}/${senha}`, {
+            email,
+            senha
         });
+        localStorage.setItem('@User_id', JSON.stringify(response.data.id))
+        localStorage.setItem('@User_name', JSON.stringify(response.data.nome))
+
         return response.data;
     } catch (error) {
         console.error("Erro ao realizar login:", error);
@@ -47,13 +50,20 @@ export async function realizarLogin(email, senha) {
 
 export async function agendarServico(dadosAgendamento) {
     try {
-        const response = await axios.post(`http://localhost:8080/agendamentos/agendar`, dadosAgendamento);
+        const idCliente = localStorage.getItem('@User_id');
+        const response = await axios.post(`http://localhost:8080/agendamentos/agendar`, {
+            pet: dadosAgendamento.petSelecionado,
+            cliente: idCliente,
+            dataHora: dadosAgendamento.dataHora,
+            servico: dadosAgendamento.servico
+        });
         return response.data;
     } catch (error) {
         console.error("Erro ao agendar serviço:", error);
         throw error;
     }
 }
+
 export const listarPets = async () => {
     const response = await fetch("http://localhost:8080/pets/consultar");
     if (!response.ok) {

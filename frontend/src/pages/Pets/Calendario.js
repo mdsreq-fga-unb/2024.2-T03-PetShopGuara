@@ -6,12 +6,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Agendar = () => {
     const [pets, setPets] = useState([]);
-    const [petSelecionado, setPetSelecionado] = useState("");
+    const [petSelecionado, setPetSelecionado] = useState(0); // Começa sem seleção
     const [data, setData] = useState("");
     const [hora, setHora] = useState("");
     const [servico, setServico] = useState("Banho");
-    const [error, setError] = useState(null);
-    const [success, setSuccess] = useState(null);
 
     useEffect(() => {
         const fetchPets = async () => {
@@ -28,16 +26,16 @@ const Agendar = () => {
     const handleAgendamento = async (e) => {
         e.preventDefault();
         if (!petSelecionado) {
-            setError("Por favor, selecione um pet.");
+            alert("Por favor, selecione um pet.");
             return;
         }
         try {
-            await agendarServico({ nomePet: petSelecionado, data, hora, servico });
-            setSuccess({ nomePet: petSelecionado, data, hora, servico });
-            setError(null);
+
+            const dataHora = new Date(`${data} ${hora}`);
+            await agendarServico({petSelecionado, dataHora, servico});
+            alert(`Agendamento realizado com sucesso!`);
         } catch (err) {
-            setError("Erro ao realizar o agendamento. Tente novamente.");
-            setSuccess(null);
+            alert(`Erro ao realizar agendamento!`);
         }
     };
 
@@ -53,11 +51,12 @@ const Agendar = () => {
                         onChange={(e) => setPetSelecionado(e.target.value)}
                         required
                     >
-                        <option value="" disabled>Selecione um pet</option>
+                        <option value={0} disabled>Selecione um pet</option>
                         {pets.map((pet) => (
-                            <option key={pet.id} value={pet.nome}>{pet.nome}</option>
+                            <option key={pet.id} value={pet.id}>{pet.nome}</option>
                         ))}
                     </select>
+
                 </div>
                 <div className="mb-3">
                     <label className="form-label fw-bold">Data:</label>
@@ -93,8 +92,6 @@ const Agendar = () => {
                 </div>
                 <button type="submit" className="btn-agendar tn-lg w-100">Agendar</button>
             </form>
-            {success && <div className="alert alert-success mt-3 text-center">Agendamento realizado com sucesso!</div>}
-            {error && <div className="alert alert-danger mt-3 text-center">{error}</div>}
         </div>
     );
 };

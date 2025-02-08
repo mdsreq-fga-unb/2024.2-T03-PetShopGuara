@@ -14,13 +14,13 @@ const Login = () => {
             const response = await realizarLogin(email, senha);
 
             // Supondo que o backend retorna um token
-            const { token, usuario } = response.data;
+            // const { token, usuario } = response.data;
 
             // Salvar o token no localStorage ou onde preferir
-            localStorage.setItem("token", token);
+            // localStorage.setItem("token", token);
 
             // Exemplo: Redirecionar ou exibir dados do usuário
-            alert(`Bem-vindo, ${usuario.nome}!`);
+            alert(`Bem-vindo, ${response.nome}!`);
         } catch (err) {
             setError("Falha no login. Verifique suas credenciais.");
         }

@@ -53,7 +53,7 @@ public class PetService {
         if(!petExist.isEmpty()){
             for (Pet pet : petExist) {
                 PetDTO petDto = new PetDTO(); // cria uma instância do PetDTO
-                petDto.setId(pet.getId());// tira do optional
+                petDto.setId(pet.getId());
                 petDto.setClienteId(pet.getDonoId());
                 petDto.setNome(pet.getNome());
                 petDto.setCor(pet.getCor());

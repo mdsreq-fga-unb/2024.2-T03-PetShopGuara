@@ -23,6 +23,12 @@ public class ClienteController {
         return clienteService.cadastrarCliente(cliente);
     }
 
+    @GetMapping("/login/{email}/{senha}")
+    public ResponseEntity<Cliente> login(@PathVariable String email, @PathVariable String senha) {
+        Cliente cliente = clienteService.autenticar(email, senha);
+        return ResponseEntity.ok(cliente);
+    }
+
     @DeleteMapping("/cancelar/{id}")
     public void cancelarCliente(@PathVariable Long id) {
         clienteService.cancelarCliente(id); // Passando o id para o serviço

@@ -1,5 +1,6 @@
 package com.example.backend.models;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -11,21 +12,17 @@ public class Agendamento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "pet_id")
-    private Pet pet;
+    @Column(name="pet_id")
+    private Integer pet;
 
-    @ManyToOne
-    @JoinColumn(name = "cliente_id")
-    private Cliente cliente;
+    @Column(name="cliente_id")
+    private Integer cliente;
 
     @Column(name= "dataHoraAgendamento")
-    private LocalDateTime dataHora;
+    private Date dataHora;
 
-
-    @Enumerated(EnumType.STRING) // Mapeia o enum como uma string no banco de dados
     @Column(name = "servico")
-    private Servico servico;
+    private String servico;
 
     @Column(name = "valor")
     private double valor;
