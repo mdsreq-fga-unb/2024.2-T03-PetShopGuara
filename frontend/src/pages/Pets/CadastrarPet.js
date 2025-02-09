@@ -12,6 +12,7 @@ const CadastroPet = () => {
     cor: "",
     idade: "",
     observacao: "",
+    // email: "",
     sexo: ""
   });
   const navigate = useNavigate();
@@ -29,7 +30,7 @@ const CadastroPet = () => {
         nome: "",
         especie: "",
         raca: "",
-        donoId: "",
+        // email: "",
         cor: "",
         idade: "",
         observacao: "",
@@ -62,8 +63,8 @@ const CadastroPet = () => {
   </div>
 
   {/*<div className="col-md-6">*/}
-  {/*  <label className="form-label">ID do Dono</label>*/}
-  {/*  <input type="number" className="form-control" name="donoId" value={formData.donoId} onChange={handleChange} required />*/}
+  {/*  <label className="form-label">Email</label>*/}
+  {/*  <input type="text" className="form-control" name="email" value={formData.email} onChange={handleChange} required />*/}
   {/*</div>*/}
 
   <div className="col-md-6">

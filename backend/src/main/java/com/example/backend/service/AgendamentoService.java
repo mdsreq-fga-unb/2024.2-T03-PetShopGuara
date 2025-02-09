@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import com.example.backend.Exception.AgendamentoException;
+import com.example.backend.dto.AgendamentoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -53,10 +55,26 @@ public class AgendamentoService {
 }
 
 // Buscar todos os agendamentos
-    public List<Agendamento> buscarTodosAgendamentos() {
-    return agendamentoRepository.findAll();
-    }
+    public List<AgendamentoDTO> buscarTodosAgendamentos() {
+        List<Agendamento> agendamentoExist = agendamentoRepository.findAll();
+        List<AgendamentoDTO> agendamentoDTOs = new ArrayList<>();
+        if (!agendamentoExist.isEmpty()) {
+            for (Agendamento agendamento : agendamentoExist) {
+                AgendamentoDTO agendamentoDto = new AgendamentoDTO(); // cria uma instância do agendamentoDTO
+                agendamentoDto.setId(agendamento.getId());
+                agendamentoDto.setPet(agendamento.getPet());
+                agendamentoDto.setCliente(agendamento.getCliente());
+                agendamentoDto.setDataHora(agendamento.getDataHora());
+                agendamentoDto.setServico(agendamento.getServico());
+                agendamentoDto.setValor(agendamento.getValor());
+                // Outros atributos do AgendamentoDTO que você precise setar
+                agendamentoDTOs.add(agendamentoDto);
+            }// verifica se existe o agendamento
+            return agendamentoDTOs;
+        } else {
+            throw new AgendamentoException("agendamento não existe!"); // mensagem de erro
+        }
 
-}
+}}
     
 

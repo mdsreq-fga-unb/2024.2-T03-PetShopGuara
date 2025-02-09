@@ -27,6 +27,14 @@ export async function consultarPet(petId) {
     }
 }
 
+export const listarPets = async () => {
+    const response = await fetch("http://localhost:8080/pets/consultar");
+    if (!response.ok) {
+        throw new Error("Erro ao buscar pets");
+    }
+    return await response.json();
+}
+
 export const cadastrarCliente = async (cliente) => {
     const response = await axios.post(`${API_URL}/cadastrar`, cliente);
     return response.data;
@@ -60,6 +68,15 @@ export async function realizarLogin(email, senha, perfil) {
     }
 }
 
+export const listarPerfil = async (clienteId) => {
+    const response = await fetch(`http://localhost:8080/donos/consultar/${clienteId}`);
+    if (!response.ok) {
+        throw new Error("Perfil não logado!");
+    }
+    return await response.json();
+}
+
+
 export async function agendarServico(dadosAgendamento) {
     try {
         const idCliente = localStorage.getItem('@User_id');
@@ -76,12 +93,14 @@ export async function agendarServico(dadosAgendamento) {
     }
 }
 
-export const listarPets = async () => {
-    const response = await fetch("http://localhost:8080/pets/consultar");
+export async function visualizarAgendamento(){
+    const response = await fetch("http://localhost:8080/agendamentos/calendario");
     if (!response.ok) {
-        throw new Error("Erro ao buscar pets");
+        throw new Error("Erro ao agendamento!");
     }
     return await response.json();
 }
+
+
 
 

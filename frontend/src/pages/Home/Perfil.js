@@ -1,29 +1,45 @@
 import React, { useEffect, useState } from "react";
 import "./Perfil.css";
+import {listarPerfil} from "../../services/APIService";
+import {useParams} from "react-router-dom";
 
 const VisualizarPerfil = () => {
-  const [perfil, setPerfil] = useState(null);
+  const [cliente, setCliente] = useState(null);
+
+  const { clienteId } = useParams(); // Exemplo de como obter o clienteId da URL
 
   useEffect(() => {
-    // Mock de dados do usuário logado
-    const mockPerfil = {
-      nome: "exemplo",
-      email: "exemplo@email.com",
-      endereco: "Rua A, 123",
-      telefone: "00000"
+    const fetchPets = async () => {
+      try {
+        const response = await listarPerfil(clienteId);
+        setCliente(response);
+      } catch (err) {
+        console.error("Perfil não logado", err);
+      }
     };
-    setPerfil(mockPerfil);
-  }, []);
+    fetchPets();
+  }, [clienteId]);
+
+  // useEffect(() => {
+  //   // Mock de dados do usuário logado
+  //   const mockPerfil = {
+  //     nome: "exemplo",
+  //     email: "exemplo@email.com",
+  //     endereco: "Rua A, 123",
+  //     telefone: "00000"
+  //   };
+  //   setPerfil(mockPerfil);
+  // }, []);
 
   return (
     <div className="d-flex justify-content-center align-items-center perfil-details-container mt-2">
       <h2 className="pet-details-title text-center mb-4 fw-bold">Meu Perfil</h2>
-      {perfil ? (
+      {cliente ? (
         <div className="text-center p-4 profile-box">
-          <p className="profile-detail-item"><strong>Nome:</strong> {perfil.nome}</p>
-          <p className="profile-detail-item"><strong>Email:</strong> {perfil.email}</p>
-          <p className="profile-detail-item"><strong>Endereço:</strong> {perfil.endereco}</p>
-          <p className="profile-detail-item"><strong>Telefone:</strong> {perfil.telefone}</p>
+          <p className="profile-detail-item"><strong>Nome:</strong> {cliente.nome}</p>
+          <p className="profile-detail-item"><strong>Email:</strong> {cliente.email}</p>
+          <p className="profile-detail-item"><strong>Endereço:</strong> {cliente.endereco}</p>
+          <p className="profile-detail-item"><strong>Telefone:</strong> {cliente.telefone}</p>
         </div>
       ) : (
         <p className="text-center">Carregando perfil...</p>

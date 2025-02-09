@@ -4,13 +4,12 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
 
+import com.example.backend.dto.AgendamentoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import com.example.backend.models.Agendamento;
-import com.example.backend.models.Cliente;
-import com.example.backend.models.Pet;
 import com.example.backend.repository.ClienteRepository;
 import com.example.backend.repository.PetRepository;
 import com.example.backend.service.AgendamentoService;
@@ -49,23 +48,28 @@ public class AgendamentoController {
     }
 
 
-    @GetMapping("/calendario")
-    public ResponseEntity<List<Agendamento>> visualizarCalendario(
-        @RequestParam(required = false) String dataAgendamento) {
+//    @GetMapping("/calendario")
+//    public ResponseEntity<List<Agendamento>> visualizarCalendario(
+//        @RequestParam(required = false) String dataAgendamento) {
+//
+//        if (dataAgendamento != null && !dataAgendamento.isEmpty()) {
+//        // Converter a data fornecida para LocalDate
+//        LocalDate data = LocalDate.parse(dataAgendamento);
+//        LocalDateTime inicio = data.atStartOfDay();
+//        LocalDateTime fim = data.atTime(LocalTime.MAX);
+//
+//        // Buscar os agendamentos naquela data
+//        List<Agendamento> agendamentos = agendamentoService.buscarAgendamentosPorData(inicio, fim);
+//        return ResponseEntity.ok(agendamentos);
+//        }
+//
+////        // Caso nenhuma data seja fornecida, retornar todos os agendamentos
+//        List<AgendamentoDTO> agendamentos = agendamentoService.buscarTodosAgendamentos();
+//      return ResponseEntity.ok(agendamentos);
+//}
 
-        if (dataAgendamento != null && !dataAgendamento.isEmpty()) {
-        // Converter a data fornecida para LocalDate
-        LocalDate data = LocalDate.parse(dataAgendamento);
-        LocalDateTime inicio = data.atStartOfDay();
-        LocalDateTime fim = data.atTime(LocalTime.MAX);
-
-        // Buscar os agendamentos naquela data
-        List<Agendamento> agendamentos = agendamentoService.buscarAgendamentosPorData(inicio, fim);
-        return ResponseEntity.ok(agendamentos);
-        }
-
-        // Caso nenhuma data seja fornecida, retornar todos os agendamentos
-        List<Agendamento> agendamentos = agendamentoService.buscarTodosAgendamentos();
-        return ResponseEntity.ok(agendamentos);
-}
+    @GetMapping("/consultar")
+    public List<AgendamentoDTO> buscarTodosAgendamentos() {
+        return agendamentoService.buscarTodosAgendamentos();
+    }
 }
