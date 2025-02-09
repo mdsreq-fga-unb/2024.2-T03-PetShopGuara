@@ -9,6 +9,10 @@ const App = () => {
     navigate(-1); // Navega para a página anterior
   };
 
+  const handleExternalLink = () => {
+    window.open("https://www.instagram.com/petshopguara/", "_blank"); // Abre o link externo em uma nova aba
+  };
+
   return (
     <div className="d-flex vh-100">
       {/* Sidebar */}
@@ -23,29 +27,24 @@ const App = () => {
           />
           <ul className="nav flex-column mt-4">
             <li className="nav-item fw-bold">
-              <a href="/" className="nav-link text-white">
-                Home
-              </a>
+              <a href="/" className="nav-link text-white">Home</a>
             </li>
             <li className="nav-item fw-bold">
-              <a href="/pets" className="nav-link text-white">
-                Meus Pets
-              </a>
+              <a href="/pets" className="nav-link text-white">Meus Pets</a>
             </li>
             <li className="nav-item fw-bold">
-              <a href="/agendar" className="nav-link text-white">
-                Agendar
-              </a>
+              <a href="/agendar" className="nav-link text-white">Agendar</a>
             </li>
             <li className="nav-item fw-bold">
-              <a href="/agendamentos" className="nav-link text-white">
-                Agendamentos
-              </a>
+              <a href="/agendamentos" className="nav-link text-white">Agendamentos</a>
             </li>
             <li className="nav-item fw-bold">
-              <a href="/" className="nav-link text-white">
-                Meu Perfil
-              </a>
+              <a href="/perfil" className="nav-link text-white">Meu Perfil</a>
+            </li>
+            <li className="nav-item fw-bold">
+              <button className="nav-link text-white" onClick={handleExternalLink}>
+                Instagram
+              </button>
             </li>
           </ul>
         </div>
@@ -75,4 +74,3 @@ const App = () => {
 };
 
 export default App;
-

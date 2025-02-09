@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { realizarLogin } from "../../services/APIService";
 import "./Login.css"; // Importando o CSS
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -8,7 +9,7 @@ const Login = () => {
     const [perfil, setPerfil] = useState("Cliente");
 
     const [error, setError] = useState(null);
-
+    const navigate = useNavigate();
     const handleLogin = async (e) => {
         e.preventDefault();
 
@@ -16,7 +17,7 @@ const Login = () => {
             const response = await realizarLogin(email, senha, perfil);
 
             // Exemplo: Redirecionar ou exibir dados do usuário
-            alert(`Bem-vindo, ${response.nome}!`);
+            navigate("/");
         } catch (err) {
             setError("Falha no login. Verifique suas credenciais.");
         }

@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import axios from 'axios';
 import {cadastrarCliente} from "../../services/APIService"; // Importa a função Axios
 import './cadastrarCliente.css'
+import { useNavigate } from "react-router-dom";
 
 const CadastrarDono = () => {
 
@@ -10,6 +11,7 @@ const CadastrarDono = () => {
     const [endereco, setEndereco] = React.useState("");
     const [telefone, setTelefone] = React.useState("");
     const [senha, setSenha] = React.useState("");
+    const navigate = useNavigate();
 
     // Função para lidar com mudanças nos campos do formulário
     const onChangeEmail = (event) => {
@@ -37,6 +39,7 @@ const CadastrarDono = () => {
                 email: email, nome: nome, endereco: endereco, telefone: telefone, senha: senha
             });
             alert("Dono cadastrado com sucesso!");
+            navigate("/login");
         } catch (error) {
             alert("Erro ao cadastrar dono. Tente novamente.");
         }
