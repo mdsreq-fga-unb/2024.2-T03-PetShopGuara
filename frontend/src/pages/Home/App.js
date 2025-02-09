@@ -38,8 +38,8 @@ const App = () => {
               </a>
             </li>
             <li className="nav-item fw-bold">
-              <a href="/" className="nav-link text-white">
-                Histórico
+              <a href="/agendamentos" className="nav-link text-white">
+                Agendamentos
               </a>
             </li>
             <li className="nav-item fw-bold">

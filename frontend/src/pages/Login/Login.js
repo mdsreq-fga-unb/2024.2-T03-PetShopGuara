@@ -26,7 +26,6 @@ const Login = () => {
         <div className="login-container">
             {/* Imagem acima do título */}
             <div>
-                <h1 className="login-title">PetShop Guará</h1>
                 <img
                     src="/logo.png"
                     alt="petguaraImage"
