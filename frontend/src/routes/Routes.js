@@ -8,6 +8,7 @@ import CadastrarPet from '../pages/Pets/CadastrarPet';
 import ConsultarPet from '../pages/Pets/ConsultarPet';
 import Calendario from '../pages/Pets/Calendario';
 import Agendamentos from '../pages/Pets/Agendamentos';
+import Perfil from "../pages/Home/Perfil";
 
 const AppRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const AppRoutes = () => {
         <Route path="/" element={<Home/>} />
         <Route path="/pets" element={<ConsultarPet/>} />
         <Route path="/cadastropets" element={<CadastrarPet/>} />
+        <Route path="/perfil" element={<Perfil/>} />
         <Route path="/agendar" element={<Calendario/>} />
         <Route path="/agendamentos" element={<Agendamentos/>} />
         </Route>
