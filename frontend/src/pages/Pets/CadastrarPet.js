@@ -9,7 +9,6 @@ const CadastroPet = () => {
     nome: "",
     especie: "",
     raca: "",
-    donoId: "",
     cor: "",
     idade: "",
     observacao: "",
@@ -62,10 +61,10 @@ const CadastroPet = () => {
     <input type="text" className="form-control" name="raca" value={formData.raca} onChange={handleChange} required />
   </div>
 
-  <div className="col-md-6">
-    <label className="form-label">ID do Dono</label>
-    <input type="number" className="form-control" name="donoId" value={formData.donoId} onChange={handleChange} required />
-  </div>
+  {/*<div className="col-md-6">*/}
+  {/*  <label className="form-label">ID do Dono</label>*/}
+  {/*  <input type="number" className="form-control" name="donoId" value={formData.donoId} onChange={handleChange} required />*/}
+  {/*</div>*/}
 
   <div className="col-md-6">
     <label className="form-label">Cor</label>

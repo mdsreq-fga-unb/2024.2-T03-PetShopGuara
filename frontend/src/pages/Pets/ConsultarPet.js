@@ -1,37 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from 'axios';
-import { ConsultarPet } from "../../services/APIService";
-import './ConsultarPet.css';
+import { listarPets } from "../../services/APIService";
+import "./ConsultarPet.css";
 
-const PetDetails = ({ petId }) => {
-    const [petData, setPetData] = useState(null);
+const PetDetails = () => {
+    const [pets, setPets] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const navigate = useNavigate();
 
     useEffect(() => {
-        const fetchPetData = async () => {
+        const fetchPets = async () => {
             try {
-                const mockData = {
-                    nome: "Fido",
-                    especie: "Cachorro",
-                    raca: "Golden Retriever",
-                    cor: "Preto",
-                    idade: "6 anos",
-                    observacao: "Muito calmo e fácil de se lidar",
-                    sexo: "Masculino",
-                };
-                setPetData(mockData); // Use dados mockados
+                const response = await listarPets();
+                setPets(response);
             } catch (err) {
-                setError("Erro ao carregar os dados do pet.");
+                console.error("Erro ao buscar pets:", err);
+                setError("Erro ao carregar os pets.");
             } finally {
                 setLoading(false);
             }
         };
-
-        fetchPetData();
-    }, [petId]);  // Reexecuta sempre que o petId mudar
+        fetchPets();
+    }, []);
 
     if (loading) {
         return <div>Carregando...</div>;
@@ -42,35 +33,38 @@ const PetDetails = ({ petId }) => {
     }
 
     return (
-      <div className="pet-details-container">
-      <div className="d-flex justify-content-between align-items-center">
-        <h1 className="text-primary fw-bold">Meus Pets 
-          <button
-          className="btn botao-adicionar btn-success ms-4" // Botão pequeno, verde, com ícone
-          style={{ borderRadius: '5px' }}
-          onClick={() => navigate('/cadastropets')} // Navega para a página de adicionar pet
-        >
-          <i className="fas fa-plus"></i> {/* Ícone de adição */}
-        </button></h1>
-        
-        {/* Botão de Adicionar ao lado do título */}
-      </div>
-    
-      {petData && (
-        <div className="blue-box mt-3">
-          <h2 className="pet-details-title">
-            {petData ? `${petData.nome}` : "Detalhes do Pet"}
-          </h2>
-          <p className="pet-detail-item">Espécie: {petData.especie}</p>
-          <p className="pet-detail-item">Raça: {petData.raca}</p>
-          <p className="pet-detail-item">Cor: {petData.cor}</p>
-          <p className="pet-detail-item">Idade: {petData.idade}</p>
-          <p className="pet-detail-item">Observação: {petData.observacao}</p>
-          <p className="pet-detail-item">Sexo: {petData.sexo}</p>
+        <div className="pet-details-container">
+            <div className="d-flex justify-content-between align-items-center">
+                <h1 className="text-primary fw-bold">
+                    Meus Pets
+                    <button
+                        className="btn botao-adicionar btn-success ms-4"
+                        style={{ borderRadius: "5px" }}
+                        onClick={() => navigate("/cadastropets")}
+                    >
+                        <i className="fas fa-plus"></i>
+                    </button>
+                </h1>
+            </div>
+            <div className="pets-list" style={{display: "flex", flexWrap: "wrap", gap: "20px"}}>
+                {pets.length > 0 ? (
+                    pets.map((pet) => (
+                        <div key={pet.id} className="pet-item blue-box mt-3">
+                            <h2 className="pet-details-title">{pet.nome || "Detalhes do Pet"}</h2>
+                            <p className="pet-detail-item">Espécie: {pet.especie}</p>
+                            <p className="pet-detail-item">Raça: {pet.raca}</p>
+                            <p className="pet-detail-item">Cor: {pet.cor}</p>
+                            <p className="pet-detail-item">Idade: {pet.idade}</p>
+                            <p className="pet-detail-item">Observação: {pet.observacao}</p>
+                            <p className="pet-detail-item">Sexo: {pet.sexo}</p>
+                        </div>
+                    ))
+                ) : (
+                    <p>Nenhum pet cadastrado.</p>
+                )}
+            </div>
         </div>
-      )}
-    </div>
     );
-  };
+};
 
 export default PetDetails;
