@@ -19,43 +19,38 @@
 |                     |        |               |               | Protótipo no Figma                                                                          |
 |                     |        |               |               | Arquitetura                                                                                 |
 |                     |        |               |               | Análise de riscos                                                                           |
-| **Construção**          | 3      | 25/11/2024    | 01/12/2024    | Desenvolver o banco de dados                                                                |
-|                     |        |               |               | Criar a página do cliente                                      |
-|                     |        |               |               | Desenvolver o cadastro do dono do animal                                      |
-|                     |        |               |               | Desenvolver o cadastro do pet                                      |
-|                     |        |               |               | Testes das funções/estilizações feitas na semana                                            |
-|           | 4      | 02/12/2024    | 08/12/2024    | Desenvolver o agendamento de serviços         |
-|                     |        |               |               | Desenvolver a exibição dos horários disponíveis para agendamento                             |
-|                     |        |               |               | Testes das funções/estilizações feitas na semana                                            |
-|           | 5      | 09/12/2024    | 15/12/2024    | Criar a página do dono do negócio                                                           |
-|                     |        |               |               | Desenvolver a consulta dos dados dos clientes                                   |
+| **Construção**          | 3      | 25/11/2024    | 01/12/2024    | Desenvolver o banco de dados                                                  
+|           | 4      | 02/12/2024    | 08/12/2024    | US01 - Implementação         |
+|                     |        |               |               | US01 - Estilização                              |
+|                     |        |               |               | Testes das funções/estilizações feitas na semana                               | | Criar a página do dono do negócio                                                           |
+|           | 5      | 09/12/2024    | 15/12/2024    | US02 - Implementação                                                            |
+|                     |        |               |               |US02 - Estilização                                   |
 |                     |        |               |               | Testes das funções/estilizações feitas na semana                                            |
 |           | 6      | 16/12/2024    | 22/12/2024    | Entrega da Unidade 2                                                                        |
-|                     |        |               |               | Desenvolver a visualização do calendário com agendamentos                                            |
+|                     |        |               |               |  US03 - Implementação                                            |
 |                     |        |               |               | Testes das funções/estilizações feitas na semana                                            |
 |                     |        | 23/12/2024    | 01/01/2025    | **Recesso**                                                                                  |
-|           | 7      | 02/01/2025    | 12/01/2025    | Criar a página dos funcionários                                                      |
-|                     |        |               |               | Desenvolver a visualização do calendário com agendamentos do dia por parte dos funcionários                                                |
-|                     |        |               |               | Testes das funções/estilizações feitas na semana                                            |
-|                     |        |               |               | Validação da página do usuário com nosso cliente                                           |
-|           | 8      | 13/01/2025    | 19/01/2025    | Desenvolver a consulta dos dados dos pets por parte do dono do negócio                                                            |
+|           | 7      | 02/01/2025    | 12/01/2025    | US03 - Estilização                                                      |
+|                     |        |               |               | US08 - Implementação                                                |
+|                     |        |               |               | US08 - Estilização                                            |
+|                     |        |               |               | Validação das US já feitas com nosso cliente                                           |
+|           | 8      | 13/01/2025    | 19/01/2025    | US04 - Implementação                                                            |
 |                     |        |               |               | Testes das funções/estilizações feitas na semana                                            |
 |           | 9      | 20/01/2025    | 26/01/2025    | Entrega Unidade 3                           |
-|                     |        |               |               | Desenvolver a função de alterar os preços dos serviços                                                                    |
-|                     |        |               |               | Desenvolver a função de configurar as datas do calendário                                                           |
-|                     |        |               |               | Desenvolver o cancelamento de agendamentos por parte do cliente                                                                    |
-|                     |        |               |               | Desenvolver a consulta dos dados dos pets por parte dos funcionários                                                                    |
+|                     |        |               |               | US04 - Estilização                                                                    |
+|                     |        |               |               | US12 - Implementação                                                            |
+|                     |        |               |               | US12 - Estilização                                                                    |
+|                     |        |                                                 |               | Testes das funções/estilizações feitas na semana                                           |
+|           | 10     | 27/01/2025    | 02/02/2025    | Validação com o cliente                     |        |               |               
+|                     |        |               |               | US16 - Implementação     |
+|                     |        |               |               | Testes das funções/estilizações feitas na semana                                           | 
+| **Transição**           | 11     | 03/02/2025    | 09/02/2025    | US16 - Estilização                                                     |
 |                     |        |               |               | Testes das funções/estilizações feitas na semana                                           |
-|           | 10     | 27/01/2025    | 02/02/2025    | Fazer a hospedagem                                                                         |
-|                     |        |               |               | Validação com o cliente                                                                    |
-|                     |        |               |               | Desenvolver a consulta dos lucros do pet shop                                                                   |
-|                     |        |               |               | Desenvolver a consulta das despesas do pet shop                                                                    |
-|                     |        |               |               | Testes das funções/estilizações feitas na semana                                           |
-| **Transição**           | 11     | 03/02/2025    | 09/02/2025    | Fazer as mudanças pedidas pelo cliente                                                     |
-|                     |        |               |               | Testes das funções/estilizações feitas na semana                                           |
-|            | 12     | 10/02/2025    | 12/02/2025    | Walkthrough com o cliente                                                                  |
-|                     |        |               |               | Encerramento do projeto                                                                    |
-|                     |        |               |               | Entrega da Unidade 4                                                                       |
+|            | 12     | 10/02/2025    | 12/02/2025    | Fazer Hospedagem                                                                  |
+|                     |        |               |               | Walkthrough com o cliente                                                                    |
+|                     |        |               |               | Encerramento do Projeto                                                                                                                           |
+|                     |        |               |               | Entrega da Unidade 4                                           |
+                                                              
 
 
 
