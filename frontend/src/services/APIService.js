@@ -27,8 +27,16 @@ export async function consultarPet(petId) {
     }
 }
 
+export const consultarDadosPets = async (clienteId) => {
+    const response = await fetch(`http://localhost:8080/pets/consultar/${clienteId}`);
+    if (!response.ok) {
+        throw new Error("Erro ao buscar pets");
+    }
+    return await response.json();
+}
+
 export const listarPets = async () => {
-    const response = await fetch("http://localhost:8080/pets/consultar");
+    const response = await fetch(`http://localhost:8080/pets/consultar`);
     if (!response.ok) {
         throw new Error("Erro ao buscar pets");
     }

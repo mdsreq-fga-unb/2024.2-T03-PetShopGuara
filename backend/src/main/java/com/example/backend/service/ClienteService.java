@@ -37,6 +37,7 @@ public class ClienteService {
             ClienteDTO clienteDto = new ClienteDTO(); // cria uma instância do clienteDto
             clienteDto.setId(clienteExist.get().getId()); // tira do optional
             clienteDto.setNome(clienteExist.get().getNome());
+            clienteDto.setEmail(clienteExist.get().getEmail());
             clienteDto.setTelefone(clienteExist.get().getTelefone());
             clienteDto.setEndereco(clienteExist.get().getEndereco());
 

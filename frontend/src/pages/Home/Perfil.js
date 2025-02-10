@@ -1,24 +1,26 @@
 import React, { useEffect, useState } from "react";
 import "./Perfil.css";
 import {listarPerfil} from "../../services/APIService";
-import {useParams} from "react-router-dom";
 
 const VisualizarPerfil = () => {
   const [cliente, setCliente] = useState(null);
 
-  const { clienteId } = useParams(); // Exemplo de como obter o clienteId da URL
+
+  const [clienteId ] = useState(localStorage.getItem('@User_id')); //Carrega o id
 
   useEffect(() => {
-    const fetchPets = async () => {
+    const fetchCliente = async () => {
       try {
         const response = await listarPerfil(clienteId);
         setCliente(response);
       } catch (err) {
         console.error("Perfil não logado", err);
       }
+
     };
-    fetchPets();
-  }, [clienteId]);
+    fetchCliente();
+  }, []);
+
 
   // useEffect(() => {
   //   // Mock de dados do usuário logado

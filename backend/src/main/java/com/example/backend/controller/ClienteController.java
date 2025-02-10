@@ -33,9 +33,10 @@ public class ClienteController {
     public void cancelarCliente(@PathVariable Long id) {
         clienteService.cancelarCliente(id); // Passando o id para o serviço
     }
-    @PostMapping("/consultar/{clienteId}")
+    @GetMapping("/consultar/{clienteId}")
     public ClienteDTO consultarDados(@PathVariable Long clienteId) {
         return clienteService.consultarDadosCliente(clienteId);
     }
+
 }
 

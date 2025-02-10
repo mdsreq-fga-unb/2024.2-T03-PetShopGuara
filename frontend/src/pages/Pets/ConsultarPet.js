@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { listarPets } from "../../services/APIService";
+import {consultarDadosPets, listarPets} from "../../services/APIService";
 import "./ConsultarPet.css";
 
 const PetDetails = () => {
     const [pets, setPets] = useState([]);
+    const [clienteId ] = useState(localStorage.getItem('@User_id'));
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const navigate = useNavigate();
@@ -12,7 +13,7 @@ const PetDetails = () => {
     useEffect(() => {
         const fetchPets = async () => {
             try {
-                const response = await listarPets();
+                const response = await listarPets(); //consultarDadosPets(clienteId)
                 setPets(response);
             } catch (err) {
                 console.error("Erro ao buscar pets:", err);
