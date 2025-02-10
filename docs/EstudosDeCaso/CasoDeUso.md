@@ -51,10 +51,10 @@ Utilizamos um **Diagrama de Casos de Uso** para apresentar uma visão externa da
 
 # Especificação de Casos de Uso – HopeBridge  
 
-## 1. Caso de Uso: Registrar Usuário  
+## 1. Caso de Uso: Cadastrar Refugiado  
 
 ### 1.1 Breve Descrição  
-Este caso de uso permite que um usuário (refugiado) realize seu cadastro na plataforma *HopeBridge*, informando seus dados pessoais, localização e necessidades específicas.  
+Este caso de uso permite que um refugiado realize seu cadastro na plataforma *HopeBridge*, informando seus dados pessoais, localização e necessidades específicas.  
 
 ### 1.2 Atores  
 - Refugiado  
@@ -62,24 +62,29 @@ Este caso de uso permite que um usuário (refugiado) realize seu cadastro na pla
 ### 2. Fluxo de Eventos  
 
 #### 2.1 Fluxo Principal  
-1. O usuário acessa a tela de registro da plataforma.  
-2. O sistema exibe um formulário de cadastro.  
-3. O usuário preenche os campos obrigatórios e confirma o registro.  
-4. O sistema valida os dados informados.  
-5. O sistema cria a conta e exibe uma mensagem de sucesso.  
-6. O caso de uso é encerrado.  
+1. O usuário acessa a tela de cadastro.  
+2. O sistema exibe um formulário de registro.  
+3. O usuário preenche os campos obrigatórios.
+4. O usuário confirma o cadastro[RN02] [FE01].  
+5. O sistema valida os dados informados[RN01] [FE02].  
+6. O sistema cria a conta e exibe uma mensagem de sucesso[FE03].  
+7. O caso de uso é encerrado.  
 
-#### 2.2 Fluxos Alternativos  
-- **[FA01] Dados inválidos**: O sistema exibe uma mensagem de erro caso informações obrigatórias não sejam preenchidas.  
-
-#### 2.3 Fluxos de Exceção  
-- **[FE01] Erro de conexão**: Se houver falha na comunicação com o servidor, o sistema informa o usuário e permite tentar novamente.  
+#### 2.2 Fluxos de Exceção  
+- **[FE01] Campos obrigatórios não preenchidos**: O sistema informa quais campos são obrigatórios e retorna ao passo 3.  
+- **[FE02] Formato inválido de dados**: O sistema alerta o usuário e permite correção antes de enviar o cadastro.  
+- **[FE03] Erro de conexão**: O sistema informa o usuário e permite tentar novamente mais tarde.  
 
 ### 3. Requisitos Especiais  
-- O cadastro deve ser possível via dispositivos móveis.  
+- O cadastro deve ser acessível via dispositivos móveis. 
 
 ### 4. Regras de Negócio  
-- O e-mail ou número de telefone deve ser único no sistema.  
+- **[RN01] Validação de Informações**: 
+- O e-mail ou número de telefone deve ser único no sistema.    
+- A data de nascimento deve estar em um formato válido (DD/MM/AAAA).   
+
+- **[RN02] Campos preenchidos**:
+- Os campos com dados pessoais, localização, tamanho da família, necessidades específicas e capacitação profissional precisam ser preenchidos.
 
 ---
 
@@ -94,20 +99,18 @@ Este caso de uso permite que o refugiado busque por serviços essenciais próxim
 ### 2. Fluxo de Eventos  
 
 #### 2.1 Fluxo Principal  
-1. O usuário acessa a opção de busca de serviços.  
-2. O sistema solicita a localização do usuário.  
-3. O usuário informa sua localização ou permite o acesso via GPS.  
-4. O sistema exibe uma lista de serviços disponíveis na região.  
+1. O usuário acessa a opção de localizar serviços essenciais.  
+2. O sistema solicita acesso a localização atual do usuário.  
+3. O usuário informa sua localização atual ou permite o acesso via GPS.  
+4. O sistema exibe uma lista de serviços disponíveis na região[FE01].  
 5. O caso de uso é encerrado.  
 
-#### 2.2 Fluxos Alternativos  
-- **[FA01] Nenhum serviço encontrado**: O sistema exibe uma mensagem sugerindo áreas próximas com serviços disponíveis.  
-
-#### 2.3 Fluxos de Exceção  
-- **[FE01] Falha no GPS**: Se o GPS não estiver disponível, o usuário pode inserir a localização manualmente.  
+#### 2.2 Fluxos de Exceção  
+- **[FE01] Falha no GPS**: Se o GPS não estiver disponível, o usuário pode inserir a localização manualmente ao voltar para o passo 3.  
 
 ### 3. Requisitos Especiais  
-- A busca deve funcionar offline com dados previamente carregados.  
+- A busca deve funcionar offline com dados previamente carregados.
+- A busca deve ser acessível via dispositivos móveis.  
 
 ---
 
@@ -121,21 +124,26 @@ Este caso de uso permite que um refugiado solicite uma vaga em um abrigo dispon�
 
 ### 2. Fluxo de Eventos  
 
-#### 2.1 Fluxo Principal  
-1. O usuário acessa a lista de abrigos disponíveis.  
-2. O usuário seleciona um abrigo e verifica os detalhes.  
-3. O usuário solicita uma vaga.  
-4. O sistema confirma a solicitação e exibe uma mensagem de sucesso.  
-5. O caso de uso é encerrado.  
+#### 2.1 Fluxo Principal
+1. O refugiado seleciona a opção de abrigos disponíveis.
+2. O sistema solicita a localização atual do usuário.
+3. O refugiado informa sua localização atual ou permite o acesso via GPS.  
+4. O sistema apresenta os abrigos diponíveis e suas localizações.  
+5. O usuário seleciona um abrigo e verifica seus detalhes.
+6. O sistema apresenta os detalhes do abrigo.  
+7. O usuário solicita uma vaga[FE01].  
+8. O sistema confirma a solicitação e exibe uma mensagem de sucesso.  
+9. O caso de uso é encerrado.   
 
-#### 2.2 Fluxos Alternativos  
-- **[FA01] Abrigo lotado**: O sistema informa indisponibilidade e sugere alternativas.  
-
-#### 2.3 Fluxos de Exceção  
+#### 2.2 Fluxos de Exceção  
 - **[FE01] Erro de conexão**: O sistema permite que a solicitação seja registrada offline para envio posterior.  
 
 ### 3. Requisitos Especiais  
-- O sistema deve permitir reservas de abrigo com antecedência.  
+- O sistema deve permitir reservas de abrigo com antecedência.
+- A solicitação deve ser acessível via dispositivos móveis.  
+
+### 4. Precondições
+- Para utilizar este caso de uso é necessário que o refugiado esteja *logado* na plataforma.
 
 ---
 
@@ -150,24 +158,29 @@ Este caso de uso permite que refugiados acessem vagas de emprego compatíveis co
 ### 2. Fluxo de Eventos  
 
 #### 2.1 Fluxo Principal  
-1. O usuário acessa a opção de busca de empregos.  
-2. O sistema solicita dados do perfil profissional do usuário.  
-3. O sistema exibe uma lista de vagas disponíveis.  
-4. O usuário pode visualizar os detalhes de uma vaga e se candidatar.  
-5. O caso de uso é encerrado.  
+1. O usuário seleciona a opção de vagas de emprego.
+2. O sistema solicita a localização atual do usuário.
+3. O refugiado informa sua localização atual ou permite o acesso via GPS.  
+4. O sistema exibe uma lista de vagas disponíveis baseadas no perfil do usuário[RN01].  
+5. O usuário pode visualizar os detalhes de uma vaga e se inscrever.
+6. O sistema confirma a inscrição e exibe uma mensagem de sucesso.  
+6. O caso de uso é encerrado.   
 
-#### 2.2 Fluxos Alternativos  
-- **[FA01] Nenhuma vaga compatível**: O sistema sugere cursos de capacitação relacionados.  
-
-#### 2.3 Fluxos de Exceção  
+#### 2.2 Fluxos de Exceção  
 - **[FE01] Falha na busca**: Se houver erro ao carregar as vagas, o usuário pode tentar novamente mais tarde.  
 
 ### 3. Requisitos Especiais  
-- A busca de vagas deve considerar as habilidades do usuário.  
+- Esse caso de uso deve ser acessível em dispositivos móveis. 
+
+### 4. Regras de Negócio
+- **[RN01] Capacitação técnica**: A busca de vagas deve considerar as habilidades do usuário.  
+
+### 5. Precondições
+- Para utilizar este caso de uso é necessário que o refugiado esteja *logado* na plataforma.
 
 ---
 
-## 5. Caso de Uso: Gerenciar Alocação de Recursos  
+## 5. Caso de Uso: Gerenciar Alocação de Recursos humanitários 
 
 ### 1.1 Breve Descrição  
 Este caso de uso permite que agências humanitárias monitorem e distribuam recursos de forma eficiente.  
@@ -178,17 +191,21 @@ Este caso de uso permite que agências humanitárias monitorem e distribuam recu
 ### 2. Fluxo de Eventos  
 
 #### 2.1 Fluxo Principal  
-1. A agência acessa o painel de gestão de recursos.  
+1. A agência seleciona a opção de gestão de recursos.  
 2. O sistema exibe uma lista de demandas registradas por refugiados.  
-3. A agência seleciona uma demanda para atendimento.  
-4. O sistema registra a alocação do recurso.  
-5. O caso de uso é encerrado.  
+3. A agência seleciona uma demanda para atendimento[FE01].  
+4. O sistema registra a alocação do recurso[FA01]. 
+5. O sistema exibe uma mensagem confirmando a alocação de recursos. 
+6. O caso de uso é encerrado.  
 
 #### 2.2 Fluxos Alternativos  
-- **[FA01] Estoque insuficiente**: O sistema alerta a agência e sugere remanejamento de recursos.  
+- **[FA01] Estoque insuficiente**: No passo 4 do fluxo principal, se o estoque for insuficiente, o sistema alerta a agência e sugere remanejamento de recursos.  
 
 #### 2.3 Fluxos de Exceção  
-- **[FE01] Erro no registro**: Se houver falha na atualização do sistema, o processo pode ser tentado novamente.  
+- **[FE01] Erro no registro**: Se houver falha na atualização do sistema, o processo volta ao passo 2 e pode ser tentado novamente.  
 
 ### 3. Requisitos Especiais  
-- O sistema deve permitir acesso a relatórios de alocação.  
+- O sistema deve permitir acesso a relatórios de alocação de recursos. 
+
+### 4. Precondições
+- Para utilizar este caso de uso é necessário que a agência esteja *logada* na plataforma.
