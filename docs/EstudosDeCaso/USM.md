@@ -76,83 +76,94 @@ Utilizamos o **User Story Mapping (USM)** para construir o Product Backlog da Ed
 
 ### Backbone: Bb01
 
-- Eu, como coordenador pedagógico, gostaria de definir objetivos pedagógicos para alinhar o projeto aos resultados esperados.
-    - Dado que estou no painel de planejamento, quando acessar a seção de objetivos pedagógicos, então devo visualizar um formulário para preenchimento.
-    - Dado que preencho os objetivos, quando salvar, então eles devem ser associados ao projeto.
-    - Dado que quero revisar os objetivos, quando acessar novamente a seção, então devo poder editá-los.
-- Eu, como professor coordenador, gostaria de definir objetivos pedagógicos para alinhar o projeto aos resultados esperados.
-- Eu, como professor participante, quero compreender os objetivos pedagógicos para guiar minhas atividades durante o projeto.
-- Eu, como coordenador pedagógico, desejo definir competências para garantir que os alunos desenvolvam habilidades específicas ao longo do projeto.
-- Eu, como professor coordenador, desejo definir competências para garantir que os alunos desenvolvam habilidades específicas ao longo do projeto.
-- Eu, como coordenador pedagógico, gostaria de definir critérios de avaliação para medir o sucesso das atividades e o progresso dos alunos.
-    - Dado que acesso a seção de critérios de avaliação, quando crio novos critérios, então eles devem ser associados às atividades do projeto.
-- Eu, como professor coordenador, gostaria de definir critérios de avaliação para medir o sucesso das atividades e o progresso dos alunos.
-- Eu, como coordenador pedagógico, desejo distribuir papéis para os membros da equipe para garantir que todos saibam suas responsabilidades e colaborem de maneira eficiente.
-    - Dado que acesso o painel de papéis, quando distribuo responsabilidades, então cada membro deve ser notificado sobre seu papel.
-- Eu, como coordenador pedagógico, gostaria de planejar os recursos necessários para evitar problemas de logística durante o projeto.
+- **Definir objetivos pedagógicos**  
+  **•** Deve ser possível preencher e salvar os objetivos pedagógicos no painel de planejamento.  
+  **•** Os objetivos salvos devem ser associados ao projeto e permitir edição futura.  
+
+- **Definir competências**  
+  **•** Deve ser possível definir e salvar as competências que os alunos devem desenvolver durante o projeto.  
+
+- **Definir critérios de avaliação**  
+  **•** Deve ser possível criar critérios de avaliação e associá-los às atividades do projeto.  
+
+- **Distribuir papéis para os membros da equipe**  
+  **•** Deve ser possível atribuir papéis e responsabilidades aos membros da equipe.  
+  **•** Cada membro deve ser notificado sobre seu papel atribuído.  
+
+- **Planejar recursos necessários**  
+  **•** Deve ser possível listar e planejar os recursos necessários para a execução do projeto.  
 
 ### Backbone: Bb02
 
-- Eu, como professor participante, quero construir um roteiro de atividades para planejar as tarefas diárias com os alunos.
-- Eu, como professor coordenador, quero adaptar o planejamento para lidar com situações imprevistas sem prejudicar o andamento do projeto.
-    - Dado que acesso o cronograma, quando altero o planejamento, então as mudanças devem ser notificadas aos envolvidos.
-- Eu, como coordenador pedagógico, quero adaptar o planejamento para lidar com situações imprevistas sem prejudicar o andamento do projeto.
+- **Construir roteiro de atividades**  
+  **•** Deve ser possível criar e visualizar um cronograma de atividades para o projeto.  
+
+- **Adaptar planejamento diante de circunstâncias inesperadas**  
+  **•** Deve ser possível alterar o cronograma e notificar automaticamente os envolvidos sobre as mudanças.  
 
 ### Backbone: Bb03
 
-- Eu, como aluno, gostaria de receber informações iniciais do projeto para entender o que será esperado de mim.
-    - Dado que recebo acesso ao portal do projeto, quando entro na página inicial, então devo visualizar um resumo das informações do projeto.
-- Eu, como aluno, quero acessar os materiais didáticos para me preparar para as atividades do projeto.
+- **Receber informações iniciais do projeto**  
+  **•** O aluno deve visualizar um resumo das informações do projeto ao acessar o portal.  
+
+- **Acessar materiais didáticos**  
+  **•** O aluno deve poder acessar e baixar os materiais didáticos disponíveis para o projeto.  
 
 ### Backbone: Bb04
 
-- Eu, como aluno, desejo me inscrever nas atividades do projeto para participar das atividades planejadas.
-- Eu, como aluno, gostaria de formar grupos para trabalhar em equipe durante o projeto.
-    - Dado que acesso a seção de grupos, quando seleciono um grupo, então minha inscrição no grupo deve ser confirmada.
+- **Inscrever-se nas atividades do projeto**  
+  **•** O aluno deve poder se inscrever nas atividades disponíveis.  
+
+- **Formar grupos**  
+  **•** O aluno deve poder selecionar ou ser alocado em um grupo, com confirmação automática da inscrição.  
 
 ### Backbone: Bb05
 
-- Eu, como coordenador pedagógico, gostaria de enviar documentos de autorização aos pais para garantir a participação formal dos alunos no projeto.
-    - Dado que estou no painel de autorizações, quando envio documentos para os pais, então os pais devem receber uma notificação com o documento anexado.
-    - Dado que envio documentos, quando os pais acessam o link, então eles devem conseguir visualizar e assinar digitalmente.
-- Eu, como pai/responsável, desejo registrar minha assinatura digital para autorizar a participação do meu filho no projeto.
-    - Dado que recebo um documento de autorização, quando clico no link, então devo ser direcionado a uma página segura para assinar.
-    - Dado que registro minha assinatura, quando confirmo, então a autorização deve ser vinculada ao perfil do meu filho.
+- **Enviar documentos de autorização aos pais**  
+  **•** Deve ser possível enviar documentos de autorização aos pais, com notificação automática por e-mail ou sistema.  
+
+- **Registrar assinatura digital**  
+  **•** O responsável deve poder clicar no documento de autorização e ser direcionado a uma página segura para assinar.  
+  **•** Após a assinatura, a autorização deve ser vinculada ao perfil do aluno.  
 
 ### Backbone: Bb06
 
-- Eu, como coordenador pedagógico, gostaria de enviar comunicados aos pais para mantê-los atualizados sobre o andamento do projeto.
-    - Dado que acesso o painel de comunicação, quando envio um comunicado, então todos os pais devem ser notificados por e-mail ou mensagem no sistema.
-    - Dado que visualizo os comunicados enviados, quando acesso o histórico, então devo ver uma lista dos comunicados enviados.
-- Eu, como pai/responsável, desejo me comunicar com os educadores para esclarecer dúvidas.
-    - Dado que acesso o portal do projeto, quando seleciono a opção de mensagem, então devo conseguir enviar uma mensagem para o educador responsável.
-    - Dado que envio uma mensagem, quando o educador responde, então devo receber uma notificação.
+- **Enviar comunicados aos pais**  
+  **•** Deve ser possível enviar comunicados aos pais, com notificação automática por e-mail ou sistema.  
+  **•** Deve haver um histórico de comunicados enviados para consulta.  
+
+- **Comunicação entre responsáveis e educadores**  
+  **•** O responsável deve poder enviar mensagens aos educadores pelo sistema.  
+  **•** O educador deve poder responder, e o responsável deve receber notificação da resposta.  
 
 ### Backbone: Bb07
 
-- Eu, como professor participante, quero avaliar o desempenho dos alunos para identificar pontos de melhoria.
-    - Dado que acesso o painel de avaliação, quando seleciono um aluno, então devo poder dar uma nota de 1 a 5 em cada critério de avaliação.
-    - Dado que preencho uma avaliação, quando salvo, então ela deve ser registrada e vinculada ao perfil do aluno.
-- Eu, como aluno, quero visualizar os feedbacks fornecidos pelos professores para melhorar minhas habilidades.
-    - Dado que acesso a seção de feedbacks, quando escolho um comentário, então devo visualizar as observações completas.
-- Eu, como aluno, gostaria de realizar uma autoavaliação para refletir sobre meu desempenho e aprendizado.
-    - Dado que acesso o painel de autoavaliação, quando seleciono uma das competências, então devo poder dar uma nota de 1 a 5.
-    - Dado que acesso o formulário de autoavaliação, quando preencho os campos, então as respostas devem ser salvas no sistema.
-- Eu, como professor participante, desejo registrar evidências de aprendizagem para acompanhar o progresso dos alunos.
-- Eu, como coordenador pedagógico, quero avaliar o impacto das contribuições dos especialistas para ajustar o planejamento e agregar valor ao projeto.
-- Eu, como professor coordenador, quero avaliar o impacto das contribuições dos especialistas para ajustar o planejamento e agregar valor ao projeto.
-- Eu, como especialista externo, desejo avaliar o impacto das minhas contribuições no projeto para entender como elas ajudam os participantes e melhorar minha abordagem em futuras colaborações.
+- **Avaliar desempenho dos alunos**  
+  **•** O professor deve poder avaliar o desempenho dos alunos com base nos critérios de avaliação definidos.  
+  **•** As avaliações devem ser salvas e vinculadas ao perfil do aluno.  
+
+- **Visualizar feedbacks**  
+  **•** O aluno deve poder visualizar os feedbacks fornecidos pelos professores.  
+
+- **Realizar autoavaliação**  
+  **•** O aluno deve poder preencher uma autoavaliação com base nas competências definidas.  
+  **•** As respostas da autoavaliação devem ser salvas no sistema.  
+
+- **Registrar evidências de aprendizagem**  
+  **•** O professor deve poder registrar evidências de aprendizagem dos alunos.  
+
+- **Avaliar impacto das contribuições dos especialistas**  
+  **•** O coordenador e professores devem poder avaliar o impacto das contribuições dos especialistas no projeto.  
 
 ### Backbone: Bb08
 
-- Eu, como professor participante, desejo documentar o desenvolvimento do projeto para analisar os resultados e compartilhar experiências.
-    - Dado que acesso a seção de documentação, quando insiro entradas, então elas devem ser salvas e associadas ao projeto.
-- Eu, como professor coordenador, desejo documentar o desenvolvimento do projeto para analisar os resultados e compartilhar experiências.
-- Eu, como coordenador pedagógico, gostaria de documentar o desenvolvimento para garantir a melhoria contínua dos processos.
-- Eu, como professor participante, quero documentar as lições aprendidas para aprimorar futuros projetos.
-- Eu, como aluno, quero documentar as lições aprendidas para aprimorar futuros projetos.
-    - Dado que acesso a seção de lições aprendidas, quando insiro minhas percepções, então elas devem ser salvas e associadas ao meu perfil.
-- Eu, como coordenador pedagógico, desejo planejar melhorias para futuras iterações com base nas lições aprendidas.
+- **Documentar o desenvolvimento do projeto**  
+  **•** Deve ser possível registrar entradas sobre o desenvolvimento do projeto.  
+  **•** As entradas devem ser salvas e associadas ao projeto.  
 
+- **Documentar lições aprendidas**  
+  **•** Professores e alunos devem poder registrar lições aprendidas durante o projeto.  
+  **•** As lições aprendidas devem ser salvas e associadas ao perfil do usuário.  
 
-
+- **Planejar melhorias para futuras iterações**  
+  **•** Deve ser possível criar um plano de melhorias com base nas lições aprendidas.  
