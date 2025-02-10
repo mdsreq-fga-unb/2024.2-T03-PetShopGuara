@@ -1,0 +1,71 @@
+/* App.css */
+
+/* Sidebar fixa no topo */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #3D83CC; /* Cor da sidebar */
+  padding-top: 20px;
+  z-index: 1000; /* Garante que a sidebar fique acima do conteúdo */
+  font-size: 20px;
+}
+
+.titulo {
+  color: #fff;
+  font-size: 40px;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  background-color: #2d6a9f;
+}
+
+/* Conteúdo principal */
+.content {
+  margin-left: 250px; /* Deixa espaço para a sidebar */
+  padding-top: 20px;
+  width: calc(100% - 250px); /* O conteúdo ocupa o restante da tela */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* App.css */
+
+/* Botão retroceder */
+button {
+  background-color: #3D83CC; /* Cor de fundo laranja */
+  color: white; /* Cor do ícone */
+  border: none;
+  font-size: 20px; /* Tamanho do ícone */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2d6a9f; /* Cor de fundo quando hover */
+}
+
+/* Estilos para o botão circular */
+button i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
