@@ -13,7 +13,7 @@ const PetDetails = () => {
     useEffect(() => {
         const fetchPets = async () => {
             try {
-                const response = await listarPets(); //consultarDadosPets(clienteId)
+                const response = await consultarDadosPets(clienteId);
                 setPets(response);
             } catch (err) {
                 console.error("Erro ao buscar pets:", err);

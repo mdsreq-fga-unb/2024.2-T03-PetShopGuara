@@ -26,7 +26,7 @@ public class PetController {
     }
 
     @GetMapping("/consultar/{petId}")
-    public PetDTO consultarDados(@PathVariable Long petId){
+    public List<PetDTO> consultarDados(@PathVariable Long petId){
         return petService.consultarDadosPet(petId);
     }
 
