@@ -35,7 +35,7 @@ const CadastrarDono = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8080/donos/cadastrar', {
+            const response = await axios.post('https://two024-2-t03-petshopguara-esum.onrender.com/donos/cadastrar', {
                 email: email, nome: nome, endereco: endereco, telefone: telefone, senha: senha
             });
             alert("Dono cadastrado com sucesso!");

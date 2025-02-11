@@ -19,7 +19,7 @@ export async function cadastrarPet(pet) {
 
 export async function consultarPet(petId) {
     try {
-        const response = await axios.get(`http://localhost:8080/pets/consultar/${petId}`);
+        const response = await axios.get(`https://two024-2-t03-petshopguara-esum.onrender.com/pets/consultar/${petId}`);
         return response.data;
     } catch (error) {
         console.error("Erro ao consultar pet:", error);
@@ -28,7 +28,7 @@ export async function consultarPet(petId) {
 }
 
 export const consultarDadosPets = async (clienteId) => {
-    const response = await fetch(`http://localhost:8080/pets/consultar/${clienteId}`);
+    const response = await fetch(`https://two024-2-t03-petshopguara-esum.onrender.com/pets/consultar/${clienteId}`);
     if (!response.ok) {
         throw new Error("Erro ao buscar pets");
     }
@@ -36,7 +36,7 @@ export const consultarDadosPets = async (clienteId) => {
 }
 
 export const listarPets = async () => {
-    const response = await fetch(`http://localhost:8080/pets/consultar`);
+    const response = await fetch(`https://two024-2-t03-petshopguara-esum.onrender.com/pets/consultar`);
     if (!response.ok) {
         throw new Error("Erro ao buscar pets");
     }
@@ -50,16 +50,16 @@ export const cadastrarCliente = async (cliente) => {
 
 export async function realizarLogin(email, senha, perfil) {
     try {
-        let uri = "http://localhost:8080/donos/login"
+        let uri = "https://two024-2-t03-petshopguara-esum.onrender.com/donos/login"
         switch (perfil) {
             case "Cliente":
-                uri = "http://localhost:8080/donos/login"
+                uri = "https://two024-2-t03-petshopguara-esum.onrender.com/donos/login"
                 break;
             case "Dono":
-                uri = "http://localhost:8080/api/dono/login"
+                uri = "https://two024-2-t03-petshopguara-esum.onrender.com/api/dono/login"
                 break;
             case "Funcionario":
-                uri = "http://localhost:8080/api/funcionarios/login"
+                uri = "https://two024-2-t03-petshopguara-esum.onrender.com/api/funcionarios/login"
                 break;
         }
         const response = await axios.get(`${uri}/${email}/${senha}`, {
@@ -77,7 +77,7 @@ export async function realizarLogin(email, senha, perfil) {
 }
 
 export const listarPerfil = async (clienteId) => {
-    const response = await fetch(`http://localhost:8080/donos/consultar/${clienteId}`);
+    const response = await fetch(`https://two024-2-t03-petshopguara-esum.onrender.com/donos/consultar/${clienteId}`);
     if (!response.ok) {
         throw new Error("Perfil não logado!");
     }
@@ -88,7 +88,7 @@ export const listarPerfil = async (clienteId) => {
 export async function agendarServico(dadosAgendamento) {
     try {
         const idCliente = localStorage.getItem('@User_id');
-        const response = await axios.post(`http://localhost:8080/agendamentos/agendar`, {
+        const response = await axios.post(`https://two024-2-t03-petshopguara-esum.onrender.com/agendamentos/agendar`, {
             pet: dadosAgendamento.petSelecionado,
             cliente: idCliente,
             dataHora: dadosAgendamento.dataHora,
@@ -102,7 +102,7 @@ export async function agendarServico(dadosAgendamento) {
 }
 
 export async function visualizarAgendamento(){
-    const response = await fetch("http://localhost:8080/agendamentos/calendario");
+    const response = await fetch("https://two024-2-t03-petshopguara-esum.onrender.com/agendamentos/calendario");
     if (!response.ok) {
         throw new Error("Erro ao agendamento!");
     }

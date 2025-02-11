@@ -24,7 +24,7 @@ const CadastroPet = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8080/pets/cadastrar", formData);
+      await axios.post("https://two024-2-t03-petshopguara-esum.onrender.com/pets/cadastrar", formData);
       alert("Pet cadastrado com sucesso!");
       setFormData({
         nome: "",

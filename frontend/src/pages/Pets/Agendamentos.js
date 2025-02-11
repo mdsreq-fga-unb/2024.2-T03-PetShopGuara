@@ -6,7 +6,7 @@ const Agendamentos = () => {
     useEffect(() => {
        const fetchAgendamentos = async () => {
             try {
-                const response = await fetch("http://localhost:8080/agendamentos/consultar");
+                const response = await fetch("https://two024-2-t03-petshopguara-esum.onrender.com/agendamentos/consultar");
                 if (!response.ok) {
                     throw new Error("Erro ao buscar agendamentos");
                 }
